@@ -1,0 +1,64 @@
+name granat
+type pshot
+health 1
+speed 12
+noatflash 1
+flash bflash
+noquake 1
+bounce 1
+nolife 1
+jumpheight 2
+candamage enemy obstacle npc
+load expl
+anim idle 
+	loop 1
+	offset 10 10
+	bbox 0 0 0 0
+	delay 10
+	burn 3 3 14 14 29 1
+	dropv 5 3
+	frame data/chars/misc/granat2
+	frame data/chars/misc/granat3
+	frame data/chars/misc/granat4
+	frame data/chars/misc/granat5
+	frame data/chars/misc/granat6
+	frame data/chars/misc/granat7
+	frame data/chars/misc/granat8
+	frame data/chars/misc/granat1
+anim attack1
+	delay 1
+	offset 10 10
+	bbox 0 0 0 0
+	throwframe 1 -1
+	custknife expl
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+anim attack2
+	offset 163 100
+	bbox 0 0 0 0
+	delay 5
+	quakeframe 0 4 1
+	otg 1
+	sound data/sounds/granat.wav
+	burn 73 66 181 150 20 1 0 0 0 30
+	dropv 5 3
+	frame data/chars/misc/explc01
+	frame data/chars/misc/explc02
+	frame data/chars/misc/explc03
+	frame data/chars/misc/explc04
+	frame data/chars/misc/explc05
+	burn 0
+	frame data/chars/misc/explc06
+	frame data/chars/misc/explc07
+	frame data/chars/misc/explc08
+	frame data/chars/misc/explc09
+	frame data/chars/misc/explc10
+	frame data/chars/misc/explc11
+	frame data/chars/misc/explc12
+	frame data/chars/misc/explc13
+	frame data/chars/misc/explc14
+	frame data/chars/misc/explc15
+	frame data/chars/misc/explc16
+	frame data/chars/misc/explc17
+	frame data/chars/misc/explc18
+	frame data/chars/misc/empty

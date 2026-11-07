@@ -1,0 +1,151 @@
+music       data/music/west.bor 905745
+notime 1
+settime 0
+background	data/bgs/lv4c/c1
+bglayer data/bgs/lv4c/back3 0.4 0.4 0 0 0 0 2 2 1 
+panel		data/bgs/lv4c/a1
+order	a
+direction both
+spawn1 100 45 0
+spawn2 80 70 0
+cameratype 1
+wall 0 232 -1000 -1000 3000 3000 100 5000 
+wall 630 346 -50 0 1000 1000 120 5000
+#hole 0 227 -1000 -1000 3000 3000 222
+#hole 645 346 -50 0 1000 1000 120 
+#levelscript data/bgs/lv4c/lv4c.c
+load piorun 1
+load dracula 1
+load drfir 1
+load drpnt 1
+load drhnd 1
+load tlk4c 1
+noslow 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+spawn	piorun
+flip 1
+coords	360 281
+at	0
+spawn	barelb
+item bef
+coords	145 250
+at	0
+spawn	crows
+coords	160 333
+at	0
+spawn	zombiea
+coords	160 330
+at	0
+spawn	barelb
+2pspawn 1 
+item zupa
+coords	205 250
+at	0
+spawn	barelb
+2pspawn 1 
+item flame
+coords	30 335
+at	0
+spawn	barelb 
+item bet
+coords	60 250
+at	0
+spawn	ghoul2
+coords	240 270
+at	0
+spawn	ghoul2
+coords	280 290
+at	0
+spawn	ghoul2
+item itemr
+coords	240 310
+at	0
+spawn	ghoul2
+coords	280 330
+at	0
+wait 
+at 100
+spawn	crows
+coords	370 253
+at	101
+spawn	zombiea
+coords	370 250
+at	101
+spawn	jason
+item money2
+coords	350 280
+at	101
+spawn	ghoul
+coords	400 330
+at	101
+
+group 2 3
+at 200
+
+spawn	dracula
+item bosslow
+boss 1
+coords	250 295
+at	200
+group 2 3
+at 200
+spawn	zombie2
+coords	-200 270
+at	200
+spawn	zombie3
+coords	-200 300
+at	200
+spawn	zombie
+item itemr2
+coords	-200 330
+at	200
+spawn	bet
+coords	-200 360
+at	200
+spawn	zombie2
+coords	-200 270
+at	200
+spawn	zombie3
+coords	-200 300
+at	200
+spawn	zombie
+item itemr
+coords	-200 330
+at	200
+spawn	zombie3
+coords	-200 360
+at	200
+spawn	bet
+coords	-200 270
+at	200
+spawn	zombie
+coords	-200 300
+at	200
+spawn	zombie2
+item itemr2
+coords	-200 330
+at	200
+spawn	zombie3
+coords	-200 360
+at	200
+spawn	zombie2
+coords	-200 270
+at	200
+spawn	jason
+coords	-200 300
+at	200
+spawn	zombie
+item itemr
+coords	-200 330
+at	200
+spawn	bet
+coords	-200 360
+at	200

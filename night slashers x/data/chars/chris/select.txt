@@ -1,0 +1,13 @@
+name	select
+type	none
+anim spawn
+	delay 30
+	offset	25 20
+	frame   data/chars/misc/empty
+	sound data/sounds/select.wav
+	frame   data/chars/misc/empty
+anim idle
+	delay 10
+	offset	25 20
+	frame   data/chars/misc/empty
+

@@ -1,0 +1,326 @@
+loadingbg data/scenes/lvs/2 1 1000 1000 1 1000 1000 
+music		data/music/lv2.bor 1670379
+bossmusic       data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv2/back16
+bglayer		data/bgs/lv2/back216 0.4 0.6 0 0 0 0 5 5 1 0 
+panel		data/bgs/lv2/a1c16
+order	a
+direction both
+spawn1 130 45 0
+spawn2 100 45 0
+wall 441 175 -55 -20 220 220 50 1100
+wall 819 163 -45 -20 1000 1000 50 1100
+#levelscript data/bgs/lv2/lv2.c
+load auto 1
+load brama 1
+load piorun4 1
+load fir 1
+load crows 1
+load door 1
+load lift 1
+load ex1 1
+load zomb2bk 1
+load zomb2bw 1
+load bagzb 1
+load bagzb2 1
+load doctor 1
+load light 1
+load tlk1 1
+load docsht 1
+load docgr1 1
+load docgr2 1
+load docgr3 1
+load Zombiedr 1
+load Zombied2 1
+load zombiel 1
+load zombie2l 1
+load zombie3l 1
+load tlo 1
+noslow 1
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	stop
+flip 1
+coords	160 130
+at	0
+spawn	tlo
+flip 1
+coords	0 195
+at	0
+spawn	auto
+flip 1
+coords	-105 195
+at	0
+spawn	brama
+flip 1
+coords	0 196
+at	0
+spawn	jason
+coords	170 215
+at	0
+spawn	zombiea
+coords	100 215
+at	0
+spawn	kat
+coords	230 220
+at	0
+spawn	were2
+coords	350 200
+at	0
+spawn	piorun4
+flip 1
+coords	300 195
+at	0
+spawn	bareltr
+item brl
+coords	300 150
+at	0
+spawn	fir
+flip 1
+coords	459 173
+at	0
+spawn	crows
+coords	370 181
+at	30
+spawn	zombiea
+coords	370 180
+at	30
+spawn	crows
+coords	400 221
+at	30
+spawn	zombie2a
+coords	400 220
+at	30
+spawn	barel
+item zombie
+coords	620 239
+at	30
+###################
+wait
+at 360
+group 3 3
+at 360
+blockade 360
+at 360
+spawn	zombie4
+coords	380 200
+at	360
+spawn	zombie
+coords	370 200
+at	360
+###################
+group 100 100
+at 380
+spawn	zombie4a
+coords	370 160
+at	380
+spawn	zombie
+coords	-50 220
+at	450
+spawn	zombie
+coords	350 210
+at	455
+
+spawn	barelex
+coords	350 185
+at	500
+spawn	barelex
+coords	370 225
+at	500
+#####################
+wait
+at 550
+group 100 100
+at 550
+blockade 550
+at 550
+spawn	zombieb
+item itemr
+coords	280 200
+at	550
+group 3 3
+at 550
+spawn	zombie
+coords	-50 220
+at	550
+spawn	zombie
+coords	250 200
+at	550
+spawn	zombie3
+coords	380 200
+at	550
+spawn	dog
+coords	-100 220
+at	550
+spawn	zombie2
+coords	380 200
+at	550
+#########################
+spawn	door
+coords	400 160
+at	562
+spawn	barel
+item itemr
+coords	500 230
+at	590
+#########################
+group 100 100
+at 600
+spawn	zombie
+coords	-50 220
+at	600
+spawn	zombie2a
+coords	370 200
+at	680
+spawn	lift
+coords	400 162
+at	819
+spawn	ex1
+coords	400 162
+at	819
+###############
+wait 
+at 1000
+group 100 100
+at 1000
+blockade 1000
+at 1000
+spawn	zombie3
+coords	380 200
+at	1000
+group 4 5
+at 1000
+spawn	zomb2bk
+item zomb2bw
+coords	400 180
+at	1000
+spawn	zombie3
+coords	-80 200
+at	1000
+spawn	zomb2bk
+item zomb2bw
+coords	420 220
+at	1000
+spawn	zombie3
+coords	370 240
+at	1000
+spawn	zomb2bk
+item zomb2bw
+coords	400 200
+at	1000
+#################
+group 100 100
+at 1001
+spawn	barel
+item itemr2
+coords	350 230
+at	1001
+spawn	zombiea
+coords	380 165
+at	1031
+blockade 1100
+at 1100
+spawn	bagzb
+coords	464 164
+at	1106
+spawn	bagzb
+coords	494 164
+at	1204
+spawn	bagzb2
+coords	494 164
+at	1204
+spawn	zombie3
+coords	-50 200
+at	1250
+spawn	were2
+item itemr
+coords	350 200
+at	1300
+spawn	zombieb
+coords	280 220
+at	1350
+spawn	zombieb
+coords	150 220
+at	1400
+spawn	jason
+coords	380 200
+at	1450
+spawn	zombie3
+coords	380 200
+at	1450
+######################
+group 100 100
+at 1470
+wait 
+at 1470
+blockade 1470
+at 1470
+spawn	zombie4
+coords	-100 200
+at	1470
+group 4 4
+at 1500
+spawn	barel
+item bef
+coords	360 140
+at	1500
+########################
+blockade 1830
+at 1830
+spawn	doctor
+item bosslow
+health 600
+boss 1
+coords	350 200
+at	1850
+spawn	light
+flip 1
+coords	200 220
+at	1850
+spawn	zombie2l
+coords	550 200
+at	1850
+spawn	zombiea
+coords	-250 200
+at	1850
+spawn	zombieb
+coords	50 200
+at	1850
+spawn	zombie3
+item itemr2
+coords	-50 200
+at	1850
+spawn	zombie
+coords	350 200
+at	1850
+spawn	zombieb
+coords	150 220
+at	1850
+spawn	zombie4
+coords	-80 200
+at	1850
+spawn	zombie3
+coords	-50 200
+at	1850
+spawn	zombie2
+coords	380 200
+at	1850
+spawn	zombie2
+coords	380 200
+at	1850
+spawn	zombieb
+coords	250 160
+at	1850
+spawn	zombie2
+coords	380 200
+at	1850
+spawn	zombie3
+coords	350 200
+at	1850
+spawn	zombie4
+coords	-80 200
+at	1850

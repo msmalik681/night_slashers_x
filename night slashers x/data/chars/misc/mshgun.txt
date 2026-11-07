@@ -1,0 +1,29 @@
+name	mshgun
+type	item
+subtype weapon
+weapnum	4
+shootnum 16
+typeshot 1
+counter	100
+iconw data/chars/misc/shel4
+subject_to_screen 0
+anim spawn
+	delay	30
+	offset  36 6
+	bbox    0 0 0 0
+	movez -1
+	frame	data/chars/misc/mshgun
+anim idle
+	loop 1
+	delay	250
+	offset  36 6
+	bbox    6 6 6 6 5
+	frame	data/chars/misc/mshgun
+anim fall
+	delay	10
+	offset  36 6
+	bbox    6 6 6 6
+	jumpframe 0 2 -1 0
+	frame	data/chars/misc/mshgun
+	delay   100
+	frame	data/chars/misc/mshgun

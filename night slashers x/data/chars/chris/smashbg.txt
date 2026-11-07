@@ -1,0 +1,14 @@
+name	smashbg
+type	none
+setlayer 20
+nomove 1 1
+anim idle
+	delay	1
+	offset	25 25
+	frame	data/chars/misc/empty
+	delay 3
+	drawmethod 4048 4048
+	frame	data/chars/bosf/b2
+	frame	data/chars/bosf/b1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

@@ -1,0 +1,115 @@
+name	jasspc
+type	text
+subtype noskip
+cantgrab 1
+nolife 1
+setlayer 500
+palette data/chars/bosf/jsmfs18
+anim idle
+	fastattack 1
+	offset  160 120
+	bbox    0 0 0 0
+	delay 5
+	sound data/sounds/n/psfire.wav
+	frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	nodrawmethod
+        frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	nodrawmethod
+	sound data/sounds/n/psfire.wav
+	frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	nodrawmethod
+        frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs18
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs19
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs20
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs21
+	nodrawmethod
+	frame	data/chars/bosf/jsmfs22
+	#drawmethod 256 256 0 0 0 4
+	frame	data/chars/bosf/jsmfs23
+	sound   data/sounds/bosfinsh.wav
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+	

@@ -1,0 +1,22 @@
+name	bosf
+type	none
+setlayer  50
+cantgrab 1
+nolife 1
+anim idle
+	offset  250 111
+	delay   10
+	platform 1 1 1 1 1 1
+	seta 1
+	drawmethod 1024 1024
+	sound   data/sounds/bosfinsh.wav
+	frame	data/chars/bosf/b1
+	frame	data/chars/bosf/b2
+	frame	data/chars/bosf/b1
+	frame	data/chars/bosf/b2
+	frame	data/chars/bosf/b1
+	frame	data/chars/bosf/b2
+	frame	data/chars/bosf/b1
+	frame	data/chars/bosf/b2
+	delay   1
+	frame	data/chars/misc/empty

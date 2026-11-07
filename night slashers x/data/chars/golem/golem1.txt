@@ -1,0 +1,1122 @@
+name	golem1
+health	600
+speed	8
+type	enemy
+aimove chase
+aimove wander
+shadow	3
+score	5000	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+thold 100
+blockodds 1
+bflash flashf
+load zombie
+load dust
+nopain 0
+nodrop 0
+escapehits 5
+noatflash 1
+flash dflash
+hostile player 
+candamage player npc obstacle
+projectilehit enemy obstacle npc
+icon data/chars/doc/icon
+animationscript data/scripts/boss4.c
+weapons golem1 golem
+weaploss 3
+palette data/chars/golem/00
+alternatepal data/chars/golem/00a
+dust dust
+load dst
+load slamfl2
+height  1000
+aggression 50
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	nodrawmethod
+	offset  87 155
+	bbox    0 0 0 0
+	delay 15
+	frame	data/chars/golem/53
+	frame	data/chars/golem/54
+	frame	data/chars/golem/55
+	frame	data/chars/golem/56
+	sound   data/sounds/uraaaw.wav
+	frame	data/chars/golem/57
+	frame	data/chars/golem/58
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	sound   data/sounds/breakpot.wav
+	frame	data/chars/golem/63
+	frame	data/chars/golem/64
+	frame	data/chars/golem/65
+	frame	data/chars/golem/66
+	frame	data/chars/golem/67
+	frame	data/chars/golem/68
+	frame	data/chars/golem/69
+	frame	data/chars/golem/70
+	delay 200
+	frame	data/chars/golem/71
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	nodrawmethod 
+	delay 20
+	offset  87 155
+	bbox    23 132 105 30
+	frame	data/chars/golem/53
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	nodrawmethod
+	offset  87 155
+	bbox    0 0 0 0
+	delay 15
+	frame	data/chars/golem/53
+	frame	data/chars/golem/54
+	frame	data/chars/golem/55
+	frame	data/chars/golem/56
+	sound   data/sounds/uraaaw.wav
+	frame	data/chars/golem/57
+	frame	data/chars/golem/58
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	sound   data/sounds/breakpot.wav
+	frame	data/chars/golem/63
+	frame	data/chars/golem/64
+	frame	data/chars/golem/65
+	frame	data/chars/golem/66
+	frame	data/chars/golem/67
+	frame	data/chars/golem/68
+	frame	data/chars/golem/69
+	frame	data/chars/golem/70
+	delay 200
+	frame	data/chars/golem/71
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	nodrawmethod 
+	delay 20
+	offset  87 155
+	bbox    23 132 105 30
+	frame	data/chars/golem/53
+anim spawn
+	delay	20
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+anim walk
+	loop	1
+	delay	10
+	offset  87 155
+	bbox    65 30 40 99
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	frame	data/chars/golem/05
+	frame	data/chars/golem/06
+	frame	data/chars/golem/07
+	frame	data/chars/golem/08
+	frame	data/chars/golem/09
+	frame	data/chars/golem/10
+	frame	data/chars/golem/11
+	frame	data/chars/golem/04
+anim idle
+	loop	1
+	delay	1
+	offset  87 155
+	bbox    65 30 40 99
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/golem/01
+	frame	data/chars/golem/01
+anim faint
+	delay	20
+	offset  87 155
+	bbox    65 30 40 99
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/golem/01
+	@cmd hurt3 5 1
+	frame	data/chars/golem/01
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 384 384
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	nodrawmethod
+	offset  87 155
+	bbox    0 0 0 0
+	delay 20
+	frame	data/chars/golem/53
+	frame	data/chars/golem/54
+	frame	data/chars/golem/55
+	frame	data/chars/golem/56
+	sound   data/sounds/uraaaw.wav
+	frame	data/chars/golem/57
+	frame	data/chars/golem/58
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/63
+	frame	data/chars/golem/64
+	frame	data/chars/golem/65
+	frame	data/chars/golem/66
+	frame	data/chars/golem/67
+	frame	data/chars/golem/68
+	frame	data/chars/golem/69
+	frame	data/chars/golem/70
+	frame	data/chars/golem/71
+	delay 200
+	frame	data/chars/misc/empty
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 384 384
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	nodrawmethod 
+	delay 20
+	offset  87 155
+	bbox    23 132 105 30
+	frame	data/chars/golem/53
+anim block
+	delay	5
+	offset  87 155
+	bbox    0 0 0 0
+	frame	data/chars/golem/39
+	offset  88 155
+	frame	data/chars/golem/39
+	offset  87 155
+	frame	data/chars/golem/39
+	@cmd velo001 -2 0 0
+	frame	data/chars/golem/39
+	frame	data/chars/golem/39
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/golem/39
+	frame	data/chars/golem/39
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/golem/39
+	frame	data/chars/golem/39
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/golem/39
+	frame	data/chars/golem/39
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/golem/39
+	frame	data/chars/golem/39
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    65 30 40 99
+	frame	data/chars/golem/39
+anim run
+	loop	1
+	delay	8
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/05
+	frame	data/chars/golem/06
+	frame	data/chars/golem/07
+	frame	data/chars/golem/08
+	frame	data/chars/golem/09
+	frame	data/chars/golem/10
+	frame	data/chars/golem/11
+	frame	data/chars/golem/04
+anim runattack
+	@cmd velo001 2 0 0
+	delay	10
+	offset  87 155
+	bbox    65 30 40 99
+	hitflash flash
+	frame	data/chars/golem/38
+	frame	data/chars/golem/39
+	sound   data/sounds/punch2.wav
+	blast  117 54 80 45 10 1 0 30
+	delay 20
+	frame	data/chars/golem/40
+	blast  0 0 0 0
+	delay 10
+	@cmd velo001 1 0 0
+	frame	data/chars/golem/38
+anim attack1
+	range   30 70
+	delay	10
+	offset  87 155
+	bbox    65 30 40 99
+	hitflash flash
+	frame	data/chars/golem/09
+	offset  118 155
+	frame	data/chars/golem/38
+	delay 30 
+	offset  126 155
+	frame	data/chars/golem/39
+	sound   data/sounds/punch2.wav
+	offset  116 155
+	delay 5
+	blast  117 54 80 45 10 1 0 30
+	frame	data/chars/golem/40
+	blast  0 0 0 0
+	delay 35
+	frame	data/chars/golem/40
+	delay 10
+	offset  126 155
+	frame	data/chars/golem/38
+	offset  87 155
+	frame	data/chars/golem/09
+anim attack2
+	range   30 70
+	delay	10
+	offset  87 155
+	bbox    65 30 40 99
+	hitflash flash
+	frame	data/chars/golem/09
+	offset  118 155
+	frame	data/chars/golem/38
+	offset  126 155
+	delay 20 
+	frame	data/chars/golem/39
+	sound   data/sounds/punch2.wav
+	offset  116 155
+	delay 5
+	blast  117 54 80 45 10 1 0 30
+	frame	data/chars/golem/40
+	blast  0 0 0 0
+	delay 35
+	frame	data/chars/golem/40
+	delay 10
+	offset  126 155
+	frame	data/chars/golem/38
+	offset  87 155
+	frame	data/chars/golem/09
+anim attack3
+	range 100 160
+	delay	10
+	offset  87 155
+	bbox    65 30 40 99
+	hitflash flash
+	sound   data/sounds/roar.wav
+	frame	data/chars/golem/38
+	@cmd velo001 2 0 0
+	frame	data/chars/golem/39
+	blast  117 54 80 45 10 1 0 30
+	delay 40
+	frame	data/chars/golem/40
+	blast  0 0 0 0
+	delay 10
+	@cmd velo001 1 0 0
+	frame	data/chars/golem/38
+anim attack4
+	range 130 160
+	offset  87 155
+	delay 10
+	bbox    75 98 73 34
+	dropframe 5
+	landframe 6
+	quakeframe 5 3 -2
+	hitflash bflash
+	frame	data/chars/golem/46
+	@cmd    targetL 4 0 0
+	frame	data/chars/golem/46
+	@cmd    leap 4
+	bbox    65 30 40 99
+	frame	data/chars/golem/41
+	frame	data/chars/golem/42
+	bbox    19 68 119 38
+	attack  19 68 119 38 10 1 0 0 20
+	frame	data/chars/golem/43
+	bbox    19 54 116 58
+	attack  19 54 116 58 10 1 0 0 20
+	delay 1000
+	frame	data/chars/golem/44
+	bbox    75 98 73 34
+	delay  10
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/golem/45
+	attack  0 0 0 0
+	frame	data/chars/golem/45
+	frame	data/chars/golem/45
+	frame	data/chars/golem/46
+anim attack5
+	rangez 0 -30
+	range 130 160
+	offset  87 155
+	delay 20
+	bbox    75 98 73 34
+	jumpframe 1 4 2 -1
+	dropframe 2
+	landframe 3
+	quakeframe 3 3 -2
+	hitflash bflash
+	frame	data/chars/golem/46
+	delay 1000
+	bbox    65 30 40 99
+	frame	data/chars/golem/41
+	frame	data/chars/golem/42
+	bbox    75 98 73 34
+	delay  10
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 1
+	blast   75 98 73 34 10 1 0 30
+	frame	data/chars/golem/45
+	blast   0 0 0 0
+	frame	data/chars/golem/45
+	frame	data/chars/golem/45
+	frame	data/chars/golem/46
+anim attack6
+	rangez 0 30
+	range 130 160
+	offset  87 155
+	delay 20
+	bbox    75 98 73 34
+	jumpframe 1 6.5 0 0
+	dropframe 3
+	landframe 7
+	quakeframe 7 3 -2
+	hitflash bflash
+	frame	data/chars/golem/46
+	delay 20
+	bbox    65 30 40 99
+	frame	data/chars/golem/41
+	delay 1000
+	frame	data/chars/golem/42
+	delay 50
+	sound data/sounds/talk7.wav
+	frame	data/chars/misc/empty
+	delay 1
+	@cmd target 2 0
+	frame	data/chars/misc/empty
+	@cmd teletarget 0 250 0
+	frame	data/chars/misc/empty
+	delay 1000
+	bbox    19 68 119 38
+	attack  19 68 119 38 10 1 0 0 20
+	frame	data/chars/golem/43
+	bbox    75 98 73 34
+	delay  10
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dst" 0 0 1
+	frame	data/chars/golem/45
+	attack  0 0 0 0
+	frame	data/chars/golem/45
+	delay 30
+	frame	data/chars/golem/45
+	delay 10
+	frame	data/chars/golem/46
+anim attack7
+	range 130 160
+	offset  87 155
+	delay 10
+	bbox    75 98 73 34
+	dropframe 3
+	landframe 4
+	quakeframe 3 3 -2
+	hitflash bflash
+	frame	data/chars/golem/46
+	@cmd    targetL 4 0 0
+	frame	data/chars/golem/46
+	@cmd    leap 4
+	delay 1000
+	bbox    65 30 40 99
+	frame	data/chars/golem/41
+	frame	data/chars/golem/42
+	bbox    75 98 73 34
+	delay  10
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 1
+	blast   75 98 73 34 10 1 0 30
+	frame	data/chars/golem/45
+	blast   0 0 0 0
+	frame	data/chars/golem/45
+	frame	data/chars/golem/45
+	frame	data/chars/golem/46
+anim attack8
+	range 130 160
+	offset  87 155
+	bbox    65 30 40 99
+	delay 20
+	frame	data/chars/golem/01
+	sound   data/sounds/talk7.wav
+	frame	data/chars/golem/02
+	frame	data/chars/golem/03
+	frame	data/chars/golem/02
+	frame	data/chars/golem/03
+	frame	data/chars/golem/02
+	frame	data/chars/golem/03
+	frame	data/chars/golem/02
+anim attack9
+	range 30 70
+	offset  87 155
+	bbox    65 30 40 99
+	delay 10
+	followanim 2
+	followcond 3
+	attackone 1
+	grabin 1 30
+	frame	data/chars/golem/02
+	frame	data/chars/golem/76
+	attack  123 60 66 25 2 0 1 1 0
+	frame	data/chars/golem/40
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/golem/40
+anim follow2
+	offset  87 155
+	bbox    0 0 0 0
+	@cmd grabcheck
+	@cmd anti
+	delay 1
+	frame	data/chars/golem/39
+	delay  100
+	sound data/sounds/n/bighaha2.wav
+	@cmd    position 0 30 50 -1 -1
+	frame	data/chars/golem/39
+	@cmd    hurt 20 7
+	@cmd    depost 0
+	sound   data/sounds/roar1.wav
+	@cmd    finish 20 2 -5 2 0 -1
+	frame	data/chars/golem/40
+	delay 1
+	@cmd clearL
+	frame	data/chars/golem/40
+anim attack10
+	range 30 70
+	offset  87 155
+	bbox    65 30 40 99
+	delay 10
+	followanim 3
+	followcond 3
+	attackone 1
+	grabin 1 30
+	frame	data/chars/golem/02
+	frame	data/chars/golem/76
+	attack  123 60 66 25 1 0 1 1 0
+	frame	data/chars/golem/40
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/golem/40
+anim follow3
+	offset  87 155
+	bbox    0 0 0 0
+	@cmd grabcheck
+	@cmd anti
+	delay 1
+	jumpframe 1 6 1 0
+	dropframe 2
+	landframe 10
+	quakeframe 10 5 -4
+	frame	data/chars/golem/39
+	delay 1000
+	sound   data/sounds/jump.wav
+	@cmd    position 0 20 1 -1 -1
+	@cmd shoot "dust" 0 0 1
+	sound data/sounds/n/bighaha2.wav
+	frame	data/chars/golem/74
+	delay 10
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	offset  87 110
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	delay 10
+	@cmd shoot "dst" 0 0 1
+	@cmd shoot "slamfl2" 0 20 1
+	sound   data/sounds/bigfal.wav
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	@cmd    position 0 30 -12 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	@cmd    position 0 30 -10 -1 1
+	frame	data/chars/golem/75
+	@cmd    hurt 0 8
+	@cmd    position 0 30 -8 -1 1
+	frame	data/chars/golem/75
+	@cmd    depost 0
+	@cmd    finish 30 2 2 3 0 1
+	frame	data/chars/golem/75
+	offset  87 155
+	delay 30
+	@cmd clearL
+	frame	data/chars/golem/46
+anim grab
+	delay 1
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/39
+anim special
+	range 30 70
+	offset  87 155
+	bbox    0 0 0 0
+	delay 10
+	followanim 3
+	followcond 3
+	attackone 1
+	grabin 1 30
+	frame	data/chars/golem/02
+	frame	data/chars/golem/76
+	attack  123 60 66 25 1 0 1 1 0
+	frame	data/chars/golem/40
+	bbox    65 30 40 99
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/golem/40
+anim special2
+	range   0 100
+	offset  87 155
+	bbox    0 0 0 0
+	delay 10
+	followanim 2
+	followcond 3
+	attackone 1
+	grabin 1 30
+	frame	data/chars/golem/02
+	frame	data/chars/golem/76
+	attack  123 60 66 25 2 0 1 1 0
+	frame	data/chars/golem/40
+	bbox    65 30 40 99
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/golem/40
+anim pain2
+	delay 2
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/47
+	delay  30
+	frame	data/chars/golem/48
+	delay 10
+	frame	data/chars/golem/47
+anim pain
+	delay 2
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/49
+	delay  30
+	frame	data/chars/golem/50
+	delay 10
+	frame	data/chars/golem/49
+anim pain5
+	delay 1
+	offset  87 155
+	bbox    45 50 67 78
+	movea 1
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+	frame	data/chars/golem/51
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 5
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  87 155
+	bbox    65 30 40 99
+	frame	data/chars/golem/47
+anim grabbedwalk
+	delay 1
+	offset  87 195
+	bbox    65 30 40 99
+	frame	data/chars/golem/47
+anim fall
+	delay 1000
+	offset  87 155
+	bbox    0 0 0 0
+	landframe 1
+	attack 34 64 48 56 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/golem/51
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/golem/52
+	delay 15
+	bbox    23 132 105 30
+	frame	data/chars/golem/53
+anim fall5
+	delay 1000
+	offset  87 155
+	bbox    34 64 48 56
+	landframe 1
+	attack 34 64 48 56 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/golem/51
+	delay 20
+	attack  0 0 0 0 0
+	bbox    0 0 0 0
+	frame	data/chars/golem/52
+	delay 30
+	bbox    23 132 105 30
+	frame	data/chars/golem/53
+anim fall8
+	delay 1000
+	offset  87 155
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/golem/49a
+	frame	data/chars/golem/x1
+	attack 34 64 48 56 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/golem/51
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/golem/52
+	delay 15
+	bbox    23 132 105 30
+	frame	data/chars/golem/53
+anim rise
+	delay 15
+	offset  87 155
+	bbox    23 132 105 30
+	frame	data/chars/golem/53
+	bbox    0 0 0 0
+	frame	data/chars/golem/54
+	frame	data/chars/golem/55
+	frame	data/chars/golem/56
+anim riseattack
+	range 0 80
+	delay 10
+	offset  87 155
+	bbox    0 0 0 0
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/golem/54
+	sound   data/sounds/pbugs.wav
+	frame	data/chars/golem/55
+	frame	data/chars/golem/56
+	offset  87 155
+	frame	data/chars/golem/12
+	frame	data/chars/golem/13
+	delay 3
+	bbox    65 30 40 99
+	attack  110 54 84 36 2 1 0 0 10
+	frame	data/chars/golem/14
+	attack  0 0 0 0 
+	frame	data/chars/golem/15
+	attack  130 54 81 32 2 1 0 0 10
+	frame	data/chars/golem/16
+	attack  0 0 0 0
+	frame	data/chars/golem/17
+	attack  153 54 84 33 2 1 0 0 10
+	frame	data/chars/golem/18
+	attack 0 0 0 0
+	frame	data/chars/golem/19
+	attack  176 55 80 30 2 1 0 0 10
+	frame	data/chars/golem/20
+	attack  0 0 0 0 0
+	frame	data/chars/golem/21
+	attack  195 56 69 32 2 1 0 0 10
+	frame	data/chars/golem/22
+	attack  0 0 0 0
+	frame	data/chars/golem/23
+	attack  222 57 62 33 2 1 0 0 10
+	frame	data/chars/golem/24
+	attack  0 0 0 0
+	frame	data/chars/golem/25
+	attack  238 53 71 35 10 1 0 0 10
+	frame	data/chars/golem/26
+	attack  215 55 83 32 6 1 0 0 10
+	frame	data/chars/golem/27
+	attack  210 54 69 35 6 1 0 0 10
+	frame	data/chars/golem/28
+	attack  196 54 80 33 6 1 0 0 10
+	frame	data/chars/golem/29
+	attack  194 56 75 30 6 1 0 0 10
+	frame	data/chars/golem/30
+	attack  169 54 84 33 6 1 0 0 10
+	frame	data/chars/golem/31
+	attack  160 54 75 35 6 1 0 0 10
+	frame	data/chars/golem/32
+	attack  150 53 83 33 6 1 0 0 10
+	frame	data/chars/golem/33
+	attack  149 54 71 34 6 1 0 0 10
+	frame	data/chars/golem/34
+	attack  126 56 82 31 6 1 0 0 10
+	frame	data/chars/golem/35
+	attack  121 51 69 39 6 1 0 0 10
+	frame	data/chars/golem/36
+	attack  104 54 84 32 6 1 0 0 10
+	frame	data/chars/golem/37
+	delay	30
+	offset  87 155
+	bbox    65 30 40 99
+	attack  0 0 0 0 
+	frame	data/chars/golem/13
+	delay 20
+	frame	data/chars/golem/12
+anim death
+	@cmd death
+	delay  15
+	offset  87 155
+	bbox    65 30 40 99
+	attack  0 0 0 0 
+	frame	data/chars/golem/56
+	sound   data/sounds/uraaaw.wav
+	frame	data/chars/golem/57
+	frame	data/chars/golem/58
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	sound   data/sounds/breakpot.wav
+	frame	data/chars/golem/63
+	frame	data/chars/golem/64
+	frame	data/chars/golem/65
+	frame	data/chars/golem/66
+	frame	data/chars/golem/67
+	frame	data/chars/golem/68
+	frame	data/chars/golem/69
+	frame	data/chars/golem/70
+	delay 200
+	frame	data/chars/golem/71
+anim death3
+	jumpframe 0 3 -1 0
+	landframe 1
+	delay 1000
+	offset  87 155
+	bbox    0 0 0 0
+	hitflash bflash
+	frame	data/chars/golem/51
+	delay 15
+	frame	data/chars/golem/52
+	frame	data/chars/golem/53
+	frame	data/chars/golem/54
+	frame	data/chars/golem/55
+	frame	data/chars/golem/56
+	sound   data/sounds/uraaaw.wav
+	frame	data/chars/golem/57
+	frame	data/chars/golem/58
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	frame	data/chars/golem/59
+	frame	data/chars/golem/60
+	frame	data/chars/golem/61
+	frame	data/chars/golem/62
+	sound   data/sounds/breakpot.wav
+	frame	data/chars/golem/63
+	frame	data/chars/golem/64
+	frame	data/chars/golem/65
+	frame	data/chars/golem/66
+	frame	data/chars/golem/67
+	frame	data/chars/golem/68
+	frame	data/chars/golem/69
+	frame	data/chars/golem/70
+	delay 200
+	frame	data/chars/golem/71
+anim throw
+	offset  87 155
+	bbox    0 0 0 0
+	throwframewait 1
+	flipframe 2
+	delay 20
+	frame	data/chars/golem/74
+	delay 10
+	sound   data/sounds/roar1.wav
+	frame	data/chars/golem/39
+	frame	data/chars/golem/39
+	delay 40
+	bbox    65 30 40 99
+	frame	data/chars/golem/76

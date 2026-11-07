@@ -1,0 +1,31 @@
+name jashead
+type pshot
+speed 5
+jumpheight 0
+palette data/chars/jason/01
+alternatepal data/chars/jason/alt1a
+alternatepal data/chars/jason/alt2a
+alternatepal data/chars/jason/alt3a
+alternatepal data/chars/jason/alt4a
+alternatepal data/chars/jason/alt5a
+alternatepal data/chars/jason/alt6a
+alternatepal data/chars/jason/alt7a
+anim idle 
+	offset 24 30
+	bbox 0 0 0 0
+	delay 1000
+	flipframe 0
+	frame data/chars/jason/41
+anim attack1
+	offset 24 30
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 1000
+	landframe 1
+	frame data/chars/jason/41
+	delay 9999999999999
+	frame data/chars/jason/42
+anim attack2
+	offset 24 37
+	bbox 0 0 0 0
+	frame data/chars/jason/42

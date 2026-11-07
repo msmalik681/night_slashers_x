@@ -1,0 +1,1141 @@
+name	cyborg
+health	1000
+speed	8
+type	enemy
+aimove chase
+aimove wander
+shadow	3
+score	15000	5
+falldie 2
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+thold 30
+blockodds 1
+bflash flashf
+load zombie
+escapehits 5
+hostile player 
+candamage player npc enemy obstacle
+projectilehit   enemy obstacle npc
+icon data/chars/doc/icon
+animationscript data/scripts/boss4.c
+dust dust
+load dust
+load cybfir1
+load cybfir2
+load cybfir3
+load zombie
+load slamfl2
+load expl1
+load tlk8a
+noatflash 1
+flash dflash
+alternatepal data/chars/cyborg/alt1
+palette data/chars/cyborg/37
+height  1000
+subject_to_hole 0
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0 
+aggression 50
+anim spawn
+	delay   50
+	offset  138 191
+	bbox    0 0 0 0
+	spawnframe 22 160 220 0 1
+	subentity tlk8a
+	drawmethod 256 256 0 0 0 0 1
+	platform 138 215 -127 -127 127 127 50 1100
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	@cmd shoot "cybfir2" 0 100 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	@cmd shoot "expl1" 81 25 1
+	@cmd shoot "expl1" -71 0 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	@cmd shoot "expl1" -81 25 1
+	@cmd shoot "expl1" 71 0 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	@cmd shoot "expl1" 81 50 1
+	@cmd shoot "expl1" -71 40 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	@cmd shoot "expl1" -81 50 1
+	@cmd shoot "expl1" 71 30 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	@cmd shoot "expl1" 81 75 1
+	@cmd shoot "expl1" -71 60 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	@cmd shoot "expl1" -81 75 1
+	@cmd shoot "expl1" 71 60 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 1
+	@cmd shoot "expl1" 81 100 1
+	@cmd shoot "expl1" -71 85 1
+	frame	data/chars/cyborg/37
+	drawmethod 256 256 0 0 0 0 0
+	@cmd shoot "expl1" -81 100 1
+	@cmd shoot "expl1" 71 80 1
+	frame	data/chars/cyborg/37
+	delay 40
+	offset 25 25
+	drawmethod 4048 4048 0 0 0 0 0
+	frame	data/chars/bosf/b1
+	delay	20
+	offset  138 191
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+anim idle
+	loop	1
+	delay	20
+	offset  138 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	@cmd clearL
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+anim faint
+	loop	1
+	delay	20
+	offset  138 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	summonframe 3 -500 -50 0 1
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	@cmd clearL
+	frame	data/chars/cyborg/01
+	@cmd hurt3 10 1
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	@cmd hurt3 10 1
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	@cmd hurt3 10 1
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+anim block
+	delay	5
+	offset  139 191
+	bbox    0 0 0 0 
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/30
+	offset  138 191
+	frame	data/chars/cyborg/30
+	offset  139 191
+	frame	data/chars/cyborg/30
+	offset  138 191
+	@cmd velo001 -2 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/cyborg/30
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/30
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/cyborg/30
+	frame	data/chars/cyborg/30
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/cyborg/30
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/30
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/cyborg/30
+	frame	data/chars/cyborg/30
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/cyborg/30
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/30
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/30
+anim walk
+	loop	1
+	delay	10
+	@cmd    depost 0
+	offset  138 191
+	bbox    109 71 61 91
+	@cmd clearL
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/07
+	frame	data/chars/cyborg/08
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/09
+	frame	data/chars/cyborg/10
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/11
+	frame	data/chars/cyborg/12
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/13
+	frame	data/chars/cyborg/14
+anim run
+	loop	1
+	delay	8
+	@cmd    depost 0
+	offset  138 191
+	bbox    109 71 61 91
+	@cmd clearL
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/07
+	frame	data/chars/cyborg/08
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/09
+	frame	data/chars/cyborg/10
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/11
+	frame	data/chars/cyborg/12
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/13
+	frame	data/chars/cyborg/14
+anim runattack 
+	delay 5
+	offset  138 191
+	bbox    109 71 61 91
+	@cmd velo001 3 0 0
+	@cmd shoot "dust" 0 0 0
+	blast   107 92 106 50 10 1 1 20
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 2.5 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 2 0 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 1.5 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 1 0 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 0.5 0 0
+	blast  0 0 0 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+anim attack2
+	range 50 100
+	delay 10
+	offset  138 191
+	bbox    109 71 61 91
+	hitflash flash
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/04
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/05
+	drawmethod 256 256 0 0 0 0 1
+	attack  142 90 100 40 10 0 0 0 20
+	frame	data/chars/cyborg/06
+	drawmethod 256 256 0 0 0 0 0
+	attack 0 0 0 0
+	frame	data/chars/cyborg/05
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/04
+anim attack1
+	range 50 100
+	delay 10
+	offset  138 191
+	bbox    109 71 61 91
+	hitflash bblod
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/04
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/05
+	drawmethod 256 256 0 0 0 0 1
+	attack  142 90 100 40 10 1 0 0 30
+	dropv 3 3
+	frame	data/chars/cyborg/06
+	drawmethod 256 256 0 0 0 0 0
+	attack 0 0 0 0
+	frame	data/chars/cyborg/05
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/04
+anim attack3
+	range 160 170
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/30
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/31
+	@cmd shoot "dust" 0 0 0
+	@cmd velo001 3 0 0
+	delay 5
+	blast   107 92 106 50 10 1 0 5
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 2.5 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 2 0 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 1.5 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 1 0 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 0.5 0 0
+	blast  0 0 0 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+anim attack4
+	range 160 170
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	#jumpframe 1 4 2 0
+	dropframe 3
+	landframe 4
+	quakeframe 4 3 -2
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/27
+	@cmd    targetL 4 0 0
+	frame	data/chars/cyborg/27
+	@cmd    leap 4
+	drawmethod 256 256 0 0 0 0 0
+	delay 1000
+	frame	data/chars/cyborg/28
+	drawmethod 256 256 0 0 0 0 1
+	blast   79 136 74 72 10 1 0 10
+	frame	data/chars/cyborg/29
+	delay 10
+	@cmd shoot "dust" 0 0 10
+	sound data/sounds/bigfal.wav
+	blast   79 136 74 72 10 1 0 30
+	frame	data/chars/cyborg/27
+	drawmethod 256 256 0 0 0 0 0
+	blast   0 0 0 0
+	frame	data/chars/cyborg/27
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/27
+anim attack5
+	range 50 100
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/30
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/31
+	@cmd velo001 3 0 0
+	delay 5
+	blast   107 92 106 50 10 1 0 5
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 2.5 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 2 0 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 1.5 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 1 0 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 0.5 0 0
+	blast  0 0 0 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+anim attack6
+	range 160 170
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	hitflash flash
+	drawmethod 256 256 0 0 0 0 1
+	sound data/sounds/n/bighaha2.wav
+	frame	data/chars/cyborg/04
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/05
+	delay 60
+	drawmethod 256 256 0 0 0 0 1
+	@cmd shoot "cybfir3" 94 78 1
+	frame	data/chars/cyborg/06
+	delay 15
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/05
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/04
+anim attack13
+	rangez -50 -30
+	range 150 170
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	dropframe 3
+	landframe 4
+	quakeframe 4 3 -2
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/27
+	@cmd    targetL 4 0 0
+	frame	data/chars/cyborg/27
+	delay 1000
+	@cmd    leap 4
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/28
+	blast   79 136 74 72 10 1 0 10
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/29
+	delay 10
+	@cmd shoot "dust" 0 0 10
+	sound data/sounds/bigfal.wav
+	blast   79 136 74 72 10 1 0 30
+	frame	data/chars/cyborg/27
+	blast   0 0 0 0
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/27
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/27
+anim attack14
+	rangez 30 50
+	range 150 170
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	dropframe 3
+	landframe 4
+	quakeframe 4 3 -2
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/27
+	@cmd    targetL 4 0 0
+	frame	data/chars/cyborg/27
+	delay 1000
+	@cmd    leap 4
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/28
+	blast   79 136 74 72 10 1 0 10
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/29
+	delay 10
+	@cmd shoot "dust" 0 0 10
+	sound data/sounds/bigfal.wav
+	blast   79 136 74 72 10 1 0 30
+	frame	data/chars/cyborg/27
+	blast   0 0 0 0
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/27
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/27
+anim attack15
+	rangez 10 30
+	range 160 170
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/30
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/31
+	@cmd shoot "dust" 0 0 0
+	@cmd velo001 3 0.5 0
+	delay 5
+	blast   107 92 106 50 10 1 0 5
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 2.5 0.5 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 2 0.5 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 1.5 0.4 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 1 0.3 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 0.5 0.1 0
+	blast  0 0 0 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+anim attack16
+	rangez -30 -10
+	range 160 170
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/30
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/31
+	@cmd shoot "dust" 0 0 0
+	@cmd velo001 3 -0.5 0
+	delay 5
+	blast   107 92 106 50 10 1 0 5
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 2.5 -0.5 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 2 -0.5 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 1.5 -0.4 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+	@cmd velo001 1 -0.3 0
+	frame	data/chars/cyborg/33
+	frame	data/chars/cyborg/32
+	@cmd velo001 0.5 -0.1 0
+	blast  0 0 0 0 0
+	frame	data/chars/cyborg/34
+	frame	data/chars/cyborg/32
+anim attack17
+	range -10 10
+	delay 10
+	offset  138 191
+	bbox    0 0 0 0
+	@cmd shoot "cybfir1" 0 1 0
+	sound data/sounds/n/bighaha2.wav
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	bbox    0 0 0 0
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+anim attack18
+	rangea -10 10
+	range 10 30
+	delay 15
+	offset  138 191
+	bbox    109 71 61 91
+	hitflash flash
+	followanim 1
+	followcond 3
+	attackone 1
+	grabin 1 50
+	drawmethod 256 256 0 0 0 0 1
+	attack  136 121 60 35 0 0 1 0 
+	frame	data/chars/cyborg/23
+	attack 0 0 0 0 0
+	delay 30
+	frame	data/chars/cyborg/23
+anim follow1
+	offset  138 191
+	bbox    0 0 0 0
+	@cmd grabcheck
+	@cmd anti
+	delay  15
+	jumpframe 3 5 1 0
+	dropframe 4
+	landframe 5
+	quakeframe 5 3 -2
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/23
+	@cmd    hurt 0 8
+	@cmd    position 4 60 30 1 -1
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/24
+	@cmd    hurt 0 8
+	@cmd    position 4 60 100 1 -1
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/25
+	delay  1000
+	sound data/sounds/n/bighaha2.wav
+	@cmd    hurt 0 7
+	@cmd    position 1 -5 125 -1 -1
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/28
+	@cmd    hurt 0 7
+	@cmd    position 1 -5 125 -1 -1
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/29
+	delay  10
+	@cmd shoot "dust" 0 0 10
+	sound data/sounds/bigfal.wav
+	@cmd shoot "slamfl2" 0 80 1
+	@cmd    hurt 0 7
+	@cmd    position 0 -5 80 -1 -1
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/30
+	@cmd    hurt 0 7
+	@cmd    position 0 -5 80 -1 -1
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/30
+	@cmd    hurt 20 7
+	@cmd    depost 0
+	drawmethod 256 256 0 0 0 0 0
+	@cmd    finish 20 2 4 2 0 1
+	sound data/sounds/beat1.wav
+	frame	data/chars/cyborg/30
+	@cmd clearL
+	delay 30
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/30
+anim pain2
+	delay 5
+	offset  133 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/15
+	delay 10
+	offset  138 191
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/15
+	offset  133 191
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/15
+	offset  138 191
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/15
+	offset  133 191
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/15
+anim pain
+	delay 5
+	offset  133 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/16
+	delay 10
+	offset  138 191
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/16
+	offset  133 191
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/16
+	offset  138 191
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/16
+	offset  133 191
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/16
+anim pain5
+	delay 1
+	movea 1
+	offset  133 191
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+	frame	data/chars/cyborg/16
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 5
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  138 191
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+anim grabbedwalk
+	delay 1
+	offset  138 231
+	bbox    109 71 61 91
+	frame	data/chars/cyborg/15
+anim fall
+	delay 1000
+	offset  138 191
+	bbox    0 0 0 0
+	landframe 1
+	attack 57 98 29 36 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/cyborg/17
+	delay 20
+	attack  0 0 0 0 0
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/18
+	delay 15
+	bbox    77 164 130 37
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/19
+anim fall5
+	delay 1000
+	offset  138 191
+	bbox    90 91 88 82
+	landframe 1
+	attack 90 91 88 82 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/cyborg/17
+	delay 20
+	attack  0 0 0 0 0
+	bbox    0 0 0 0
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/18
+	delay 30
+	bbox    77 164 130 37
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/19
+anim fall8
+	delay 1000
+	offset  138 191
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/cyborg/15a
+	frame	data/chars/cyborg/x1
+	attack 57 98 29 36 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/cyborg/17
+	delay 20
+	attack  0 0 0 0 0
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/18
+	delay 15
+	bbox    77 164 130 37
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/19
+anim rise
+	delay 15
+	offset  138 191
+	bbox    77 164 130 37
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/19
+	bbox    0 0 0 0
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/20
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/21
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/22
+anim riseattack
+	range -100 100
+	delay 5
+	offset  138 191
+	bbox    0 0 0 0
+	frame	data/chars/cyborg/20
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/21
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/22
+	delay 10
+	sound data/sounds/n/bighaha2.wav
+	@cmd shoot "cybfir1" 0 1 0
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	bbox    0 0 0 0
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	bbox    109 71 61 91
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/01
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/03
+	drawmethod 256 256 0 0 0 0 0
+	frame	data/chars/cyborg/02
+anim death
+	delay  30
+	offset  138 191
+	bbox    0 0 0 0 0
+	quakeframe 3 36 3
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/cyborg/19
+	@cmd shoot "cybfir2" 0 25 1
+	frame	data/chars/cyborg/35
+	delay 200
+	drawmethod 256 256 0 0 0 0 0
+	@cmd playmusic("data/music/alarm.bor", 0)
+	frame	data/chars/cyborg/36
+	delay 10
+	@cmd shoot "expl1" 0 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" -30 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 30 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" -15 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 0 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 15 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 45 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" -45 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 10 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" -30 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 30 0 1
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 0 0 1
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" 10 0 1
+	frame	data/chars/cyborg/36
+	@cmd shoot "expl1" -10 0 1
+	frame	data/chars/cyborg/36
+
+

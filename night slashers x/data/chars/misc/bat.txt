@@ -1,0 +1,32 @@
+name	bat
+type	item
+subtype weapon
+weapnum	4
+counter	100
+typeshot 0
+shootnum 1
+subject_to_screen 0
+anim idle
+	loop 1
+	delay	250
+	offset  18 0
+	bbox    0 0 40 10 5
+	frame	data/chars/misc/bat
+anim fall
+	delay	250
+	offset  18 0
+	bbox    0 0 40 10
+	frame	data/chars/misc/bat
+anim spawn
+	delay	100
+	offset  18 0
+	bbox    0 0 40 10
+	jumpframe 0 2 0 0
+	frame	data/chars/misc/bat
+anim death
+	delay	250
+	offset  18 0
+	bbox    0 0 40 10
+	frame	data/chars/misc/bat
+
+

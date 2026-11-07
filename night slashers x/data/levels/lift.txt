@@ -1,0 +1,117 @@
+music		data/music/snake.bor 1557365
+notime 1
+settime 0
+background	data/bgs/lift/back
+bglayer    	data/bgs/lift/back1 0.3 0.3 0 0 0 0 90000000 900000000 1 0
+bglayer    	data/bgs/lift/back2 0.1 0.1 0 0 0 0 90000000 900000000 1 0
+panel		data/bgs/lift/a2
+frontpanel	data/bgs/lift/p1
+order	a
+direction down
+spawn1 100 50 0
+spawn2 80 70 0
+cameratype 1
+wall 330 250 -60  0 100000 100000 120 1000
+#hole 330 250 -58  2 100000 100000 120 
+#levelscript data/bgs/lift/lift.c
+load death 
+load tlk7 
+load barelb2 1
+noslow 1
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	lvbegin3
+flip 1
+coords	320 240
+at	0
+spawn	barel
+item bef
+coords	80 160
+at	0
+spawn	death
+boss 1
+item bosslow
+coords	260 200
+at	0
+group 2 3
+at 1000
+spawn	zombieb
+coords	250 150
+at	1000
+spawn	zombieb
+coords	50 190
+at	1000
+spawn	zombieb
+coords	150 220
+at	1000
+spawn	zombieb
+coords	250 150
+at	1000
+spawn	were3
+coords	50 200
+at	1000
+spawn	zombieb
+coords	150 220
+at	1000
+spawn	ghoul3
+coords	250 150
+at	1000
+spawn	barelb2
+item itemr2
+coords	80 220
+at	1000
+group 3 4
+at 1000
+spawn	zombieb
+coords	50 150
+at	1000
+spawn	ghoul3
+coords	150 200
+at	1000
+spawn	were3
+coords	250 230
+at	1000
+spawn	kat3
+item axe
+coords	50 150
+at	1000
+spawn	zombieb
+coords	150 170
+at	1000
+spawn	zombieb
+coords	250 230
+at	1000
+spawn	jason4
+item itemr
+coords	50 140
+at	1000
+spawn	were3
+coords	150 170
+at	1000
+spawn	zombieb
+coords	250 220
+at	1000
+group 4 5
+at 1000
+spawn	zombieb
+coords	50 150
+at	1000
+spawn	zombieb
+coords	150 200
+at	1000
+spawn	were3
+item itemr
+coords	50 220
+at	1000
+spawn	zombieb
+coords	50 200
+at	1000
+spawn	were3
+coords	150 150
+at	1000
+spawn	zombieb
+coords	250 230
+at	1000

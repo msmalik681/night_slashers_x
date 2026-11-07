@@ -1,0 +1,32 @@
+name	drhnd
+type	pshot
+speed 8
+candamage player enemy npc obstacle
+nolife 1
+remove 0
+nomove 1 1
+noatflash 1
+flash bblod
+lifespan 5
+anim idle
+	delay 10
+	offset  21 85
+	bbox    0 0 0 0
+	hitflash bblod
+	hitfx  data/sounds/knifes.wav
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/b1
+	offset  21 216
+	attack3  66 114 107 73 10 1 0 0 30
+	dropv 5 2
+	frame	data/chars/dracula/b2
+	attack  86 2 76 82 10 1 0 0 30
+	dropv 5 2
+	offset  33 210
+	frame	data/chars/dracula/b3
+	attack  0 0 0 0 0
+	offset  23 210
+	frame	data/chars/dracula/b4
+	offset  43 207
+	frame	data/chars/dracula/b5
+	frame	data/chars/misc/empty

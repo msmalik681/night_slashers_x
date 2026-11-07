@@ -1,0 +1,18 @@
+name	tlk3c
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 300
+facing 1
+palette data/scenes/demo/tlk3c
+anim idle
+	delay	200
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+        delay	200
+	sound data/sounds/n2/igor.wav
+	frame	data/scenes/demo/tlk3c
+

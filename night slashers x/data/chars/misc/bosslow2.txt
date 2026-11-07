@@ -1,0 +1,53 @@
+name	bosslow2
+health 1000
+type	none
+nolife 1
+setlayer 30
+cantgrab 1
+anim idle
+	@script
+	void self = getlocalvar("self");
+	if (frame == 0){
+	changeopenborvariant("slowmotion", 1);
+	}
+	if (frame == 22){
+	changeopenborvariant("slowmotion", 0);
+	damageentity(self, self, 1, 0, openborconstant("ATK_NORMAL"));
+	}
+	@end_script
+	offset  160 120
+	delay   2
+	sound   data/sounds/bosfinsh.wav
+	frame	data/chars/bosf/xx01
+	frame	data/chars/bosf/xx02
+	frame	data/chars/bosf/xx03
+	frame	data/chars/bosf/xx04
+	frame	data/chars/bosf/xx05
+	frame	data/chars/bosf/xx06
+	frame	data/chars/bosf/xx07
+	frame	data/chars/bosf/xx08
+	frame	data/chars/bosf/xx09
+	frame	data/chars/bosf/xx10
+	frame	data/chars/bosf/xx11
+	frame	data/chars/bosf/xx12
+	frame	data/chars/bosf/zzz1
+	frame	data/chars/bosf/zzz2
+	frame	data/chars/bosf/zzz3
+	frame	data/chars/bosf/zzz4
+	frame	data/chars/bosf/zzz5
+	frame	data/chars/bosf/zzz6
+	delay 8
+	sound  data/sounds/destroy.wav
+	offset 25 25
+	drawmethod 4024 4024
+	frame	data/chars/bosf/xx19
+	drawmethod 4024 4024 0 0 0 1
+	frame	data/chars/bosf/xx19
+	drawmethod 4024 4024 0 0 0 6
+	frame	data/chars/bosf/xx19
+	nodrawmethod
+	delay   50
+	frame	data/chars/misc/empty
+	delay 5
+	bbox    5000 5000 1 1
+	frame	data/chars/misc/empty

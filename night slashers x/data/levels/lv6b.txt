@@ -1,0 +1,52 @@
+music		data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv6/back3
+bglayer         data/bgs/lv6/back3 0.9 1 0 -10 0 0 99999999999999999999 1 0 0 0 0 0 0 3
+bglayer         data/bgs/lv6/back32 0.9 1 0 -10 0 0 99999999999999999999 1 1 0 0 0 0 0 2.5
+bglayer         data/bgs/lv6/back31 0.8 1 0 -10 0 0 99999999999999999999 1 1 0 0 0 0 0 3.5
+panel		data/bgs/lv6/b1
+order	a
+direction leftright
+rock 1
+bgspeed 20
+spawn1 200 30 0
+spawn2 220 40 0
+wall 760 250 -100 -15 100 1000 150 1000
+hole 780 155 0 0 1000 1000 200
+#levelscript data/bgs/lv6/lv6b.c
+load knsw1 1
+load knight2 1
+load plane2 1
+#--group1----- 
+shadowalpha 2
+at 0 
+light -256 -33
+at 0
+spawn	lvbegin3
+flip 1
+coords	320 244
+at	0
+spawn	knsw1
+coords	15 190
+at	0
+blockade 250
+at 250
+blockade 300
+at 300
+group 1 1
+at 350
+blockade 350
+at 350
+spawn knight2
+item bosslow
+flip 1
+map 1
+coords	-100 190
+at	400
+wait
+at 410
+spawn plane2
+coords	300 156
+at	410
+##################

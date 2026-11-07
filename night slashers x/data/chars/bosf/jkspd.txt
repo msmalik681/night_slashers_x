@@ -1,0 +1,61 @@
+name	jkspd
+type	none
+cantgrab 1
+nolife 1
+load jkspe
+setlayer 400
+candamage enemy obstacle
+anim idle
+	offset  160 240
+	bbox    0 0 0 0
+	delay 8
+	spawnframe 0 160 120 0 1
+	subentity jkspe
+	flipframe 0
+	hitfx data/sounds/empty.wav
+	attack2 -1000 -1000 2000 2000 5 0 1 1 0 1000
+	#sound data/sounds/n/pbomb.wav
+	#sound data/sounds/n/pscripe2.wav
+	otg 1
+	seal 10 0
+	frame	data/chars/bosf/jcksp01
+	frame	data/chars/bosf/jcksp02
+	frame	data/chars/bosf/jcksp03
+	attack2 0
+	frame	data/chars/bosf/jcksp04
+	attack2 -1000 -1000 2000 2000 5 0 1 1 0 1000
+	otg 1
+	frame	data/chars/bosf/jcksp05
+	frame	data/chars/bosf/jcksp06
+	frame	data/chars/bosf/jcksp07
+	attack2 0
+	frame	data/chars/bosf/jcksp08
+	attack2 -1000 -1000 2000 2000 5 0 1 1 0 1000
+	otg 1
+	frame	data/chars/bosf/jcksp09
+	frame	data/chars/bosf/jcksp10
+	frame	data/chars/bosf/jcksp11
+	attack2 0
+	frame	data/chars/bosf/jcksp12
+	attack2 -1000 -1000 2000 2000 5 0 1 1 0 1000
+	otg 1
+	frame	data/chars/bosf/jcksp13
+	frame	data/chars/bosf/jcksp14
+	frame	data/chars/bosf/jcksp15
+	attack2 0
+	frame	data/chars/bosf/jcksp16
+	attack2 -1000 -1000 2000 2000 5 0 1 1 0 1000
+	otg 1
+	frame	data/chars/bosf/jcksp17
+	frame	data/chars/bosf/jcksp18
+	attack2 0
+	frame	data/chars/bosf/jcksp19
+	attack2 -1000 -1000 2000 2000 25 1 1 1 0 1000
+	otg 1
+	frame	data/chars/bosf/jcksp20
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+
+	

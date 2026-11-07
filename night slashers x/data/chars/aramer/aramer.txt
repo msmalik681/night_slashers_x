@@ -1,0 +1,157 @@
+name	aramer
+health	200
+speed	5
+type	enemy
+shadow	0
+noquake 1
+score	400	5
+falldie 1
+nodrop 1
+nodieblink 3
+throwdamage	20
+cantgrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+hostile player
+candamage player npc obstacle
+projectilehit   enemy obstacle npc
+icon data/chars/aramer/icon
+animationscript data/scripts/zombie.c
+dust dust
+height  1000
+subject_to_hole 0
+subject_to_wall 0
+no_adjust_base 1
+load cybfir3
+anim idle
+	loop	1
+	delay	5
+	offset  117 167
+	seta	120
+	bbox    99 77 42 65
+	frame	data/chars/aramer/01
+	frame	data/chars/aramer/02
+	frame	data/chars/aramer/03
+	frame	data/chars/aramer/04
+	frame	data/chars/aramer/05
+	frame	data/chars/aramer/06
+	frame	data/chars/aramer/07
+	frame	data/chars/aramer/08
+anim walk
+	loop	1
+	delay	5
+	offset  117 167
+	bbox    99 77 42 65
+	frame	data/chars/aramer/01
+	frame	data/chars/aramer/02
+	frame	data/chars/aramer/03
+	frame	data/chars/aramer/04
+	frame	data/chars/aramer/05
+	frame	data/chars/aramer/06
+	frame	data/chars/aramer/07
+	frame	data/chars/aramer/08
+anim attack1
+@script
+if(frame==0){
+   void self = getlocalvar("self");
+   int x = getentityproperty(self, "x");
+   int lvx = openborvariant("xpos");
+   if(x<lvx-10){
+	performattack(self, openborconstant("ANI_ATTACK2"));
+   }
+
+}
+@end_script
+	range 130 160
+	delay	5
+	offset  117 167
+	bbox    99 77 42 65
+	sound data/sounds/roar1.wav
+	frame	data/chars/aramer/09
+	frame	data/chars/aramer/10
+	frame	data/chars/aramer/11
+	@cmd shoot "cybfir3" 20 40 1
+	frame	data/chars/aramer/12
+	frame	data/chars/aramer/11
+	frame	data/chars/aramer/12
+	frame	data/chars/aramer/11
+	frame	data/chars/aramer/12
+	frame	data/chars/aramer/10
+	frame	data/chars/aramer/11
+	frame	data/chars/aramer/01
+	frame	data/chars/aramer/02
+	frame	data/chars/aramer/03
+	frame	data/chars/aramer/04
+	frame	data/chars/aramer/05
+	frame	data/chars/aramer/06
+	frame	data/chars/aramer/07
+	frame	data/chars/aramer/08
+anim attack3
+	range 130 155
+	delay	5
+	offset  117 167
+	bbox    99 77 42 65
+	frame	data/chars/aramer/01
+	frame	data/chars/aramer/02
+	frame	data/chars/aramer/03
+	frame	data/chars/aramer/04
+	frame	data/chars/aramer/05
+	frame	data/chars/aramer/06
+	frame	data/chars/aramer/07
+	frame	data/chars/aramer/08
+anim attack2
+	range 130 155
+	delay	5
+	offset  117 167
+	bbox    0 0 0 0
+	jumpframe 0 5 4 0
+	frame	data/chars/aramer/01
+	frame	data/chars/aramer/02
+	frame	data/chars/aramer/03
+	frame	data/chars/aramer/04
+	frame	data/chars/aramer/05
+	frame	data/chars/aramer/06
+	frame	data/chars/aramer/07
+	frame	data/chars/aramer/08
+anim pain2
+	delay 2
+	offset  117 167
+	bbox    99 77 42 65
+	frame	data/chars/aramer/09
+	delay 28
+	frame	data/chars/aramer/12
+anim pain
+	delay 2
+	jumpframe 0 0 -3 0
+	offset  117 167
+	bbox    99 77 42 65
+	frame	data/chars/aramer/12
+	delay 28
+	frame	data/chars/aramer/09
+anim fall
+	delay 30
+	jumpframe 0 0 -3 0
+	offset  117 167
+	bbox    99 77 42 65
+	frame	data/chars/aramer/09
+anim rise
+	delay	5
+	offset  117 167
+	bbox    99 77 42 65
+	frame	data/chars/aramer/01
+	frame	data/chars/aramer/02
+	frame	data/chars/aramer/03
+	frame	data/chars/aramer/04
+	frame	data/chars/aramer/05
+	frame	data/chars/aramer/06
+	frame	data/chars/aramer/07
+	frame	data/chars/aramer/08
+anim death
+	delay 300
+	jumpframe 0 0 -3 0
+	offset  117 167
+	bbox    99 77 42 65
+	frame	data/chars/aramer/09
+	frame	data/chars/aramer/09

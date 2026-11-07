@@ -1,0 +1,11 @@
+name	jsme
+type	endlevel
+branch jsmend
+nolife 1
+anim idle
+	loop 1
+	offset  0 0
+	delay   1
+	bbox    0 0 100 200 100
+	jumpframe 0 0 0 5
+	frame	data/chars/misc/empty

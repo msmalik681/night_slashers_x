@@ -1,0 +1,93 @@
+loadingbg data/scenes/lvs/3 1 1000 1000 1 1000 1000 
+music		data/music/lv7.bor
+notime 1
+settime 0
+background	data/bgs/lv1/back1
+bglayer		data/bgs/lv1/back1 0.5 0 0 0 0 0 100 5 1 0 0 0 0 0 0 0
+bglayer		data/bgs/lv1/back2 0.4 0 0 0 0 0 100 5 1 0 0 0 0 0 0 0
+fglayer 	data/bgs/lv3/p1 1 -0.5 0 550 0 99999999 0 1 2 1 
+fglayer 	data/bgs/lv3/foga1 2 0 0 0 0 0 0 9999999 2 1 1 0 0 0 0 1
+fglayer 	data/bgs/lv3/foga2 2 0 0 0 0 0 0 9999999 2 1 1 0 0 0 0 0.75 
+fglayer 	data/bgs/lv3/foga3 2 0 0 0 0 0 0 9999999 2 1 1 0 0 0 0 0.5 
+panel		data/bgs/lv1/a1
+order	a
+bgspeed 1
+#direction both
+spawn1 100 20 0
+spawn2 80 50 0
+cameratype 1
+#levelscript data/bgs/lv3/lv3a.c
+load kar2 1
+load crows 1
+load igr 1
+load dra 1
+load mutant4 1
+load tlk3a 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	stop
+flip 1
+coords	160 130
+at	0
+#####################
+spawn	barelb
+item bet
+coords	250 160
+at	0
+spawn	crows
+coords	270 235
+at	0
+spawn	zombiea
+coords	270 230
+at	0
+spawn	ghoul
+coords	700 190
+at	0
+spawn	zombie
+coords	350 180
+at	50
+spawn	were
+coords	340 200
+at	100
+spawn	jason
+coords	-50 180
+at	150
+spawn	barelb
+item money2
+coords	400 230
+at	200
+spawn	flame
+coords	300 160
+at	200
+spawn	zombie
+coords	300 200
+at	250
+wait
+at 350
+spawn	were2
+coords	350 170
+at	350
+spawn	zombie
+coords	-50 200
+at	350
+group  1 1
+at 350
+spawn	mutant4
+coords	250 160
+at	350
+#########################
+group  100 100
+at 350
+spawn   kar2
+flip 1
+coords	360 180
+at	506
+spawn   igr
+coords	440 220
+at	506
+spawn   dra
+coords	440 200
+at	506

@@ -1,0 +1,39 @@
+name ztrso
+type pshot
+speed 5
+jumpheight 4
+load dust
+dust dust
+palette data/chars/zombie/00a
+alternatepal data/chars/zombie/alt1a
+alternatepal data/chars/zombie/alt2a
+alternatepal data/chars/zombie/alt3a
+alternatepal data/chars/zombie/alt4a
+alternatepal data/chars/zombie/alt2a
+animationscript data/scripts/shoot.c
+anim idle 
+	offset 84 73
+	bbox 0 0 0 0
+	delay 1000
+	flipframe 0
+	dropframe 1
+	frame data/chars/zombie/f3
+	frame data/chars/zombie/f4
+anim attack1
+	offset 84 73
+	bbox 0 0 0 0
+	jumpframe 1 1 -1 0
+	delay 5
+	landframe 2
+	@cmd shoot "dust" 0 0 0
+	frame data/chars/zombie/f5
+	delay 1000
+	frame data/chars/zombie/f4
+	@cmd shoot "dust" 0 0 0
+	frame data/chars/zombie/f5
+	delay 99999999999
+	frame data/chars/zombie/f5
+anim attack2
+	offset 84 73
+	bbox 0 0 0 0
+	frame data/chars/zombie/f3

@@ -1,0 +1,68 @@
+name	montsp
+type	pshot
+speed 8
+candamage player enemy obstacle
+nolife 1
+remove 0
+nomove 1 1
+noatflash 1
+flash dflash
+anim idle
+	offset  41 461
+	bbox    0 0 0 0 
+	delay 10
+	burn    7 27 69 435 10 1 0 0 0 
+	frame	data/chars/montezum/a1
+	frame	data/chars/montezum/a2
+	frame	data/chars/montezum/a3
+	frame	data/chars/montezum/a1
+	frame	data/chars/montezum/a2
+	frame	data/chars/montezum/a3
+	frame	data/chars/montezum/a1
+	frame	data/chars/montezum/a2
+	frame	data/chars/montezum/a3
+	frame	data/chars/montezum/a1
+	frame	data/chars/montezum/a2
+	frame	data/chars/montezum/a3
+	frame	data/chars/montezum/a1
+	frame	data/chars/montezum/a2
+	frame	data/chars/montezum/a3
+	delay 5
+	frame	data/chars/montezum/a1
+	burn    0 0 0 0 0
+	frame	data/chars/misc/empty
+	burn    7 27 69 435 10 1 0 0 0 
+	frame	data/chars/montezum/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a2
+	burn    0 0 0 0 0
+	frame	data/chars/misc/empty
+	burn    7 27 69 435 10 1 0 0 0 
+	frame	data/chars/montezum/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/montezum/a3
+	delay   1
+	move 100000
+	burn    0 0 0 0 0
+	frame	data/chars/misc/empty
+	

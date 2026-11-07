@@ -1,0 +1,9 @@
+name	lvbegin
+type	none
+setlayer 900
+anim idle
+	delay  200
+	offset	540 260
+	@cmd changeentityproperty getlocalvar("self") "velocity" 9 0 0
+	@cmd changeopenborvariant("slowmotion", 0)
+	frame	data/chars/misc/lvst

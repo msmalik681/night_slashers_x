@@ -1,0 +1,164 @@
+music		data/music/lv1.bor 1996221
+bossmusic       data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/library/p1
+panel		data/bgs/library/a1
+frontpanel      data/bgs/library/p1
+fglayer 	data/bgs/lv4/swc5a 4 1 0 0 0 99999999 0 2 1 1 2 
+order	a
+direction both
+spawn1 100 45 0
+spawn2 80 70 0
+cameratype 1
+#levelscript data/bgs/library/library.c
+load zombiedr 1
+load mutant2 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 244
+at	0
+
+spawn	bareltr
+item brl
+coords	50 230
+at	0
+spawn	barel
+item itemr
+coords	100 230
+at	0
+spawn	zombiea
+coords	250 180
+at	0
+spawn	zombie2a
+coords	380 220
+at	50
+spawn	zombiedr
+coords	151 146
+at	260
+###################
+wait
+at 360
+blockade 360
+at 360
+spawn	zombie
+coords	350 200
+at	360
+group 3 3
+at 360
+spawn	zombie3
+coords	380 200
+at	360
+spawn	zombiedr
+coords	61 146
+at	310
+###################
+group 100 100
+at 380
+spawn	zombie3
+coords	380 160
+at	380
+spawn	zombie
+coords	-50 220
+at	450
+spawn	zombie
+coords	350 210
+at	455
+#####################
+wait
+at 550
+group 100 100
+at 550
+blockade 550
+at 550
+spawn	zombieb
+item itemr
+coords	280 200
+at	550
+group 3 3
+at 550
+spawn	zombie
+coords	-50 220
+at	550
+spawn	zombie
+coords	280 200
+at	550
+spawn	zombie
+coords	350 200
+at	550
+spawn	zombie2
+coords	-80 220
+at	550
+spawn	zombie
+coords	350 200
+at	550
+#########################
+group 100 100
+at 600
+spawn	zombie
+coords	-50 220
+at	600
+spawn	zombie2a
+coords	370 200
+at	680
+###############
+wait 
+at 1000
+group 100 100
+at 1000
+blockade 1000
+at 1000
+spawn	zombie3
+coords	380 200
+at	1000
+group 4 5
+at 1000
+spawn	zombie3
+coords	-80 200
+at	1000
+spawn	zombie3
+coords	380 240
+at	1000
+#################
+group 100 100
+at 1001
+spawn	barel
+item itemr2
+coords	350 230
+at	1001
+spawn	mutant2
+item bosslow
+coords	370 200
+at	1001
+spawn	zombie3
+coords	-50 200
+at	1250
+spawn	were2
+item itemr
+coords	350 200
+at	1300
+blockade 1300
+at 1300
+spawn	zombieb
+coords	280 220
+at	1350
+spawn	zombiedr
+coords	152 146
+at	1350
+spawn	zombieb
+coords	150 220
+at	1400
+spawn	zombie2
+coords	380 200
+at	1450
+spawn	zombiedr
+coords	52 146
+at	1450
+spawn	zombie3
+coords	350 200
+at	1450

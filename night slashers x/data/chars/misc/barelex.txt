@@ -1,0 +1,81 @@
+name barelex
+type obstacle
+health 1
+nodrop 1
+shadow 2
+diesound data/sounds/drum.wav
+nolife 1
+noatflash 1
+flash bflash
+nodieblink 2
+score 0 0
+gfxshadow 1
+load expl
+load dust
+anim idle 
+	loop 1
+	offset 29 84
+	bbox 7 5 44 71 5
+	delay 1000
+	seta 0
+	platform 29 85 -45 -45 45 45 16 1070
+	frame data/chars/misc/barel1
+anim death
+	bounce 3
+	offset 29 84
+	bbox 7 5 44 71
+	delay 10
+	seta 0
+	bbox 0 0 0 0
+	throwframe 18 -1 
+	custknife expl
+	spawnframe 21 0 0 0 0
+	subentity dust
+	jumpframe 20 7 0.5 0
+	landframe 21
+	platform 29 85 -45 -45 45 45 16 1070
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 9
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 8
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 7
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 6
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 5
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 4
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 3
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 2
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 1
+	frame data/chars/misc/barel1   
+	frame data/chars/misc/barel3
+	delay 1000
+	sound data/sounds/drum.wav
+	platform 0 0 0 0 0 0
+	frame data/chars/misc/barel2
+	delay 5
+	movea 5
+	movea 5
+	sound data/sounds/fall.wav
+	frame data/chars/misc/barel2
+	frame data/chars/misc/empty
+	frame data/chars/misc/barel2
+	frame data/chars/misc/empty
+	frame data/chars/misc/barel2
+	frame data/chars/misc/empty
+	frame data/chars/misc/barel2
+

@@ -1,0 +1,500 @@
+name	Zombie3l
+health	50
+speed	5
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+aiattack dodgemove
+shadow	3
+noquake 1
+score	400	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+nolife 1
+running  10 4 2 1 0
+gfxshadow 1
+aggression -10
+jumpheight 3
+hostile player 
+candamage player npc obstacle
+projectilehit   enemy obstacle npc
+animationscript data/scripts/zombie.c
+dust dust
+height  1000
+palette data/chars/zombie3/00a
+alternatepal data/chars/zombie3/alt1a
+alternatepal data/chars/zombie3/alt2a
+alternatepal data/chars/zombie3/alt3a
+alternatepal data/chars/zombie3/alt4a
+alternatepal data/chars/zombie3/alt5a
+alternatepal data/chars/zombie3/alt5a
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 30
+	offset  53 108
+	bbox    15 86 78 27
+	frame	data/chars/zombie3/16
+	delay 30
+	offset  96 110
+	frame	data/chars/zombie3/34
+	delay 15
+	frame	data/chars/zombie3/35
+	frame	data/chars/zombie3/36
+	delay   200
+	frame	data/chars/zombie3/37
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 30
+	offset  53 108
+	bbox    15 86 78 27
+	frame	data/chars/zombie3/16
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 30
+	offset  53 108
+	bbox    15 86 78 27
+	frame	data/chars/zombie3/16
+	delay 30
+	offset  96 110
+	frame	data/chars/zombie3/34
+	delay 15
+	frame	data/chars/zombie3/35
+	frame	data/chars/zombie3/36
+	delay   200
+	frame	data/chars/zombie3/37
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 30
+	offset  53 108
+	bbox    15 86 78 27
+	frame	data/chars/zombie3/16
+anim spawn
+	delay	15
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/01
+anim idle
+	range   100 100000
+	loop	1
+	delay	15
+	offset  53 108
+	bbox    42 19 23 66
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	frame	data/chars/zombie3/01
+anim walk
+	loop	1
+	delay	15
+	offset  53 108
+	bbox    42 19 23 66
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/zombie3/09
+	frame	data/chars/zombie3/02
+	frame	data/chars/zombie3/03
+	frame	data/chars/zombie3/04
+	frame	data/chars/zombie3/05
+	frame	data/chars/zombie3/06
+	frame	data/chars/zombie3/07
+	frame	data/chars/zombie3/08
+anim run
+	loop	1
+	delay	10
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/09
+	frame	data/chars/zombie3/02
+	frame	data/chars/zombie3/03
+	frame	data/chars/zombie3/04
+	frame	data/chars/zombie3/05
+	frame	data/chars/zombie3/06
+	frame	data/chars/zombie3/07
+	frame	data/chars/zombie3/08
+anim attack1
+	range   20 60
+	delay	30
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/20
+	delay 10
+	attack  52 31 54 13 6 0 0 0 20
+	frame	data/chars/zombie3/21
+	attack  0 0 0 0 0
+	frame	data/chars/zombie3/20
+anim attack2
+	range   20 60
+	delay	20
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/20
+	delay 10
+	attack  52 31 54 13 6 0 0 0 20
+	frame	data/chars/zombie3/21
+	attack  0 0 0 0 0
+	frame	data/chars/zombie3/20
+	attack  52 31 54 13 6 1 0 0 20
+	frame	data/chars/zombie3/21
+	attack  0 0 0 0 0
+	frame	data/chars/zombie3/20
+anim attack3
+	rangea -10 10
+	range   10 20
+	delay	10
+	offset  53 108
+	bbox    42 19 23 66
+	grabin 1 10
+	frame	data/chars/zombie3/22
+	attack  60 22 77 15 6 0 0 0 30
+	frame	data/chars/zombie3/23
+	attack  0 0 0 0 0
+	delay  50
+	frame	data/chars/zombie3/24
+anim pain
+	delay 2
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/12
+	delay  30
+	frame	data/chars/zombie3/13
+	delay 10
+	frame	data/chars/zombie3/12
+anim pain2
+	delay 2
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	delay  30
+	frame	data/chars/zombie3/11
+	delay 10
+	frame	data/chars/zombie3/10
+anim pain5
+	delay 2
+	offset  53 108
+	bbox    15 42 53 45
+	movea 1
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+	frame	data/chars/zombie3/14
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  53 108
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+anim grabbedwalk
+	delay 1
+	offset  53 148
+	bbox    42 19 23 66
+	frame	data/chars/zombie3/10
+anim fall
+	delay 1000
+	offset  53 113
+	bbox    0 0 0 0
+	landframe 1
+	hitflash bflash
+	attack 14 39 23 36 6 1 0 0 20
+	frame	data/chars/zombie3/14
+	offset  53 108
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/zombie3/15
+	delay 30
+	bbox    15 86 78 27
+	frame	data/chars/zombie3/16
+anim fall5
+	delay 1000
+	offset  53 113
+	landframe 1
+	hitflash bflash
+	attack 14 39 23 36 6 1 0 0 20
+	bbox   14 39 23 36
+	frame	data/chars/zombie3/14
+	offset  53 108
+	delay 20
+	bbox    0 0 0 0
+	attack  0 0 0 0
+	frame	data/chars/zombie3/15
+	delay 60
+	bbox    15 86 78 27
+	frame	data/chars/zombie3/16
+anim fall8
+	delay 1000
+	offset  53 113
+	bbox    0 0 0 0
+	landframe 3
+	hitflash bflash
+	frame	data/chars/zombie3/10a
+	frame	data/chars/zombie3/x1
+	attack 14 39 23 36 6 1 0 0 20
+	frame	data/chars/zombie3/14
+	offset  53 108
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/zombie3/15
+	delay 30
+	bbox    15 86 78 27
+	frame	data/chars/zombie3/16
+anim rise
+	delay 15
+	offset  53 108
+	bbox    0 0 0 0
+	frame	data/chars/zombie3/17
+	frame	data/chars/zombie3/18
+	frame	data/chars/zombie3/19
+anim death
+	@cmd death
+	offset  78 108
+	bbox    0 0 0 0
+	delay 30
+	sound data/sounds/die3.wav
+	frame	data/chars/zombie3/25
+	delay 10
+	@cmd toss "zhead" -17 96 0
+	frame	data/chars/zombie3/26
+	frame	data/chars/zombie3/27
+	delay   200
+	frame	data/chars/zombie3/28
+anim death2
+	@cmd death
+	offset  53 108
+	bbox    0 0 0 0
+	delay 15
+	sound data/sounds/n/brainout.wav
+	frame	data/chars/zombie3/29
+	frame	data/chars/zombie3/30
+	frame	data/chars/zombie3/31
+	frame	data/chars/zombie3/32
+	delay   200
+	frame	data/chars/zombie3/33
+anim death3
+	delay 30
+	offset  53 108
+	bbox    0 0 0 0
+	jumpframe 0 3 -2 0
+	landframe 2
+	frame	data/chars/zombie3/14
+	delay 1000
+	frame	data/chars/zombie3/15
+	delay 30 
+	frame	data/chars/zombie3/16
+	offset  96 110
+	delay 10
+	sound data/sounds/zombie.wav
+	frame	data/chars/zombie3/34
+	delay 30
+	frame	data/chars/zombie3/35
+	delay 10
+	frame	data/chars/zombie3/36
+	delay   200
+	frame	data/chars/zombie3/37
+anim death4
+	@cmd death
+	offset  78 108
+	bbox    0 0 0 0
+	delay 10
+	sound data/sounds/die7.wav
+	frame	data/chars/zombie3/25
+	offset  78 130
+	frame	data/chars/zombie3/a1
+	delay 30
+	frame	data/chars/zombie3/a2
+	offset  78 108
+	frame	data/chars/zombie3/26
+	delay 15
+	frame	data/chars/zombie3/27
+	delay   1
+	frame	data/chars/zombie3/28
+	delay   200
+	frame	data/chars/zombie3/28
+anim death5
+	@cmd death
+	offset  78 108
+	bbox    0 0 0 0
+	delay 15
+	sound data/sounds/die7.wav
+	frame	data/chars/zombie3/25
+	offset  78 130
+	frame	data/chars/zombie3/a1
+	offset  78 108
+	delay 20
+	@cmd shoot "zhead2" -17 96 0
+	frame	data/chars/zombie3/26
+	delay 15
+	frame	data/chars/zombie3/27
+	delay   1
+	frame	data/chars/zombie3/28
+	delay   200
+	frame	data/chars/zombie3/28

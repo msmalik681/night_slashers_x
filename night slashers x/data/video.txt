@@ -1,0 +1,2 @@
+video 0
+ColourDepth 32bit

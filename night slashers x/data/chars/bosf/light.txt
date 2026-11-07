@@ -1,0 +1,123 @@
+name	light
+health 100
+type	enemy
+nopain 1
+nodrop 1
+nomove 1 1
+setlayer 300
+cantgrab 1
+nolife 1
+falldie 1
+nodieblink 1
+anim spawn
+	offset  25 25
+	delay   1500
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim idle
+	loop 1
+	offset  25 25
+	delay   500
+	bbox   0 0 0 0
+	drawmethod 2304 2304 0 0 0 2
+	frame	data/chars/misc/empty
+	delay 10
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	delay   300
+	frame	data/chars/misc/empty
+	delay 10
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	delay 15
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	delay 20
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	delay   500
+	bbox   0 0 0 0
+	frame	data/chars/misc/empty
+	delay 10
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	delay   300
+	frame	data/chars/misc/empty
+	delay 10
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	delay 15
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	delay 20
+	frame	data/chars/bosf/c1
+	frame	data/chars/misc/empty
+	delay 1000
+	frame	data/chars/bosf/c1
+	delay 20
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/c1
+anim fall
+	offset  250 125
+	delay   1
+	bbox    0 0 0 0
+	nodrawmethod 
+	frame	data/chars/misc/empty
+anim pain
+	offset  250 125
+	delay   1
+	bbox    0 0 0 0
+	nodrawmethod 
+	frame	data/chars/misc/empty
+anim walk
+	offset  250 125
+	delay   1
+	bbox    0 0 0 0
+	nodrawmethod 
+	frame	data/chars/misc/empty
+anim rise
+	offset  250 125
+	delay   1
+	bbox    0 0 0 0
+	nodrawmethod 
+	frame	data/chars/misc/empty
+anim death
+	offset  250 125
+	delay   300
+	bbox    0 0 0 0
+	nodrawmethod 
+	frame	data/chars/misc/empty
+

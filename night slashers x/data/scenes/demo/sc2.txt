@@ -1,0 +1,4 @@
+music		data/music/remix2.bor  1
+animation	data/scenes/demo/sc2.gif 0 0
+animation	data/scenes/demo/sc3.gif 0 0
+animation	data/scenes/demo/sc4.gif 0 0

@@ -1,0 +1,49 @@
+name	shel
+type	none
+speed 5
+shadow	0
+jumpheight 2
+anim idle
+	delay	10
+	offset	7 5
+	flipframe 0
+	bbox    0 0 0 0
+	frame	data/chars/misc/shel1
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/shel3
+	frame	data/chars/misc/shel4
+	frame	data/chars/misc/shel1
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/shel3
+	frame	data/chars/misc/shel4
+	frame	data/chars/misc/shel1
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/shel3
+	frame	data/chars/misc/shel4
+	frame	data/chars/misc/shel1
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/shel3
+	frame	data/chars/misc/shel4
+	frame	data/chars/misc/shel1
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/shel3
+	frame	data/chars/misc/shel4
+anim attack1
+	delay	50
+	offset	7 5
+	bbox    0 0 0 0
+	frame	data/chars/misc/shel2
+	delay 5
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/shel2
+	frame	data/chars/misc/empty
+anim attack2
+	delay	50
+	offset	7 5
+	bbox    0 0 0 0
+	frame	data/chars/misc/shel2     
+

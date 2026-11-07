@@ -1,0 +1,41 @@
+name	drpnt
+type	pshot
+speed 8
+nolife 1
+nomove 1 1
+setlayer 1
+anim idle
+	delay 50
+	offset  79 21
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	delay 5
+	frame	data/chars/dracula/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c2
+	frame	data/chars/misc/empty
+	delay  500
+	frame	data/chars/dracula/c3
+	delay 5
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/dracula/c1
+	frame	data/chars/misc/empty
+

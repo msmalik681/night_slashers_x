@@ -1,0 +1,196 @@
+maxplayers 2
+hiscorebg  1
+completebg  1
+rush 1 1 Hits 0 4 MAX 1 1 
+lbarsize  77 6 1 1 0 0 0 10 -1000
+olbarsize 218 6 1 1 0 0 0 10 -1000
+mpbarsize 14 14 1 1 1 0 -1000 -1000 -1000 -1000
+loadingbg 1 10 220 300 1000 2050 3
+loadingbg2 0 10 400 300 15 400 3
+clearbonus 32 190 140 190 240 190 500 190 700 190
+showcomplete 85 160 1000 1000 150 160
+lifebonus  32 200 140 200 240 200 500 200 700 200
+totalscore 32 220 140 220 240 220 500 220 700 220 
+timeloc 149 3 21 22 0
+e1life	71 216
+e1name	1000 1000
+e1icon	30 216
+p1lifex 1000 1000
+p1lifen 118 2
+p1icon  21 2
+p1life  38 10
+p1mp    22  2
+p1rush  21  49  48 40 1121 1162 1146 1162 
+mp1icon 117 17
+p1score 1000 1000 1000 100 62 2
+p1namej 62 2 1000 1000 25 2
+p1smenu 80 315 1000 1000
+p1shoot 28 20
+p1iconw 17 19 
+e2life	71 216
+e2name	1000 1000
+e2icon	30 216
+p2lifex 1000 1000
+p2lifen 290 2
+p2icon  193 2
+p2life  210 10
+p2mp    193  15 
+p2rush  255  49  282 40 1121 1162 1146 1162 
+mp2icon 267 16
+p2score 1000 1000 1000 100 234 2
+p2namej 234 2 1000 1000 225 2
+p2smenu 240 315 1000 1000
+p2shoot 201 20
+p2iconw 190 19
+ 
+#############################
+
+set	Survival
+nosame 1
+lives 4
+credits 15
+cansave 2
+continuescore 1
+
+scene data/scenes/demo/sc0.txt
+scene data/scenes/demo/empty.txt
+z 142 240 240
+file	data/levels/lv1.txt
+z 164 240 240
+file	data/levels/lv1b.txt
+scene data/scenes/demo/sc1.txt
+scene data/scenes/demo/empty.txt
+z 137 240 240
+file	data/levels/lv2.txt
+z 134 240 240
+file	data/levels/lv2b.txt
+scene data/scenes/demo/sc2.txt
+scene data/scenes/demo/empty.txt
+z 142 240 240
+file	data/levels/lv3a.txt
+z 157 240 240
+file	data/levels/lv3b.txt
+z 142 240 240
+file	data/levels/lv3c.txt
+scene data/scenes/demo/sc4a.txt
+scene data/scenes/demo/empty.txt
+z 137 240 240
+file	data/levels/lv4.txt
+z 145 210 300
+file	data/levels/lift2.txt
+z 137 240 240
+file	data/levels/lv4b.txt
+z 233 340 340
+file	data/levels/lv4c.txt
+scene data/scenes/demo/sc4b.txt
+scene data/scenes/demo/empty.txt
+z 669 770 792
+file	data/levels/lv5.txt
+scene data/scenes/demo/sc5.txt
+scene data/scenes/demo/empty.txt
+z 136 240 240
+file	data/levels/lv6a.txt
+z 155 240 240
+file	data/levels/lv6b.txt
+z 136 240 240
+file	data/levels/lv6c.txt
+scene data/scenes/demo/sc6.txt
+scene data/scenes/demo/empty.txt
+z 126 240 180
+file	data/levels/lv7a.txt
+z 130 240 180
+file	data/levels/lv7b.txt
+z 126 240 180
+file	data/levels/lv7c.txt
+z 136 240 300
+file	data/levels/lift.txt
+scene data/scenes/demo/sc8.txt
+scene data/scenes/demo/empty.txt
+z 135 240 180
+file	data/levels/lv8a.txt
+scene data/scenes/demo/sc8b.txt
+scene data/scenes/demo/empty.txt
+z 126 240 180
+file	data/levels/lv8b.txt
+z 0 240 240
+file	data/levels/end.txt
+
+#######
+branch ex1
+
+z 148 240 240
+file	data/levels/library.txt
+z 157 240 240
+file	data/levels/lab.txt
+z 154 240 240
+file	data/levels/comprm.txt
+scene data/scenes/demo/sc2.txt
+scene data/scenes/demo/empty.txt
+#z 110 122 240
+z 229 239 240
+file	data/levels/bonus.txt
+z 142 240 240
+file	data/levels/lv3a.txt
+z 157 240 240
+file	data/levels/lv3b.txt
+z 142 240 240
+file	data/levels/lv3c.txt
+scene data/scenes/demo/sc4a.txt
+scene data/scenes/demo/empty.txt
+z 137 240 240
+file	data/levels/lv4.txt
+z 145 210 300
+file	data/levels/lift2.txt
+z 137 240 240
+file	data/levels/lv4b.txt
+z 233 340 340
+file	data/levels/lv4c.txt
+scene data/scenes/demo/sc4b.txt
+scene data/scenes/demo/empty.txt
+z 669 770 792
+file	data/levels/lv5.txt
+scene data/scenes/demo/sc5.txt
+scene data/scenes/demo/empty.txt
+z 136 240 240
+file	data/levels/lv6a.txt
+z 155 240 240
+file	data/levels/lv6b.txt
+z 136 240 240
+file	data/levels/lv6c.txt
+scene data/scenes/demo/sc6.txt
+scene data/scenes/demo/empty.txt
+z 126 240 180
+file	data/levels/lv7a.txt
+z 130 240 180
+file	data/levels/lv7b.txt
+z 126 240 180
+file	data/levels/lv7c.txt
+z 136 240 300
+file	data/levels/lift.txt
+scene data/scenes/demo/sc8.txt
+scene data/scenes/demo/empty.txt
+z 135 240 180
+file	data/levels/lv8a.txt
+scene data/scenes/demo/sc8b.txt
+scene data/scenes/demo/empty.txt
+z 126 240 180
+file	data/levels/lv8b.txt
+z 0 240 240
+file	data/levels/end.txt
+
+########
+branch jkend
+scene data/scenes/end/jkend.txt
+end
+
+########
+branch chrend
+scene data/scenes/end/chrend.txt
+end
+
+########
+branch jsmend
+scene data/scenes/end/jsmend.txt
+end
+
+####################################

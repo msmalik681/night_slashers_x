@@ -1,0 +1,71 @@
+name	chrspa
+type	text
+subtype noskip
+cantgrab 1
+nolife 1
+load chrspb
+anim idle
+	offset  47 237
+	delay   1
+	bbox    0 0 0 0
+	spawnframe 0 160 240 0 1
+	subentity chrspb
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -100
+	frame	data/chars/misc/empty
+	delay 5
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa1
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspa3
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

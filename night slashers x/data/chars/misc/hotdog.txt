@@ -1,0 +1,30 @@
+name hotdog
+type item
+health 20
+noatflash 1
+nolife 1
+subject_to_screen 0
+anim spawn
+	delay 10
+	offset 16 32
+	bbox 2 0 28 33 5
+	jumpframe 0 2 0 0
+	movez -1
+	frame data/chars/misc/food1
+	movez 0
+	frame data/chars/misc/food2
+	frame data/chars/misc/food1
+	frame data/chars/misc/food3
+	frame data/chars/misc/food1
+	frame data/chars/misc/food4
+anim idle 
+	loop 1
+	delay 10
+	offset 16 32
+	bbox 2 0 28 33 5
+	frame data/chars/misc/food1
+	frame data/chars/misc/food2
+	frame data/chars/misc/food1
+	frame data/chars/misc/food3
+	frame data/chars/misc/food1
+	frame data/chars/misc/food4

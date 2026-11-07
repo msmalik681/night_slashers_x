@@ -1,0 +1,122 @@
+name	piorun
+type	none
+setlayer  260
+alpha 5
+anim idle
+	loop 1
+	delay 300
+	bbox 0 0 0 0
+	offset  250 111
+	frame	data/chars/misc/empty
+	offset  25 25
+	delay   10
+	drawmethod 4000 4000 0 0 0 5
+	frame	data/chars/bosf/b32
+	delay   15
+	frame	data/chars/bosf/b31
+	delay   20
+	frame	data/chars/bosf/b1
+	delay   5
+	offset  147 181
+	nodrawmethod
+	sound   data/sounds/piorun2.wav
+	frame	data/chars/misc/piorun01
+	frame	data/chars/misc/piorun02
+	frame	data/chars/misc/piorun03
+	frame	data/chars/misc/piorun04
+	delay 200
+	frame	data/chars/misc/empty
+	delay   15
+	offset  25 25
+	drawmethod 4000 4000 0 0 0 5
+	frame	data/chars/bosf/b32
+	frame	data/chars/bosf/b31
+	delay   20
+	frame	data/chars/bosf/b1
+	delay 5
+	nodrawmethod
+	offset  147 181
+	frame	data/chars/misc/piorun05
+	frame	data/chars/misc/piorun06
+anim pain
+	loop	1
+	offset	25 25
+	delay	700
+	frame data/chars/misc/empty
+	delay	20
+	bbox	0
+	drawmethod 3000 3000 0 0 0 5
+	frame data/bgs/lv4c/td1
+	delay	8
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	delay	12
+	frame data/bgs/lv4c/td2
+	delay	700
+	frame data/chars/misc/empty
+	delay   5
+	offset  147 181
+	nodrawmethod
+	sound   data/sounds/piorun2.wav
+	frame	data/chars/misc/piorun01
+	frame	data/chars/misc/piorun02
+	frame	data/chars/misc/piorun03
+	frame	data/chars/misc/piorun04
+	delay	20
+	offset	25 25
+	drawmethod 3000 3000 0 0 0 5
+	frame data/bgs/lv4c/td1
+	delay	8
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	delay	12
+	frame data/bgs/lv4c/td2
+	delay	2000
+	frame data/chars/misc/empty
+	delay 5
+	nodrawmethod
+	offset  147 181
+	frame	data/chars/misc/piorun05
+	frame	data/chars/misc/piorun06
+	delay	20
+	offset	25 25
+	drawmethod 4000 4000 0 0 0 5
+	frame data/bgs/lv4c/td1
+	delay	8
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	delay	12
+	frame data/bgs/lv4c/td2
+	delay	40
+	frame data/bgs/lv4c/td1
+	delay	8
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	delay	12
+	frame data/bgs/lv4c/td2
+	delay 5
+	nodrawmethod
+	offset  147 181
+	frame	data/chars/misc/piorun05
+	frame	data/chars/misc/piorun06
+	delay	20
+	offset	25 25
+	drawmethod 4000 4000 0 0 0 5
+	bbox	0 0 0 0
+	sound data/sounds/soun0004.wav
+	frame data/bgs/lv4c/td1
+	delay	8
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	frame data/bgs/lv4c/td2
+	frame data/bgs/lv4c/td3
+	delay	12
+	frame data/bgs/lv4c/td2

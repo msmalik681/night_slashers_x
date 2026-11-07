@@ -1,0 +1,43 @@
+name	shbul6
+type	pshot
+speed 10
+remove 0
+load bblod2
+jumpheight 0
+candamage enemy npc obstacle
+
+anim idle
+	delay	4
+	offset	19 41
+	hitfx data/sounds/empty.wav
+	sound data/sounds/empty.wav
+	hitflash bblod
+	drawmethod 256 256 0 0 0 0 0 0 45 1
+	attack3  18 29 22 21 50 1 1 0 10
+	dropv 2 1
+	otg 1
+	frame	data/chars/chris/shbul01 
+	frame	data/chars/chris/shbul02 
+	frame	data/chars/chris/shbul03 
+	frame	data/chars/chris/shbul04 
+	frame	data/chars/chris/shbul05
+	frame	data/chars/chris/shbul06 
+	frame	data/chars/chris/shbul07 
+	frame	data/chars/chris/shbul08 
+	frame	data/chars/chris/shbul09 
+	frame	data/chars/chris/shbul10
+	frame	data/chars/chris/shbul11 
+	frame	data/chars/chris/shbul12 
+	frame	data/chars/chris/shbul13 
+	frame	data/chars/chris/shbul14 
+	frame	data/chars/chris/shbul15 
+	attack  0 0 0 0 0 
+	frame	data/chars/misc/empty
+anim attack1
+	delay	4
+	offset	19 41
+	frame	data/chars/misc/empty 
+anim attack2
+	delay	4
+	offset	19 41
+	frame	data/chars/misc/empty 

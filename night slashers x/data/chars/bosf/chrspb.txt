@@ -1,0 +1,83 @@
+name	chrspb
+type	text
+subtype noskip
+cantgrab 1
+nolife 1
+load chrspc
+candamage enemy
+grabdistance 1000
+palette data/chars/bosf/chrspb01
+anim idle
+	fastattack 1
+	offset  160 240
+	bbox    0 0 0 0
+	delay 10
+	quakeframe 0 27 -2
+	spawnframe 0 160 120 0 1
+	subentity chrspc
+	flipframe 0
+	hitfx data/sounds/empty.wav
+	sound data/sounds/n/storm.wav
+	attack -1000 -1000 2000 2000 0 0 1 1
+	seal 10 0
+	frame	data/chars/bosf/chrspb01
+	attack 0
+	frame	data/chars/bosf/chrspb02
+	attack2 -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb03
+	attack2 0
+	frame	data/chars/bosf/chrspb04
+	attack -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb05
+	attack 0
+	frame	data/chars/bosf/chrspb06
+	attack2 -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb07
+	attack2 0
+	frame	data/chars/bosf/chrspb08
+	attack -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb09
+	attack 0
+	frame	data/chars/bosf/chrspb10
+	attack2 -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb11
+	attack2 0
+	frame	data/chars/bosf/chrspb12
+	attack -1000 -1000 2000 2000 0 0 1 1
+	sound data/sounds/n/storm.wav
+	frame	data/chars/bosf/chrspb01
+	attack 0
+	frame	data/chars/bosf/chrspb02
+	attack2 -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb03
+	attack2 0
+	frame	data/chars/bosf/chrspb04
+	attack -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb05
+	attack 0
+	frame	data/chars/bosf/chrspb06
+	attack2 -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb07
+	attack2 0
+	frame	data/chars/bosf/chrspb08
+	attack -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb09
+	attack 0
+	frame	data/chars/bosf/chrspb10
+	attack2 -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb11
+	attack2 0
+	frame	data/chars/bosf/chrspb12
+	attack -1000 -1000 2000 2000 0 0 1 1
+	frame	data/chars/bosf/chrspb10
+	attack 0
+	frame	data/chars/bosf/chrspb11
+	frame	data/chars/bosf/chrspb12
+	delay 1
+	sound   data/sounds/bosfinsh.wav
+	frame	data/chars/misc/empty
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty
+
+
+	

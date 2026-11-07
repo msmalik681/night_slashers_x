@@ -1,0 +1,721 @@
+name	mutant4
+health	300
+speed	5
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+aiattack dodgemove
+icon data/chars/doc/icon
+noquake 1
+score	4000	5
+falldie 1
+nodieblink 3
+throwdamage	20
+cantgrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+blockodds 3
+bflash flashf
+thold 30
+aggression 20
+jumpheight 3
+hostile player
+candamage player enemy npc obstacle
+projectilehit   enemy obstacle npc
+animationscript data/scripts/boss.c
+dust dust
+height  1000
+load zombieb
+load zombie2
+load zombie3
+palette data/chars/mutant4/00
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  64 140
+	delay 50
+	frame	data/chars/mutant4/51
+	delay 15
+	sound data/sounds/skeldie2.wav
+	frame	data/chars/mutant4/42
+	frame	data/chars/mutant4/41
+	frame	data/chars/mutant4/39
+	frame	data/chars/mutant4/38
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 50
+	offset  64 140
+	bbox    25 101 64 36
+	frame	data/chars/mutant4/51
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  64 140
+	delay 50
+	frame	data/chars/mutant4/51
+	delay 15
+	sound data/sounds/skeldie2.wav
+	frame	data/chars/mutant4/42
+	frame	data/chars/mutant4/41
+	frame	data/chars/mutant4/39
+	frame	data/chars/mutant4/38
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 50
+	offset  64 140
+	bbox    25 101 64 36
+	frame	data/chars/mutant4/51
+anim spawn
+	delay 1
+	offset  64 140
+	bbox    40 56 46 67
+	jumpframe 1 6 0 0
+	dropframe 2
+	landframe 3
+	quakeframe 3 3 -2
+	frame	data/chars/misc/empty
+	delay 1000
+	frame	data/chars/misc/empty
+	frame	data/chars/mutant4/14
+	delay 10
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 0
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+	delay	10
+	offset  64 140
+	bbox    40 56 46 67
+	sound data/sounds/hdie.wav
+	frame	data/chars/mutant4/42
+	frame	data/chars/mutant4/43
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+anim idle
+	range   100 100000
+	loop	1
+	delay	20
+	offset  64 140
+	bbox    40 56 46 67
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	subentity zombieb
+	summonframe 1 100 0 0 0
+	frame	data/chars/mutant4/01
+	frame	data/chars/mutant4/02
+	frame	data/chars/mutant4/03
+	frame	data/chars/mutant4/02
+anim walk
+	loop	1
+	delay	15
+	offset  78 140
+	bbox    57 55 46 69
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	subentity zombie2
+	summonframe 1 150 0 0 0
+	frame	data/chars/mutant4/04
+	frame	data/chars/mutant4/05
+	frame	data/chars/mutant4/06
+	frame	data/chars/mutant4/07
+	frame	data/chars/mutant4/08
+	frame	data/chars/mutant4/09
+	frame	data/chars/mutant4/10
+anim run
+	loop	1
+	delay	10
+	offset  78 140
+	bbox    57 55 46 69
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	subentity zombie3
+	summonframe 1 -100 0 0 0
+	frame	data/chars/mutant4/04
+	frame	data/chars/mutant4/05
+	frame	data/chars/mutant4/06
+	frame	data/chars/mutant4/07
+	frame	data/chars/mutant4/08
+	frame	data/chars/mutant4/09
+	frame	data/chars/mutant4/10
+anim runattack
+	range   20 80
+	offset  64 140
+	bbox    40 56 46 67
+	delay 10
+	jumpframe 0 0 1 0
+	landframe 5
+	frame	data/chars/mutant4/16
+	delay 5
+	frame	data/chars/mutant4/17
+	blast 68 54 70 63 10 0 0 20
+	frame	data/chars/mutant4/18
+	frame	data/chars/mutant4/19
+	blast 0
+	delay 15
+	frame	data/chars/mutant4/20
+	frame	data/chars/mutant4/20
+anim attack1
+	range   20 80
+	offset  64 140
+	bbox    40 56 46 67
+	delay 10
+	frame	data/chars/mutant4/16
+	delay 5
+	frame	data/chars/mutant4/17
+	attack 68 54 70 63 10 0 0 0 10
+	frame	data/chars/mutant4/18
+	frame	data/chars/mutant4/19
+	attack 0
+	delay 30
+	frame	data/chars/mutant4/20
+anim attack2
+	range   20 80
+	offset  64 140
+	bbox    40 56 46 67
+	delay 10
+	frame	data/chars/mutant4/16
+	delay 5
+	frame	data/chars/mutant4/17
+	attack 68 54 70 63 10 1 0 0 10
+	frame	data/chars/mutant4/18
+	frame	data/chars/mutant4/19
+	attack 0
+	delay 30
+	frame	data/chars/mutant4/20
+anim attack3
+	range   150 200
+	offset  64 140
+	bbox    40 56 46 67
+	delay 20
+	jumpframe 1 5 2.5 0
+	dropframe 2
+	landframe 3
+	quakeframe 3 3 -2
+	frame	data/chars/mutant4/11
+	delay 1000
+	sound data/sounds/jump.wav
+	frame	data/chars/mutant4/12
+	frame	data/chars/mutant4/14
+	delay 10
+	@cmd shoot "dust" 0 0 0
+	sound data/sounds/bigfal.wav
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+anim attack4
+	range   150 200
+	offset  64 140
+	bbox    40 56 46 67
+	delay 20
+	jumpframe 1 5 2.5 0.5
+	dropframe 2
+	landframe 3
+	quakeframe 3 3 -2
+	frame	data/chars/mutant4/11
+	delay 1000
+	sound data/sounds/jump.wav
+	frame	data/chars/mutant4/12
+	frame	data/chars/mutant4/14
+	delay 10
+	@cmd shoot "dust" 0 0 0
+	sound data/sounds/bigfal.wav
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+anim attack5
+	range   150 200
+	offset  64 140
+	bbox    40 56 46 67
+	delay 20
+	jumpframe 1 5 2.5 -0.5
+	dropframe 2
+	landframe 3
+	quakeframe 3 3 -2
+	frame	data/chars/mutant4/11
+	delay 1000
+	sound data/sounds/jump.wav
+	frame	data/chars/mutant4/12
+	frame	data/chars/mutant4/14
+	delay 10
+	@cmd shoot "dust" 0 0 0
+	sound data/sounds/bigfal.wav
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+	frame	data/chars/mutant4/15
+anim attack6
+	range 150 202
+	delay	10
+	offset  64 140
+	bbox    40 56 46 67
+	sound data/sounds/hdie.wav
+	frame	data/chars/mutant4/42
+	frame	data/chars/mutant4/43
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+anim attack7
+	range   10 20
+	delay 10
+	grabin 1 25
+	attackone 1
+	offset  64 140
+	bbox    40 56 46 67
+	attack 85 81 22 25 0 0 1 20
+	frame	data/chars/mutant4/55
+	frame	data/chars/mutant4/56
+	attack 0
+	frame	data/chars/mutant4/57
+	attack 85 81 22 25 0 0 1 20
+	frame	data/chars/mutant4/56
+	attack 0
+	frame	data/chars/mutant4/57
+	attack 85 81 22 25 0 0 1 20
+	frame	data/chars/mutant4/56
+	attack 0
+	frame	data/chars/mutant4/57
+	delay 5
+	hitflash bblod
+	attack 65 60 36 43 10 1 1 0 30
+	dropv 2 4 
+	frame	data/chars/mutant4/54
+	delay 40
+	attack 0
+	frame	data/chars/mutant4/54
+anim attack8
+	rangez -40 -20
+	range 200 220
+	delay	10
+	offset  64 140
+	bbox    40 56 46 67
+	sound data/sounds/hdie.wav
+	landframe 6
+	frame	data/chars/mutant4/11
+	@cmd    targetL 5 0 0
+	frame	data/chars/mutant4/11
+	delay 20
+	@cmd    leap 5 
+	frame	data/chars/mutant4/25
+	frame	data/chars/mutant4/26
+	frame	data/chars/mutant4/27
+	delay 1000
+	blast 42 70 48 57 10 0 0 5
+	frame	data/chars/mutant4/28
+	blast 0
+	delay 10
+	bbox 0 0 0 0
+	frame	data/chars/mutant4/29
+	frame	data/chars/mutant4/30
+	frame	data/chars/mutant4/31
+	frame	data/chars/mutant4/32
+	frame	data/chars/mutant4/33
+	frame	data/chars/mutant4/39
+	frame	data/chars/mutant4/40
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/41
+	frame	data/chars/mutant4/42
+anim attack9
+	rangez 20 40
+	range 200 220
+	delay	10
+	offset  64 140
+	bbox    40 56 46 67
+	sound data/sounds/hdie.wav
+	landframe 6
+	frame	data/chars/mutant4/11
+	@cmd    targetL 5 0 0
+	frame	data/chars/mutant4/11
+	delay 20
+	@cmd    leap 5 
+	frame	data/chars/mutant4/25
+	frame	data/chars/mutant4/26
+	frame	data/chars/mutant4/27
+	delay 1000
+	blast 42 70 48 57 10 0 0 5
+	frame	data/chars/mutant4/28
+	blast 0
+	delay 10
+	bbox 0 0 0 0
+	frame	data/chars/mutant4/29
+	frame	data/chars/mutant4/30
+	frame	data/chars/mutant4/31
+	frame	data/chars/mutant4/32
+	frame	data/chars/mutant4/33
+	frame	data/chars/mutant4/39
+	frame	data/chars/mutant4/40
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/41
+	frame	data/chars/mutant4/42
+anim pain2
+	delay 2
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/46
+	delay  50
+	frame	data/chars/mutant4/48
+	delay 10
+	frame	data/chars/mutant4/46
+anim pain
+	delay 2
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/42
+	delay  50
+	frame	data/chars/mutant4/47
+	delay 10
+	frame	data/chars/mutant4/42
+anim pain5
+	delay 2
+	offset  64 140
+	bbox    40 56 46 67
+	movea 1
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+	frame	data/chars/mutant4/47
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/47
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/47
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/47
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/47
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/47
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/47
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  64 140
+	frame	data/chars/mutant4/47
+	offset 42 92
+	frame data/chars/misc/freze4
+	offset  64 140
+	frame	data/chars/mutant4/47
+	offset 42 92
+	frame data/chars/misc/freze4
+	offset  64 140
+	frame	data/chars/mutant4/47
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/22
+anim grabbedwalk
+	delay 1
+	offset  64 140
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/16
+anim fall
+	delay 1000
+	offset  64 140
+	bbox    0 0 0 0
+	landframe 1
+	hitflash bflash
+	attack 22 75 40 38 6 1 0 0 20
+	frame	data/chars/mutant4/49
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/mutant4/50
+	delay 50
+	bbox    25 101 64 36
+	frame	data/chars/mutant4/51
+anim fall5
+	delay 1000
+	offset  64 140
+	dropframe 1
+	landframe 2
+	hitflash bflash
+	bbox 21 85 70 30
+	frame	data/chars/mutant4/47
+	bbox 21 85 70 30
+	attack 22 75 40 38 6 1 0 0 20
+	frame	data/chars/mutant4/49
+	delay 20
+	bbox    0 0 0 0
+	attack  0 0 0 0
+	frame	data/chars/mutant4/50
+	delay 60
+	bbox    25 101 64 36
+	frame	data/chars/mutant4/51
+anim rise
+	delay 10
+	offset  64 140
+	bbox    0 0 0 0
+	frame	data/chars/mutant4/52
+	frame	data/chars/mutant4/46
+	frame	data/chars/mutant4/42
+	@cmd velo001 1 0 0
+anim riseattack
+	range 0 100
+	delay 10
+	offset  64 140
+	bbox    0 0 0 0
+	frame	data/chars/mutant4/52
+	frame	data/chars/mutant4/46
+	frame	data/chars/mutant4/40
+	frame	data/chars/mutant4/39
+	@cmd velo001 2 0 0
+	frame	data/chars/mutant4/34
+	blast   34 60 69 56 10 0 0 10
+	frame	data/chars/mutant4/35
+	frame	data/chars/mutant4/36
+	blast 0
+	frame	data/chars/mutant4/37
+	frame	data/chars/mutant4/38
+	@cmd velo001 0 0 0
+	frame	data/chars/mutant4/39
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/40
+	frame	data/chars/mutant4/41
+	sound data/sounds/hdie.wav
+	frame	data/chars/mutant4/42
+	frame	data/chars/mutant4/43
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+anim block
+	delay	5
+	offset  64 140
+	bbox    0 0 0 0
+	frame	data/chars/mutant4/53
+	offset  65 140
+	frame	data/chars/mutant4/53
+	offset  64 140
+	frame	data/chars/mutant4/53
+	@cmd velo001 -2 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/mutant4/53
+	frame	data/chars/mutant4/53
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/mutant4/53
+	frame	data/chars/mutant4/53
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/mutant4/53
+	frame	data/chars/mutant4/53
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/mutant4/53
+	frame	data/chars/mutant4/53
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/mutant4/53
+	frame	data/chars/mutant4/53
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    40 56 46 67
+	frame	data/chars/mutant4/53
+anim death
+	@cmd death
+	offset  64 140
+	bbox    0 0 0 0
+	delay 10
+	sound data/sounds/hdie.wav
+	frame	data/chars/mutant4/43
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	frame	data/chars/mutant4/44
+	frame	data/chars/mutant4/45
+	delay 25
+	sound data/sounds/n/brainout.wav
+	frame	data/chars/mutant4/42
+	frame	data/chars/mutant4/41
+	frame	data/chars/mutant4/39
+	delay 100
+	frame	data/chars/mutant4/38
+	@cmd spawn01 "zombieb" 380 0 0
+	frame	data/chars/mutant4/38
+anim death3
+	delay 1000
+	offset  64 140
+	bbox    0 0 0 0
+	jumpframe 0 3 -2 0
+	landframe 1
+	hitflash bflash
+	attack 22 75 40 38 6 1 0 0 20
+	frame	data/chars/mutant4/49
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/mutant4/50
+	delay 50
+	frame	data/chars/mutant4/51
+	delay 25
+	sound data/sounds/n/brainout.wav
+	frame	data/chars/mutant4/42
+	frame	data/chars/mutant4/41
+	frame	data/chars/mutant4/39
+	delay 100
+	frame	data/chars/mutant4/38
+	@cmd spawn01 "zombie2" 380 0 0
+	frame	data/chars/mutant4/38
+

@@ -1,0 +1,189 @@
+loadingbg data/scenes/lvs/8 1 1000 1000 1 1000 1000 
+music		data/music/lv3.bor
+bossmusic	data/music/snake.bor 1557365
+notime 1
+settime 0
+background	data/bgs/lv8/back1
+panel		data/bgs/lv8/a1
+bgspeed 5
+order	a
+direction both
+spawn1 100 50 0
+spawn2 80 70 0
+wall 0 164 -1000 -1000 365 345 100 1100
+load zombiedr 1
+load Zombied2 1
+load cyborg 1
+load cybfir1 1
+load cybfir2 1
+load cybfir3 1
+load tlk8a 1
+load core 1
+noslow 1
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	stop
+flip 1
+coords	160 130
+at	0
+group 3 3
+at 0
+wait 
+at 0
+
+spawn	bareltr
+item brl
+coords	50 240
+at	0
+spawn	barel
+item itemr
+coords	100 240
+at	0
+spawn	were
+coords	259 210
+at	0
+spawn	zombiedr
+coords	255 164
+at	0
+spawn	zombie
+coords	380 200
+at	0
+spawn	jason
+coords	-480 200
+at	0
+spawn	zombiedr
+coords	109 164
+at	0
+spawn	zombie2
+coords	-380 200
+at	0
+spawn	zombie3
+coords	-80 200
+at	0
+spawn	zombiedr
+coords	255 164
+at	0
+spawn	zombied2
+coords	109 164
+at	0
+spawn	kat
+coords	-350 200
+at	0
+spawn	zombied2
+coords	255 164
+at	0
+spawn	zombie2
+coords	380 200
+at	0
+spawn	zombie
+coords	-80 200
+at	0
+spawn	zombiedr
+coords	109 164
+at	0
+spawn	zombie
+coords	380 200
+at	0
+spawn	zombie2
+coords	-480 200
+at	0
+spawn	zombied2
+coords	255 164
+at	0
+spawn	zombie2
+coords	380 200
+at	0
+spawn	zombiedr
+coords	109 164
+at	0
+blockade 100
+at 100
+spawn	core
+flip 1
+coords	362 240
+at	120
+spawn	cyborg
+dying 1 600 300
+boss 1
+item bosslow
+coords	425 166
+at	120
+blockade 336
+at 336
+group 4 4
+at 336
+spawn	zombie2a
+coords	950 200
+at	336
+spawn	zombiea
+coords	-550 200
+at	336
+spawn	zombie3
+coords	950 230
+at	336
+spawn	zombie
+coords	-550 230
+at	336
+spawn	zombie2
+coords	950 200
+at	336
+spawn	zombie
+coords	-950 200
+at	336
+spawn	zombie3
+coords	950 230
+at	336
+spawn	jason
+coords	-950 230
+at	336
+spawn	zombie2
+coords	850 200
+at	336
+spawn	zombie
+coords	-550 200
+at	336
+spawn	kat
+coords	850 230
+at	336
+spawn	were
+coords	-550 230
+at	336
+spawn	zombie2
+coords	850 200
+at	336
+spawn	ghoul
+coords	-550 200
+at	336
+spawn	zombie4
+coords	850 230
+at	336
+spawn	jason
+coords	-550 230
+at	336
+spawn	zombie2
+coords	850 200
+at	336
+spawn	zombie
+coords	-550 200
+at	336
+spawn	zombie3
+coords	850 230
+at	336
+spawn	kat
+coords	-550 230
+at	336
+spawn	zombie2
+coords	850 200
+at	336
+spawn	flame
+coords	-550 200
+at	336
+spawn	zombie4
+coords	850 230
+at	336
+spawn	jason
+coords	-550 230
+at	336

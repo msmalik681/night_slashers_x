@@ -1,0 +1,16 @@
+notime 1
+settime 0
+background	data/scenes/end/back
+panel		data/scenes/end/back
+frontpanel	data/scenes/end/back 
+order	a
+spawn1 160 120 0
+spawn2 160 120 0
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	end
+coords	160 120
+at	0

@@ -1,0 +1,143 @@
+loadingbg data/scenes/lvs/6 1 1000 1000 1 1000 1000 
+music		data/music/lv4.bor
+bossmusic	data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv6/a1
+panel		data/bgs/lv6/a1
+order	a
+direction both
+rock 1
+bgspeed 30
+spawn1 100 40 0
+spawn2 70 70 0
+wall 612 256 -75 0 1000 1000 150 1000 
+#levelscript data/bgs/lv6/lv6a.c
+load plane 1
+load knsw2 1
+load planebg 1
+#--group1----- 
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	stop
+coords	160 130
+at	0
+spawn	planebg
+flip 1
+coords	0 240
+at	0
+spawn	plane
+flip 1
+coords	-576 240
+at	0
+spawn	bareltr
+item brl
+coords	50 160
+at	0
+spawn barel
+item itemr
+coords	400 230
+at	0
+spawn barel
+item itemr2
+coords	460 230
+at	0
+spawn barelex
+item itemr
+coords	500 160
+at	0
+group 4 4
+at 10
+spawn zombie4
+coords	350 190
+at	10
+spawn zombiea
+coords	390 160
+at	10
+spawn zombie2a
+coords	420 200
+at	10
+spawn kat
+coords	380 175
+at	10
+spawn zombiea
+coords	-200 190
+at	10
+group 5 5
+at 10
+spawn zombie2a
+coords	-200 190
+at	10
+spawn were2
+flip 1
+coords	-50 190
+at	10
+spawn flame2
+coords	200 190
+at	10
+spawn zombie3
+coords	-300 190
+at	10
+spawn zombie2
+coords	-300 190
+at	10
+spawn kat
+coords	-300 190
+at	10
+spawn jason2
+flip 1
+coords	-50 190
+at	10
+spawn zombie2
+coords	-300 190
+at	10
+spawn were2
+flip 1
+coords	-50 190
+at	10
+group 6 6
+at 10
+spawn zombie4
+coords	-350 190
+at	10
+spawn zombie2
+coords	-300 190
+at	10
+spawn were
+flip 1
+coords	-50 190
+at	10
+spawn zombie4
+coords	-300 190
+at	10
+spawn zombie2
+coords	-300 190
+at	10
+spawn jason2
+flip 1
+coords	-50 190
+at	10
+spawn zombie3
+coords	-300 190
+at	10
+spawn zombie2
+coords	-300 190
+at	10
+spawn were2
+flip 1
+coords	-50 190
+at	10
+spawn zombie4
+coords	-300 190
+at	10
+spawn zombie
+coords	-300 190
+at	10
+group 1 1
+at 10
+spawn knsw2
+boss 1
+coords	70 190
+at	10

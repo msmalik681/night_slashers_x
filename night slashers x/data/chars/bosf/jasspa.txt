@@ -1,0 +1,67 @@
+name	jasspa
+type	text
+subtype noskip
+cantgrab 1
+nolife 1
+load jasspc
+animationscript data/scripts/flash.c
+palette data/chars/bosf/jsmfs01
+anim idle
+	offset  98 188
+	delay   1
+	bbox    0 0 0 0
+	@cmd velo001 0 0 -3.5
+	spawnframe 41 160 120 0 1
+	subentity jasspc
+        jumpframe 0 0 0 0
+        landframe 17
+	frame	data/chars/misc/empty
+	delay 5
+	frame	data/chars/bosf/jsmfs01
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/jsmfs02
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/jsmfs01
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/jsmfs02
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/jsmfs01
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/jsmfs02
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/jsmfs01
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/jsmfs02
+	frame	data/chars/misc/empty
+	offset  98 172
+	frame	data/chars/bosf/jsmfs08
+	frame	data/chars/bosf/jsmfs02
+	frame	data/chars/bosf/jsmfs09
+	frame	data/chars/bosf/jsmfs02
+	frame	data/chars/bosf/jsmfs10
+	frame	data/chars/bosf/jsmfs03
+	frame	data/chars/bosf/jsmfs11
+	frame	data/chars/bosf/jsmfs04
+	frame	data/chars/bosf/jsmfs12
+	frame	data/chars/bosf/jsmfs05
+	frame	data/chars/bosf/jsmfs13
+	frame	data/chars/bosf/jsmfs05
+	frame	data/chars/bosf/jsmfs14
+	frame	data/chars/bosf/jsmfs05
+	frame	data/chars/bosf/jsmfs15
+	frame	data/chars/bosf/jsmfs06
+	frame	data/chars/bosf/jsmfs16
+	frame	data/chars/bosf/jsmfs07
+	frame	data/chars/bosf/jsmfs17
+        drawmethod 384 384
+	frame	data/chars/bosf/jsmfs07
+	frame	data/chars/bosf/jsmfs17
+        drawmethod 512 512
+	frame	data/chars/bosf/jsmfs07
+	frame	data/chars/bosf/jsmfs17
+        drawmethod 768 768
+	frame	data/chars/bosf/jsmfs07
+	delay 1
+	frame	data/chars/misc/empty
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

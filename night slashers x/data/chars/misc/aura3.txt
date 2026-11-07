@@ -1,0 +1,13 @@
+name	aura3
+type	pshot
+nomove 1 1
+
+alpha 5
+anim idle
+	delay	5
+	offset	62 114
+	bbox    0 0 0 0
+	frame	data/chars/misc/aura3
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

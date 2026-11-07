@@ -1,0 +1,107 @@
+music		data/music/lv2.bor
+bossmusic       data/music/boss.bor 291327
+notime 1
+settime 0
+bgspeed 50
+rock 2
+background	data/bgs/metro/back
+bglayer data/bgs/metro/a3 0.5 0.5 5000 0 100000 0 100000 1 1 0
+panel		data/bgs/metro/a1 none data/bgs/metro/a2
+order	a
+spawn1 100 45 0
+spawn2 80 70 0
+wall 1500 250 0 130 1000 1000 100 1100
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	160 244
+at	0
+spawn	pharaon
+coords	350 190
+at	50
+###################
+spawn	jason
+coords	380 200
+at	360
+spawn	ghoul
+coords	350 200
+at	360
+###################
+spawn	jason
+coords	370 160
+at	380
+spawn	ghoul
+coords	-50 220
+at	450
+spawn	bet
+coords	350 210
+at	455
+#####################
+spawn	zombieb
+item itemr
+coords	280 200
+at	550
+group 3 3
+at 550
+spawn	bet
+coords	-50 220
+at	550
+spawn	zombie
+coords	280 200
+at	550
+spawn	zombie
+coords	350 200
+at	550
+spawn	zombie2
+coords	-80 220
+at	550
+spawn	zombie
+coords	350 200
+at	550
+#########################
+spawn	zombie
+coords	-50 220
+at	600
+spawn	zombie2a
+coords	370 200
+at	680
+###############
+spawn	zombie3
+coords	350 200
+at	1000
+group 4 5
+at 1000
+spawn	zombie3
+coords	-80 200
+at	1000
+spawn	zombie3
+coords	370 240
+at	1000
+#################
+spawn	barel
+item shtgun
+coords	350 230
+at	1001
+spawn	zombie3
+coords	-50 200
+at	1250
+spawn	were2
+item itemr
+coords	350 200
+at	1300
+spawn	zombieb
+coords	280 220
+at	1350
+spawn	zombieb
+coords	150 220
+at	1400
+spawn	zombie2
+coords	380 200
+at	1450
+spawn	zombie3
+coords	350 200
+at	1450

@@ -1,0 +1,435 @@
+name	cyb2
+health	100
+speed	15
+type	enemy
+aimove chase
+aiattack dodge
+aimove wander
+aimove normal
+noquake 1
+score	100000	5
+running  20 4 2 1 0
+falldie 1
+nodieblink 1
+throwdamage	20
+nopain 1
+cantgrab 1
+noatflash 1
+flash dflash
+nodrop 1
+jumpheight 0
+nomove 0 1
+facing 1
+hostile player 
+candamage player enemy
+projectilehit enemy obstacle
+animationscript data/scripts/were.c
+icon data/chars/doc/icon
+aggression -10
+gfxshadow 1
+load cybfir3
+load expl1
+anim spawn
+	delay	1000
+        offset  119 133
+        bbox    32 17 71 47
+	frame	data/chars/cyborg/z1
+	delay 1
+	sound data/sounds/n/bighaha2.wav
+	frame	data/chars/cyborg/z1
+anim idle
+	loop	1
+	delay	20
+        offset  119 133
+        bbox    32 17 71 47
+	attack 0 0 0 0 0 0 0 0
+	blast 0 0 0 0 0 0 0 0
+	frame	data/chars/cyborg/z1
+anim walk
+	loop	1
+	delay	5
+        offset  119 133
+        bbox    32 17 71 47
+	attack 0 0 0 0 0 0 0 0
+	blast 0 0 0 0 0 0 0 0
+	frame	data/chars/cyborg/z1
+anim backwalk
+	loop	1
+	delay	5
+        offset  119 133
+        bbox    32 17 71 47
+	attack 0 0 0 0 0 0 0 0
+	blast 0 0 0 0 0 0 0 0
+	frame	data/chars/cyborg/z1
+anim attack1
+	range 20 50
+	delay	15
+        offset  119 133
+        bbox    32 17 71 47
+	sound data/sounds/n/bighaha2.wav
+	frame	data/chars/cyborg/z2
+	attack 74 16 82 50 6 1 0 0 15
+	frame	data/chars/cyborg/z1
+	attack 0 0 0 0 0
+	frame	data/chars/cyborg/z2
+	attack 74 16 82 50 6 1 0 0 15
+	frame	data/chars/cyborg/z1
+	attack 0 0 0 0 0 
+	frame	data/chars/cyborg/z2
+	blast 74 16 82 50 6 1 0 30
+	frame	data/chars/cyborg/z1
+anim attack2
+	range 150 200
+	delay	10
+        offset  119 133
+        bbox    32 17 71 47
+	frame	data/chars/cyborg/z2
+	delay 30
+	@cmd shoot "cybfir3" 29 74 1 
+	frame	data/chars/cyborg/z1
+anim attack3
+	range 150 200
+	delay	5
+        offset  119 133
+        bbox    32 17 71 47
+	@cmd velo001 3 0 0
+	burn 96 33 70 50 6 1 0 0 15
+	sound data/sounds/n/bighaha2.wav
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+anim attack4
+	rangez 15 30
+	range 150 200
+	delay	10
+        offset  119 133
+        bbox    32 17 71 47
+	@cmd velo001 3 0.2 0
+	burn 96 33 70 50 6 1 0 0 15
+	sound data/sounds/n/bighaha2.wav
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+anim attack5
+	rangez -30 -15
+	range 150 200
+	delay	10
+        offset  119 133
+        bbox    32 17 71 47
+	@cmd velo001 3 -0.2 0
+	burn 96 33 70 50 6 1 0 0 15
+	sound data/sounds/n/bighaha2.wav
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za2
+	frame	data/chars/cyborg/z1
+	frame	data/chars/cyborg/za1
+	frame	data/chars/cyborg/z1
+anim attack6
+	range -30 20
+	delay	50
+        offset  119 133
+        bbox    32 17 71 47
+	@cmd velo001 -2 0 0
+	frame	data/chars/cyborg/z1
+anim attack7
+	range -30 20
+	delay	50
+        offset  119 133
+        bbox    32 17 71 47
+	@cmd velo001 -1 -0.5 0
+	frame	data/chars/cyborg/z1
+anim attack8
+	range -30 20
+	delay	50
+        offset  119 133
+        bbox    32 17 71 47
+	@cmd velo001 -1 0.5 0
+	frame	data/chars/cyborg/z1
+anim pain
+	delay	5
+        offset  119 133
+        bbox    32 17 71 47
+	frame	data/chars/cyborg/z1
+anim death
+	delay	10
+        offset  119 133
+        bbox    32 17 71 47
+	quakeframe 0 89 -3
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd velo001 -0.8 0 0
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -20 90 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" 30 100 1
+	frame	data/chars/cyborg/z2
+	@cmd shoot "expl1" -70 90 1
+	frame	data/chars/cyborg/z2
+anim fall
+	delay	5
+        offset  119 133
+        bbox    32 17 71 47
+	frame	data/chars/cyborg/z1
+anim rise
+	delay	5
+        offset  119 133
+        bbox    32 17 71 47
+	frame	data/chars/cyborg/z1
+
+

@@ -1,0 +1,19 @@
+name	blckf
+type	none
+toflip 1
+palette data/chars/misc/blckf1
+
+alpha 5
+
+anim idle
+	delay	1
+	offset	23 34
+	quakeframe 0 1 1
+	frame	data/chars/misc/empty
+	delay 5
+	frame	data/chars/misc/blckf1
+	frame	data/chars/misc/blckf2
+	frame	data/chars/misc/blckf3
+	frame	data/chars/misc/blckf4
+	frame	data/chars/misc/blckf5
+	frame	data/chars/misc/blckf6

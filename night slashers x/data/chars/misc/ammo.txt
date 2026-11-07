@@ -1,0 +1,17 @@
+name ammo
+type item
+reload 6
+weapons chris3
+subject_to_screen 0
+anim spawn
+	delay 10
+	offset 15 12
+	bbox 0 0 30 20
+	jumpframe 0 2 0 0
+	frame data/chars/misc/ammo
+anim idle 
+	loop 1
+	delay 10
+	offset 15 12
+	bbox 0 0 30 20
+	frame data/chars/misc/ammo

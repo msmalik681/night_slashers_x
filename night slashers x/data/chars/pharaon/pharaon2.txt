@@ -1,0 +1,774 @@
+name	Pharaon2
+health	600
+speed	8
+type	enemy
+aimove chase
+aimove wander
+shadow	3
+score	5000	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+thold 100
+blockodds 1
+bflash flashf
+nopain 0
+nodrop 0
+escapehits 5
+noatflash 1
+flash dflash
+hostile player 
+candamage player 
+projectilehit enemy obstacle npc
+icon data/chars/doc/icon
+animationscript data/scripts/boss.c
+load Pharaon3
+load Pharaon4
+weapons pharaon2 pharaon
+weaploss 3
+palette data/chars/pharaon/00
+height  1000
+aggression 50
+summonkill 3
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 20
+	nodrawmethod 
+	offset  99 149
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/18
+	delay 20
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/19
+	frame	data/chars/pharaon/20
+	frame	data/chars/pharaon/12
+	delay  30
+	offset  99 149
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/37
+	frame	data/chars/pharaon/38
+	frame	data/chars/pharaon/39
+	frame	data/chars/pharaon/40
+	frame	data/chars/pharaon/41
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	nodrawmethod 
+	offset  99 149
+	bbox    17 150 108 28
+	frame	data/chars/pharaon/18
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 20
+	nodrawmethod 
+	offset  99 149
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/18
+	delay 20
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/19
+	frame	data/chars/pharaon/20
+	frame	data/chars/pharaon/12
+	delay  30
+	offset  99 149
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/37
+	frame	data/chars/pharaon/38
+	frame	data/chars/pharaon/39
+	frame	data/chars/pharaon/40
+	frame	data/chars/pharaon/41
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	nodrawmethod 
+	offset  99 149
+	bbox    17 150 108 28
+	frame	data/chars/pharaon/18
+anim spawn
+	delay   10
+	offset  89 175
+	bbox    0 0 0 0 
+	frame	data/chars/pharaon/51
+	@cmd hurt3 150 1
+	@cmd spawn01 "pharaon3" 0 0 0
+	@cmd spawn01 "pharaon4" 0 0 0
+	delay 150
+	frame	data/chars/pharaon/51
+	frame	data/chars/pharaon/51
+	frame	data/chars/pharaon/51
+anim respawn
+	delay   10
+	offset  89 175
+	bbox    0 0 0 0 
+	frame	data/chars/pharaon/51
+	@cmd hurt3 150 1
+	@cmd spawn01 "pharaon3" 0 0 0
+	@cmd spawn01 "pharaon4" 0 0 0
+	delay 150
+	frame	data/chars/pharaon/51
+	frame	data/chars/pharaon/51
+	frame	data/chars/pharaon/51
+anim idle
+	loop	1
+	delay	30
+	offset  93 175
+	bbox    73 61 42 79
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	attack  0 0 0 0 0
+	@cmd clearL
+	frame	data/chars/pharaon/52
+	frame	data/chars/pharaon/53
+anim faint
+	loop	1
+	delay	30
+	offset  93 175
+	bbox    73 61 42 79
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	attack  0 0 0 0 0
+	@cmd clearL
+	frame	data/chars/pharaon/52
+	frame	data/chars/pharaon/53
+anim block
+	delay	5
+	offset  93 175
+	bbox    0 0 0 0 
+	frame	data/chars/pharaon/21
+	offset  94 175
+	frame	data/chars/pharaon/21
+	offset  93 175
+	frame	data/chars/pharaon/21
+	@cmd velo001 -2 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/21
+	frame	data/chars/pharaon/21
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/pharaon/21
+	frame	data/chars/pharaon/21
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/pharaon/21
+	frame	data/chars/pharaon/21
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/pharaon/21
+	frame	data/chars/pharaon/21
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/pharaon/21
+	frame	data/chars/pharaon/21
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    74 57 42 86
+	frame	data/chars/pharaon/21
+anim walk
+	loop	1
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	@cmd    depost 0
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	attack  0 0 0 0 0
+	@cmd clearL
+	frame	data/chars/pharaon/07
+	frame	data/chars/pharaon/08
+	frame	data/chars/pharaon/09
+	frame	data/chars/pharaon/10
+	frame	data/chars/pharaon/11
+	frame	data/chars/pharaon/06
+anim run
+	loop	1
+	delay	8
+	offset  93 175
+	bbox    73 61 42 79
+	@cmd    depost 0
+	@cmd clearL
+	frame	data/chars/pharaon/07
+	frame	data/chars/pharaon/08
+	frame	data/chars/pharaon/09
+	frame	data/chars/pharaon/10
+	frame	data/chars/pharaon/11
+	frame	data/chars/pharaon/06
+anim runattack
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	@cmd velo001 3 0 0
+	hitflash bflash
+	sound data/sounds/slide.wav
+	frame	data/chars/pharaon/22
+	delay  50
+	attack  94 140 81 36 10 1 0 0 10
+	dropv 4 1
+	frame	data/chars/pharaon/23
+	delay 10
+	@cmd velo001 1 0 0
+	frame	data/chars/pharaon/23
+	attack 0 0 0  0 0 0
+	@cmd velo001 0.5 0 0
+	frame	data/chars/pharaon/23
+	delay 30
+	@cmd velo001 0 0 0
+	frame	data/chars/pharaon/22
+anim attack1
+	range   40 100
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/26
+	attack  124 98 134 16 6 0 0 0 20
+	frame	data/chars/pharaon/27
+	attack  0 0 0 0 
+	delay   30
+	frame	data/chars/pharaon/27
+anim attack2
+	range   40 100
+	delay	30
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/26
+	delay   10
+	attack  104 98 93 17 10 1 0 0 20
+	dropv 2 3
+	frame	data/chars/pharaon/27a
+	attack  0 0 0 0 
+	delay   40
+	frame	data/chars/pharaon/27a
+anim attack3
+	range 140 160
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	jumpframe 0 3 2 0
+	dropframe 2
+	landframe 3
+	frame	data/chars/pharaon/28
+	frame	data/chars/pharaon/29
+	blast  81 103 87 33 10 1 0 30
+	delay 1000
+	frame	data/chars/pharaon/30
+	attack  0 0 0 0
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/31
+anim attack4
+	range 20 70
+	range   40 100
+	delay	20
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/24
+	delay   30
+	attack  96 125 92 22 10 1 0 0 20
+	frame	data/chars/pharaon/25
+	attack  0 0 0 0 
+	delay   10
+	frame	data/chars/pharaon/24
+anim attack5
+	range  140 160
+	delay	20
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/03
+	sound   data/sounds/etfire.wav
+	frame	data/chars/pharaon/04
+	frame	data/chars/pharaon/05
+	frame	data/chars/pharaon/04
+	frame	data/chars/pharaon/05
+	frame	data/chars/pharaon/04
+	frame	data/chars/pharaon/05
+	frame	data/chars/pharaon/03
+anim attack6
+	range 10 40
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	jumpframe 0 3 0 0
+	dropframe 2
+	landframe 3
+	frame	data/chars/pharaon/28
+	frame	data/chars/pharaon/29
+	blast  81 103 87 33 10 1 0 30
+	delay 1000
+	frame	data/chars/pharaon/30
+	attack  0 0 0 0
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/31
+anim attack7
+	range   10 40
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	grabin 1 30
+	hitflash bflash
+	followanim 1
+	followcond 3
+	attackone 1
+	attack  104 77 30 50 0 0 1 1 
+	frame	data/chars/pharaon/13
+	delay 30
+	attack 0 0 0 0 0
+	frame	data/chars/pharaon/13
+anim follow1
+	delay 1
+	offset  93 175
+	bbox    0 0 0 0
+	@cmd    anti
+	@cmd grabcheck
+	quakeframe 5 3 -2
+	frame	data/chars/pharaon/32
+	delay 14
+	frame	data/chars/pharaon/32
+	delay 30
+	@cmd    position 0 20 55 -1 -1
+	frame	data/chars/pharaon/33
+	delay 15
+	@cmd    hurt 0 7
+	@cmd    position 0 -40 85 -1 1
+	frame	data/chars/pharaon/34
+	@cmd    hurt 20 8
+	@cmd    position 0 -40 0 -1 -1
+	frame	data/chars/pharaon/35
+	@cmd    hurt 0 8
+	sound data/sounds/bigfal.wav
+	@cmd    position 0 -40 0 -1 -1
+	frame	data/chars/pharaon/35
+	@cmd    hurt 0 8
+	@cmd    position 0 -40 0 -1 -1
+	@cmd shoot "slamfl2" -30 20 1
+	frame	data/chars/pharaon/35
+	@cmd    depost 0
+	@cmd    finish 20 0 2 3 0 -1
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/36
+	delay   20
+	@cmd clearL
+	frame	data/chars/pharaon/18
+	frame	data/chars/pharaon/19
+	frame	data/chars/pharaon/20
+anim attack8
+	range 20 70
+	range   40 100
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	jumpframe 6 3 2 0
+	dropframe 8
+	landframe 9
+	frame	data/chars/pharaon/24
+	delay   30
+	attack  96 125 92 22 5 0 0 0 10
+	frame	data/chars/pharaon/25
+	attack  0 0 0 0 
+	delay   10
+	frame	data/chars/pharaon/24
+	frame	data/chars/pharaon/26
+	attack  104 98 93 17 5 0 0 0 10
+	frame	data/chars/pharaon/27a
+	attack  0 0 0 0 
+	delay   20
+	frame	data/chars/pharaon/27a
+	frame	data/chars/pharaon/28
+	frame	data/chars/pharaon/29
+	attack  81 103 87 33 10 1 0 0 30
+	dropv 2 3
+	delay 1000
+	frame	data/chars/pharaon/30
+	attack  0 0 0 0
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/31
+	frame	data/chars/pharaon/03
+	sound   data/sounds/etfire.wav
+	frame	data/chars/pharaon/04
+	frame	data/chars/pharaon/05
+	frame	data/chars/pharaon/04
+	frame	data/chars/pharaon/05
+	frame	data/chars/pharaon/04
+	frame	data/chars/pharaon/05
+	frame	data/chars/pharaon/03
+anim grab
+	delay 10
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/32
+anim special
+	range   10 40
+	delay	10
+	offset  93 175
+	bbox    73 61 42 79
+	grabin 1 30
+	hitflash bflash
+	followanim 1
+	followcond 3
+	attackone 1
+	attack  104 77 30 50 0 0 1 1 
+	frame	data/chars/pharaon/13
+	delay 30
+	attack 0 0 0 0 0
+	frame	data/chars/pharaon/13
+anim special2
+	range 0 100
+	delay	10
+	offset  93 175
+	bbox    0 0 0 0
+	jumpframe 0 3 1 0
+	dropframe 2
+	landframe 3
+	frame	data/chars/pharaon/28
+	frame	data/chars/pharaon/29
+	blast  81 103 87 33 10 1 0 30
+	delay 1000
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/30
+	attack  0 0 0 0
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/31
+anim pain
+	delay 2
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	delay  40
+	frame	data/chars/pharaon/15
+	delay 10
+	frame	data/chars/pharaon/14
+anim pain2
+	delay 2
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/13
+	delay  40
+	frame	data/chars/pharaon/12
+	delay 10
+	frame	data/chars/pharaon/13
+anim pain5
+	delay 1
+	movea 1
+	offset  93 175
+	bbox    58 75 66 70
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+	frame	data/chars/pharaon/16
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 5
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/14
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 20
+	offset  93 175
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/13
+anim grabbedwalk
+	delay 20
+	offset  93 215
+	bbox    73 61 42 79
+	frame	data/chars/pharaon/13
+anim fall
+	delay 1000
+	offset  93 175
+	bbox    0 0 0 0
+	landframe 1
+	attack 57 98 29 36 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/pharaon/16
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/pharaon/17
+	delay 15
+	bbox    17 150 108 28
+	frame	data/chars/pharaon/18
+anim fall5
+	delay 1000
+	offset  93 175
+	bbox    57 98 29 36
+	landframe 1
+	attack 57 98 29 36 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/pharaon/16
+	delay 20
+	bbox    0 0 0 0
+	attack  0 0 0 0 0
+	frame	data/chars/pharaon/17
+	delay 30
+	bbox    17 150 108 28
+	frame	data/chars/pharaon/18
+anim fall8
+	delay 1000
+	offset  93 175
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/pharaon/14a
+	frame	data/chars/pharaon/x1
+	attack 57 98 29 36 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/pharaon/16
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/pharaon/17
+	delay 15
+	bbox    17 150 108 28
+	frame	data/chars/pharaon/18
+anim rise
+	delay 15
+	offset  93 175
+	bbox    17 150 108 28
+	frame	data/chars/pharaon/18
+	delay 10
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/19
+	frame	data/chars/pharaon/20
+	frame	data/chars/pharaon/12
+anim riseattack
+	range 0 80
+	delay 10
+	offset  93 175
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/19
+	frame	data/chars/pharaon/24
+	delay   30
+	attack  96 125 92 22 10 1 0 0 20
+	frame	data/chars/pharaon/25
+	attack  0 0 0 0 
+	delay   10
+	frame	data/chars/pharaon/24
+anim death
+	@cmd death
+	delay  30
+	offset  93 175
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/37
+	frame	data/chars/pharaon/38
+	frame	data/chars/pharaon/39
+	frame	data/chars/pharaon/40
+	delay 100
+	frame	data/chars/pharaon/41
+anim death3
+	delay 1000
+	offset  93 175
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 1
+	attack 56 63 36 43 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/pharaon/16
+	delay 30
+	attack  0 0 0 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/17
+	frame	data/chars/pharaon/18
+	delay 20
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/19
+	frame	data/chars/pharaon/20
+	frame	data/chars/pharaon/12
+	delay  30
+	offset  93 175
+	bbox    0 0 0 0
+	frame	data/chars/pharaon/37
+	frame	data/chars/pharaon/38
+	frame	data/chars/pharaon/39
+	frame	data/chars/pharaon/40
+	delay 100
+	frame	data/chars/pharaon/41
+anim throw
+	delay	20
+	throwframewait 1
+	offset  93 175
+	bbox    0 0 0 0
+	quakeframe 4 3 -2
+	frame	data/chars/pharaon/32
+	delay 10
+	sound data/sounds/roar1.wav
+	frame	data/chars/pharaon/33
+	frame	data/chars/pharaon/34
+	frame	data/chars/pharaon/35
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/pharaon/36
+	frame	data/chars/pharaon/18
+	frame	data/chars/pharaon/19
+	frame	data/chars/pharaon/20
+	frame	data/chars/pharaon/12

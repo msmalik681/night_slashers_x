@@ -1,0 +1,3 @@
+music		data/music/remix.bor 1
+animation	data/scenes/end.gif 0 0
+animation	data/scenes/thanks.gif 0 0

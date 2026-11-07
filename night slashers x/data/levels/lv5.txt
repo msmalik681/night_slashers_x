@@ -1,0 +1,166 @@
+loadingbg data/scenes/lvs/5 1 1000 1000 1 1000 1000 
+music		data/music/lv1.bor
+bossmusic	data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv5/backb
+bglayer	data/bgs/lv5/backb 0.5 0.9 0 0 0 0 5 5 1
+bglayer	data/bgs/lv5/back1a 0.4 0.45 0 240 0 0 5 5 1 0  
+panel		data/bgs/lv5/a1
+order	a
+direction both
+spawn1 100 40 0
+spawn2 80 50 0
+cameratype 1 
+wall 0 780 0 0 105 105 200 250
+wall 298 702 0 0 115 115 200 1100
+#levelscript data/bgs/lv5/lv5.c
+load stop3 1
+load crows 1
+load montezu2 1
+load montezum 1
+load montsp 1
+load tlk5 1
+noslow 1
+#--group1----- 
+shadowalpha 2
+at 0 
+light 256 -33
+at 0
+spawn	stop3
+flip 1
+coords	160 130
+at	0
+spawn	barelb
+item itemr
+coords	250 760
+at	10
+spawn	crows
+coords	180 711
+at	10
+spawn	zombiea
+coords	180 710
+at	10
+spawn	crows
+coords	400 741
+at	10
+spawn	zombie2a
+coords	400 750
+at	10
+blockade 105
+at 105
+wait
+at 200
+group 6 6
+at 200
+spawn	jason2
+coords	370 720
+at	200
+spawn	kat
+coords	400 720
+at	200
+spawn	zombie
+coords	400 720
+at	200
+spawn	zombie2
+coords	-100 720
+at	200
+spawn	zombieb
+coords	280 720
+at	200
+spawn	zombie3
+coords	-100 720
+at	200
+spawn	zombie
+coords	400 720
+at	200
+spawn	zombie2
+coords	-100 720
+at	200
+spawn	ghoul3
+coords	200 720
+at	200
+spawn	zombie3
+coords	-100 720
+at	200
+spawn	jason2
+flip 1
+coords	-50 720
+at	200
+spawn	zombieb
+coords	70 720
+at	200
+spawn	zombie2
+coords	-100 720
+at	200
+spawn	zombie
+coords	400 720
+at	200
+spawn	zombie3
+coords	-100 720
+at	200
+########################
+spawn	zombiea
+coords	400 720
+at	250
+spawn	zombie2
+coords	-100 720
+at	280
+spawn	zombie
+coords	300 760
+at	300
+spawn	barelb
+item itemr
+coords	350 680
+at	300
+spawn	barelb
+item itemr2
+coords	410 680
+at	300
+wait 
+at 450
+spawn	zombie3
+coords	-100 720
+at	350
+spawn	zombiea
+coords	400 720
+at	350
+spawn	zombie2
+coords	-100 720
+at	350
+spawn	zombie
+coords	300 760
+at	350
+spawn	zombie3
+coords	-100 720
+at	350
+spawn	zombiea
+coords	400 720
+at	350
+spawn	zombie2
+coords	-100 720
+at	350
+spawn	zombie
+coords	300 760
+at	350
+blockade 450
+at 450
+light 0 -33
+at 457
+blockade 500
+at 500
+group 100 100
+at 540
+spawn montezu2
+map 1
+boss 1
+item bosslow
+coords	230 700
+at	540
+spawn montezum
+boss 1
+item bosslow
+coords	350 740
+at	540
+light -256 -33
+at 649

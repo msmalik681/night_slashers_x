@@ -1,0 +1,14 @@
+name	cflash
+type	none
+toflip 1
+
+alpha 1
+
+anim idle
+	delay	10
+	offset	18 20
+	quakeframe 0 1 1
+	frame	data/chars/misc/flshc1
+	frame	data/chars/misc/flshc2
+	frame	data/chars/misc/flshc3
+

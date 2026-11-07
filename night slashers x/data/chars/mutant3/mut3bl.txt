@@ -1,0 +1,16 @@
+name	mut3bl
+type	pshot
+speed 15
+candamage player enemy obstacle
+nolife 1
+noatflash 1
+flash dflash
+anim idle
+	loop 1
+	delay 1
+	offset  18 15
+	bbox  0 0 0 0
+	attack 17 9 28 8 6 0 0 0 20
+	frame	data/chars/mutant3/a1
+	attack 17 9 28 8 6 1 0 0 20
+	frame	data/chars/mutant3/a1

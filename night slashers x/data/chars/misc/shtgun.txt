@@ -1,0 +1,29 @@
+name	shtgun
+type	item
+subtype weapon
+weapnum	2
+shootnum 6
+typeshot 1
+counter	100
+iconw data/chars/misc/shel4
+subject_to_screen 0
+anim spawn
+	delay	30
+	offset  30 6
+	bbox    0 0 0 0
+	movez -1
+	frame	data/chars/misc/shgun
+anim idle
+	loop 1
+	delay	250
+	offset  30 6
+	bbox    6 6 6 6 5
+	frame	data/chars/misc/shgun
+anim fall
+	delay	10
+	offset  30 6
+	bbox    6 6 6 6 
+	jumpframe 0 2 -1 0
+	frame	data/chars/misc/shgun
+	delay   100
+	frame	data/chars/misc/shgun

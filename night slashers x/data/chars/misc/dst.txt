@@ -1,0 +1,26 @@
+name dst
+type none
+nomove 1 1
+palette data/chars/misc/dst1
+
+alpha 1
+
+anim idle 
+	delay 1
+	offset 57 100
+	load dstfl
+	movez 1
+	bbox 0 0 0 0
+	frame data/chars/misc/empty
+	delay 5
+	movez 0
+	frame data/chars/misc/dst1
+	frame data/chars/misc/dst2
+	frame data/chars/misc/dst3
+	frame data/chars/misc/dst4
+	frame data/chars/misc/dst5
+	frame data/chars/misc/dst6
+	frame data/chars/misc/dst7
+	frame data/chars/misc/dst8
+	frame data/chars/misc/dst9
+	frame data/chars/misc/empty

@@ -1,0 +1,42 @@
+name	flash
+type	none
+toflip 1
+nomove 1 0
+Animationscript data/scripts/shoot.c
+load blood
+load smash
+palette data/chars/misc/f1
+anim idle
+	@script
+	void self = getlocalvar("self");
+	if(frame == 0){
+	int map = rand()%10;
+	if( map >= 7 &&  map <= 10){
+	changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL2"));
+	}
+	}
+	@end_script	
+	delay	1
+	offset	32 46
+	custbomb blood
+	tossframe 3 1
+	quakeframe 1 1 1
+	frame	data/chars/misc/empty
+	delay	6
+	#sound data/sounds/beata1.wav
+	frame	data/chars/misc/f1
+	frame	data/chars/misc/f2
+	frame	data/chars/misc/f3
+	frame	data/chars/misc/f4
+	frame	data/chars/misc/f5
+	frame	data/chars/misc/f6
+	frame	data/chars/misc/f7
+anim freespecial2
+	delay	1
+	offset	0 0 
+	movez 1
+	#sound data/sounds/beatc.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "smash" 0 0 0
+	frame	data/chars/misc/empty
+	

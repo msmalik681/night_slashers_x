@@ -1,0 +1,3 @@
+silence
+animation	data/chars/misc/empty.gif 0 0
+

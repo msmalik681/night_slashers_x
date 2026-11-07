@@ -1,0 +1,3 @@
+#music           data/music/remix.bor 0
+animation	data/scenes/howto.gif 0 0
+

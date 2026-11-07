@@ -1,0 +1,47 @@
+name	slamfl2
+type	pshot
+speed 5
+toflip 1
+nomove 1 1
+remove 0
+facing 1
+palette data/chars/chris/000
+load dstfl
+candamage enemy obstacle
+anim idle
+	delay	3
+	offset	33 16
+	hitflash bflash
+	summonframe 0 160 240 0 1
+	subentity dstfl
+	frame	data/chars/misc/empty
+	blast   0 0 67 76 10 1 
+	frame	data/chars/chris/131 
+	blast   0 0 67 76 10 1 
+	dropv 3 2 -1
+	frame   data/chars/chris/131
+	blast   0 0 67 76 10 1 
+	dropv 3 2 1
+	frame   data/chars/chris/131
+	delay 9
+	offset	33 21
+	frame	data/chars/misc/empty
+	delay 3
+	blast   0 0 67 76 10 1 
+	frame	data/chars/chris/131 
+	blast   0 0 67 76 10 1 
+	dropv 3 2 1
+	frame   data/chars/chris/131
+	blast   0 0 67 76 10 1 
+	dropv 3 2 -1
+	frame   data/chars/chris/131
+	delay 9
+	offset	33 11
+	blast   0 0 0 0
+	frame	data/chars/misc/empty
+	delay 3
+	frame	data/chars/chris/131 
+	frame   data/chars/chris/131
+	frame   data/chars/chris/131
+	delay 9
+	frame	data/chars/misc/empty

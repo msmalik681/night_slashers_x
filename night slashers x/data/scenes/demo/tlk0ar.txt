@@ -1,0 +1,11 @@
+name	tlk0ar
+type	none
+setlayer 800
+facing 1
+palette data/scenes/demo/tlk0a0
+anim idle
+	delay	160
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/scenes/demo/tlk0a0
+	frame	data/chars/misc/empty

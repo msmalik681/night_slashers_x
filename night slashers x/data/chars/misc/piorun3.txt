@@ -1,0 +1,56 @@
+name	piorun
+type	none
+setlayer  260
+nomove 1 1
+alpha 5
+anim idle
+	loop 1
+	offset  500 294
+	delay   10
+	frame	data/chars/bosf/b32
+	delay   15
+	frame	data/chars/bosf/b31
+	delay   20
+	sound   data/sounds/piorun2.wav
+	frame	data/chars/bosf/b1
+	offset  147 225
+	frame	data/chars/misc/piorun07
+	delay   13
+	frame	data/chars/misc/piorun08
+	delay   11
+	frame	data/chars/misc/piorun09
+	delay   9
+	frame	data/chars/misc/piorun10
+	delay   7
+	frame	data/chars/misc/piorun11
+	delay 5
+	frame	data/chars/misc/piorun12
+	delay 3
+	frame	data/chars/misc/piorun13
+	delay   1000
+	frame	data/chars/misc/empty
+	offset  147 181
+	delay   15
+	offset  500 294
+	frame	data/chars/bosf/b32
+	frame	data/chars/bosf/b1
+	delay   5
+	offset  147 181
+	frame	data/chars/misc/piorun01
+	frame	data/chars/misc/piorun02
+	frame	data/chars/misc/piorun03
+	frame	data/chars/misc/piorun04
+	delay 200
+	frame	data/chars/misc/empty
+	delay   10
+	offset  500 294
+	frame	data/chars/bosf/b32
+	frame	data/chars/bosf/b1
+	delay 5
+	offset  147 181
+	frame	data/chars/misc/piorun05
+	frame	data/chars/misc/piorun06
+	delay 1000
+	frame	data/chars/misc/empty
+
+

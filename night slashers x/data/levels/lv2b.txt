@@ -1,0 +1,142 @@
+music       data/music/snake.bor 1557365
+notime 1
+settime 0
+background	data/bgs/lv2/b1a
+panel		data/bgs/lv2/b1a
+fglayer 	data/bgs/lv2/b1g 1 0 0 0 0 0 0 2 1 1 2 
+order	a
+spawn1 100 50 0
+spawn2 80 70 0
+load franksp 1
+load franken 1
+load tlk2b 1
+load tlk0b 1
+load frrock 1
+noslow 1
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 240
+at 0
+group 2 2
+at 0
+spawn	franksp
+coords	250 150
+at 0
+spawn	tlk2b
+coords	160 220
+at 0
+spawn	franken
+item bosslow
+boss 1
+coords	250 150 0
+at 0
+spawn	zombie
+coords	750 200
+at 0
+group 3 3
+at 0
+spawn	zombie
+coords	-750 200
+at 0
+spawn	zombie3
+coords	-50 200
+at 0
+spawn	zombie2
+coords	380 200
+at 0
+spawn	zombie3
+coords	380 200
+at 0
+spawn	zombie
+coords	-50 200
+at 0
+spawn	zombie2
+coords	380 200
+at 0
+spawn	zombieb
+item itemr
+coords	50 200
+at 0
+spawn	zombieb
+coords	80 230
+at 0
+spawn	zombieb
+coords	280 200
+at 0
+spawn	zombieb
+item itemr2
+coords	250 230
+at 0
+spawn	zombie2
+coords	-80 200
+at 0
+group 3 4
+at 0
+spawn	zombie
+coords	350 200
+at 0
+spawn	zombie3
+coords	380 200
+at 0
+spawn	zombie
+coords	-50 200
+at 0
+spawn	jason
+coords	380 200
+at 0
+spawn	zombie
+coords	350 200
+at 0
+spawn	zombie2
+coords	-80 200
+at 0
+spawn	zombie3
+coords	380 200
+at 0
+spawn	zombie
+coords	350 200
+at 0
+spawn	zombie2
+coords	-80 200
+at 0
+spawn	zombie
+coords	350 200
+at 0
+spawn	jason
+item itemr
+coords	380 200
+at 0
+spawn	zombie3
+coords	-80 200
+at 0
+spawn	zombie2
+coords	380 200
+at 0
+group 3 5
+at 0
+spawn	zombie
+coords	-750 200
+at 0
+spawn	zombie3
+coords	-50 200
+at 0
+spawn	zombie2
+coords	380 200
+at 0
+spawn	zombie3
+coords	380 200
+at 0
+spawn	zombie
+coords	-50 200
+at 0
+spawn	zombie2
+coords	380 200
+at 0
+spawn	zombieb
+item itemr
+coords	50 200
+at 0

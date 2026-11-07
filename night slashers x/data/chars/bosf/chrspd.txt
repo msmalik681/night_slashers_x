@@ -1,0 +1,34 @@
+name	chrspd
+type	none
+cantgrab 1
+nolife 1
+load chrspe
+anim idle
+	offset  160 240
+	bbox    0 0 0 0
+	delay 10
+	spawnframe 0 160 120 0 1
+	subentity chrspe
+	flipframe 0
+	sound data/sounds/n/storm.wav
+	frame	data/chars/bosf/chrspd01
+	frame	data/chars/bosf/chrspd02
+	frame	data/chars/bosf/chrspd03
+	frame	data/chars/bosf/chrspd04
+	frame	data/chars/bosf/chrspd05
+	frame	data/chars/bosf/chrspd06
+	frame	data/chars/bosf/chrspd07
+	frame	data/chars/bosf/chrspd08
+	frame	data/chars/bosf/chrspd09
+	frame	data/chars/bosf/chrspd10
+	frame	data/chars/bosf/chrspd11
+	frame	data/chars/bosf/chrspd12
+	frame	data/chars/bosf/chrspd13
+	frame	data/chars/bosf/chrspd14
+	frame	data/chars/bosf/chrspd15
+	offset 0 240
+	frame	data/chars/bosf/chrspd15
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty
+	

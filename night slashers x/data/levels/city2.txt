@@ -1,0 +1,111 @@
+music		data/music/lv2.bor
+bossmusic       data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/city2/back2
+bglayer  	data/bgs/city2/back2 0.2 0.2
+panel		data/bgs/city2/a1
+order	a
+direction both
+spawn1 100 25 0
+spawn2 80 45 0
+cameratype 1
+#--group1-----
+shadowalpha 6
+at 0 
+light 256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 440
+at	0
+group 2 2
+at 0
+spawn	franken2
+boss 1
+map 1
+item bosslow
+coords	450 350
+at	0
+spawn	zombie
+coords	750 350
+at	0
+group 3 3
+at 0
+spawn	zombie
+coords	-750 350
+at	0
+spawn	zombie3
+coords	-150 350
+at	0
+spawn	zombie2
+coords	480 350
+at	0
+spawn	zombie3
+coords	450 350
+at	0
+spawn	zombie
+coords	-150 380
+at	0
+spawn	zombie2
+coords	480 350
+at	0
+spawn	zombieb
+item itemr
+coords	50 360
+at	0
+spawn	zombieb
+coords	80 320
+at	0
+spawn	zombieb
+coords	280 350
+at	0
+spawn	zombieb
+item itemr2
+coords	250 360
+at	0
+spawn	zombie2
+coords	-180 350
+at	0
+group 4 4
+at 0
+spawn	zombie
+coords	450 350
+at	0
+spawn	zombie3
+coords	450 350
+at	0
+spawn	zombie
+coords	-150 350
+at	0
+spawn	jason
+coords	480 350
+at	0
+spawn	zombie
+coords	450 350
+at	50
+spawn	zombie2
+coords	-180 350
+at	0
+spawn	zombie3
+coords	450 350
+at	0
+spawn	zombie
+coords	450 350
+at	0
+spawn	zombie2
+coords	-180 350
+at	50
+spawn	zombie
+coords	450 350
+at	0
+spawn	jason
+item itemr
+coords	480 350
+at	0
+spawn	zombie3
+coords	-50 350
+at	0
+spawn	zombie2
+coords	480 350
+at	0

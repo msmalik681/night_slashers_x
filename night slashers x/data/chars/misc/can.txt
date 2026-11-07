@@ -1,0 +1,32 @@
+name can
+type item
+health 20
+noatflash 1
+nolife 1
+subject_to_screen 0
+remap data/chars/misc/can data/chars/misc/can1
+anim spawn
+	@script
+		if(frame == 0){
+		void self = getlocalvar("self");
+		int map = rand()%1;
+		if(map < 0)
+		{
+		-map == map;
+		}
+		changeentityproperty(self, "map", map);
+		}
+		@end_script
+	delay 10
+	offset 5 19
+	bbox 0 0 11 21
+	jumpframe 0 2 0 0
+	movez -1
+	frame data/chars/misc/can
+anim idle 
+	loop 1
+	delay 10
+	offset 5 19
+	bbox 0 0 11 21 5
+	frame data/chars/misc/can
+

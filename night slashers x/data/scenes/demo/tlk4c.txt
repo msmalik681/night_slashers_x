@@ -1,0 +1,43 @@
+name	tlk4c
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 300
+facing 1
+animationscript data/scripts/tlk.c
+palette data/scenes/demo/tlk4c1
+anim idle
+	delay	1
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+        delay	200
+	frame	data/scenes/demo/tlk4c1
+        @cmd tlk
+        frame	data/scenes/demo/tlk4c2
+anim freespecial2
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+        frame	data/scenes/demo/tlk4c2
+	delay 150
+	sound data/sounds/n/tfinalw.wav
+	frame	data/scenes/demo/tlk4c2
+anim freespecial3
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+        frame	data/scenes/demo/tlk4c2j
+	sound data/sounds/n/castundr.wav
+	delay 150
+	frame	data/scenes/demo/tlk4c2j
+anim freespecial4
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+        frame	data/scenes/demo/tlk4c2jk
+	delay 150
+	sound data/sounds/n/ihavepow.wav
+	frame	data/scenes/demo/tlk4c2jk

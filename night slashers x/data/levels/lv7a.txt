@@ -1,0 +1,117 @@
+loadingbg data/scenes/lvs/7 1 1000 1000 1 1000 1000 
+music		data/music/lv1.bor 1996221
+bossmusic	data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv7a/a1
+panel		data/bgs/lv7a/a1
+order	aaaaaaaaaa
+direction both
+spawn1 95 50 0
+spawn2 95 50 0
+cameratype 1
+#levelscript data/bgs/lv7a/lv7a.c
+load dpln2 1
+load dpln 1
+load golem2 1
+load golem1 1
+noslow 1
+#--group1-----
+wall 0 180 -1000 -1000 363 363 100 1100
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	stop2
+flip 1
+coords	160 130
+at	0
+#####################
+spawn	dpln2
+flip 1
+coords	30 175
+at	0
+spawn	dpln
+flip 1
+coords	-50 175
+at	0
+spawn	kat
+coords	380 160
+at	200
+spawn	kat
+coords	390 220
+at	200
+spawn	jason
+coords	360 200
+at	200
+spawn	were
+coords	350 170
+at	200
+spawn	barelex
+coords	400 140
+at	200
+spawn	barelex
+coords	475 140
+at	200
+spawn	barelex
+coords	400 230
+at	300
+spawn	barel
+item itemr2
+coords	450 230
+at	300
+wait 
+at 450
+spawn	kat
+coords	-100 220
+at	450
+spawn	kat
+coords	-150 220
+at	450
+spawn	jason
+coords	-50 200
+at	450
+group 6 6
+at 450
+spawn	zombie4
+coords	450 160
+at	450
+spawn	zombie2
+coords	450 220
+at	450
+spawn	zombie3
+coords	450 200
+at	450
+spawn	zombie
+coords	350 170
+at	200
+spawn	barel
+item itemr
+coords	490 140
+at	450
+spawn	barelex
+coords	540 140
+at	450
+
+spawn	barel
+item itemr
+coords	490 230
+at	450
+spawn	barelex
+coords	540 230
+at	450
+#########################
+wait
+at 900
+spawn death2
+coords	280 190
+map 1
+at	900
+spawn golem2
+dying 1 600 300
+item bosslow
+boss 1
+flip 1
+coords	200 190
+at	900
+ 

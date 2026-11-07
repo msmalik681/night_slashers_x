@@ -1,0 +1,20 @@
+name	bflash
+type	none
+toflip 1
+
+alpha 1
+
+anim idle
+	delay	1
+	offset	47 53
+	quakeframe 0 1 1
+	frame	data/chars/misc/bflshb2
+	delay 5
+	frame	data/chars/misc/bflshb1
+	frame	data/chars/misc/bflshb2
+	frame	data/chars/misc/bflshb3
+	frame	data/chars/misc/bflshb4
+	frame	data/chars/misc/bflshb5
+	frame	data/chars/misc/bflshb6
+	frame	data/chars/misc/bflshb7
+	frame	data/chars/misc/bflshb8

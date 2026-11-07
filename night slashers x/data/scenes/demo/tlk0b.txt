@@ -1,0 +1,46 @@
+name	tlk0b
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 900000
+facing 1
+animationscript data/scripts/tlk.c
+palette data/scenes/demo/tlk0b1
+anim idle
+	delay	1
+	offset	144 133
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+        @cmd tlk
+        frame	data/chars/misc/empty
+anim freespecial2
+        offset	144 123
+	bbox	0 0 0 0
+        delay	200
+	sound data/sounds/n/exelentf.wav
+        frame	data/scenes/demo/tlk0b1
+        frame	data/scenes/demo/tlk0b3
+        frame	data/scenes/demo/tlk0b4
+	@cmd fademusic 1 "data/music/bossend.bor" 0 0
+	frame	data/chars/misc/empty
+anim freespecial3
+        offset	144 123
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk0b2
+        frame	data/scenes/demo/tlk0b3
+        frame	data/scenes/demo/tlk0b5
+	@cmd fademusic 1 "data/music/bossend.bor" 0 0
+	frame	data/chars/misc/empty
+anim freespecial4
+        offset	144 123
+	bbox	0 0 0 0
+        delay	200
+	sound data/sounds/n/wedestal.wav
+        frame	data/scenes/demo/tlk0b7
+        frame	data/scenes/demo/tlk0b3
+        frame	data/scenes/demo/tlk0b6
+	@cmd fademusic 1 "data/music/bossend.bor" 0 0
+	frame	data/chars/misc/empty

@@ -1,0 +1,15 @@
+name	auto2
+type	panel
+#candamage enemy npc player obstacle
+palette data/bgs/bonus/auto1
+setlayer 1
+anim idle
+	loop 1
+	delay	5
+	offset	0 166
+	#blast -1000 80 2800 170 10000
+	frame	data/bgs/bonus/auto1
+	#blast -1000 80 2800 170 10000
+	frame	data/bgs/bonus/auto2
+	#blast -1000 80 2800 170 10000
+	frame	data/bgs/bonus/auto3

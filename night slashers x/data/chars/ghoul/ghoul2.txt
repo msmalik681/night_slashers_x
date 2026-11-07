@@ -1,0 +1,636 @@
+name	Ghoul2
+health	50
+speed	6
+type	enemy
+aimove chase
+aimove wander
+aiattack dodgemove
+shadow	3
+noquake 1
+score	400	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+nolife 1
+running  12 4 2 1 0
+gfxshadow 1
+jumpheight 3
+hostile player 
+candamage player npc obstacle
+projectilehit   enemy obstacle npc
+animationscript data/scripts/were.c
+dust dust
+blockodds 7
+thold 30
+bflash flashf
+palette data/chars/ghoul/00a
+alternatepal data/chars/ghoul/alt1a
+alternatepal data/chars/ghoul/alt2a
+alternatepal data/chars/ghoul/alt2a
+height  1000
+aggression -10
+anim block
+	delay	5
+	offset  75 125
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/10
+	offset  74 125
+	frame	data/chars/ghoul/10
+	offset  75 125
+	frame	data/chars/ghoul/10
+	offset  74 125 
+	@cmd velo001 -2 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/ghoul/10
+	frame	data/chars/ghoul/10
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/ghoul/10
+	frame	data/chars/ghoul/10
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/ghoul/10
+	frame	data/chars/ghoul/10
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/ghoul/10
+	frame	data/chars/ghoul/10
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/ghoul/10
+	frame	data/chars/ghoul/10
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/10
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  74 125
+	delay 30
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+	delay 20
+	offset  74 125
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/19
+	frame	data/chars/ghoul/20
+	frame	data/chars/ghoul/a11
+	frame	data/chars/ghoul/a12
+	frame	data/chars/ghoul/a26
+	frame	data/chars/ghoul/a27
+	offset  66 124
+	sound data/sounds/batdie.wav
+	frame	data/chars/ghoul/a34
+	frame	data/chars/ghoul/a35
+	frame	data/chars/ghoul/a36
+	delay  200
+	frame	data/chars/ghoul/a37
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  74 125
+	delay 30
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  74 125
+	delay 30
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+	delay 20
+	offset  74 125
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/19
+	frame	data/chars/ghoul/20
+	frame	data/chars/ghoul/a11
+	frame	data/chars/ghoul/a12
+	frame	data/chars/ghoul/a26
+	frame	data/chars/ghoul/a27
+	offset  66 124
+	sound data/sounds/batdie.wav
+	frame	data/chars/ghoul/a34
+	frame	data/chars/ghoul/a35
+	frame	data/chars/ghoul/a36
+	delay  200
+	frame	data/chars/ghoul/a37
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  74 125
+	delay 30
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+anim spawn
+	@script
+	if(frame == 0){
+	void self = getlocalvar("self");
+	int map = rand()%5;
+	if(map < 0)
+	{
+	-map == map;
+	}
+	changeentityproperty(self, "map", map);
+	}
+	@end_script
+	delay	5
+	offset  74 125
+	bbox    0 0 0 0
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	frame	data/chars/ghoul/a01
+	@cmd antiwall 0 0 -5
+	delay 155
+	frame	data/chars/ghoul/a01
+	delay  15
+	sound   data/sounds/wood.wav
+	frame	data/chars/ghoul/a02
+	frame	data/chars/ghoul/a03
+	frame	data/chars/ghoul/a04
+	frame	data/chars/ghoul/a05
+	delay 5
+	frame	data/chars/ghoul/01
+	frame	data/chars/ghoul/a05
+	frame	data/chars/ghoul/01
+	frame	data/chars/ghoul/a05
+	frame	data/chars/ghoul/01
+	frame	data/chars/ghoul/a05
+	frame	data/chars/ghoul/01
+	frame	data/chars/ghoul/a05
+	frame	data/chars/ghoul/01
+	frame	data/chars/ghoul/a05
+	frame	data/chars/ghoul/01
+	frame	data/chars/ghoul/a05
+anim idle
+	loop	1
+	delay	1
+	offset  74 125
+	bbox    61 30 28 70
+	@cmd antiwall -1 1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/ghoul/01
+	@cmd antiwall 1 -1 0
+
+	frame	data/chars/ghoul/01
+anim walk
+	loop	1
+	delay	15
+	offset  74 125
+	bbox    61 30 28 70
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/ghoul/02
+	frame	data/chars/ghoul/03
+	frame	data/chars/ghoul/04
+	frame	data/chars/ghoul/05
+	frame	data/chars/ghoul/06
+	frame	data/chars/ghoul/07
+	frame	data/chars/ghoul/08
+	frame	data/chars/ghoul/09
+anim run
+	loop	1
+	delay	10
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/02
+	frame	data/chars/ghoul/03
+	frame	data/chars/ghoul/04
+	frame	data/chars/ghoul/05
+	frame	data/chars/ghoul/06
+	frame	data/chars/ghoul/07
+	frame	data/chars/ghoul/08
+	frame	data/chars/ghoul/09
+anim attack1
+	range   20 50
+	delay	5
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/10
+	frame	data/chars/ghoul/11
+	delay 10
+	attack  82 44 49 13 6 0 0 0 20
+	frame	data/chars/ghoul/12
+	attack  0 0 0 0 0
+	frame	data/chars/ghoul/11
+anim attack2
+	range   20 50
+	delay	30
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/a08
+	delay  5
+	attack  91 44 36 15 6 1 0 0 20
+	frame	data/chars/ghoul/a09
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/ghoul/a10
+anim attack3
+	range   70 80
+	delay	30
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/a08
+	@cmd  velo001 3 0 0 
+	delay 20
+	attack  91 44 36 15 6 1 0 0 20
+	frame	data/chars/ghoul/a09
+	attack  0 0 0 0 0
+	delay 10
+	@cmd  velo001 2 0 0
+	frame	data/chars/ghoul/a10
+	@cmd  velo001 1 0 0
+	frame	data/chars/ghoul/a10
+anim attack4
+	range   70 80
+	delay	20
+	offset  74 125
+	bbox    61 30 28 70
+	jumpframe 1 4 1 0
+	dropframe 2
+	landframe 4
+	frame	data/chars/ghoul/a06
+	delay  1000
+	frame	data/chars/ghoul/a08
+	delay 5
+	frame	data/chars/ghoul/a09
+	delay 1000
+	attack  76 66 41 35 10 1 0 0 15
+	frame	data/chars/ghoul/a10
+	delay 10
+	attack  0 0 0 0 0
+	frame	data/chars/ghoul/a10
+	frame	data/chars/ghoul/a06
+anim attack5
+	range   5 15
+	delay	15
+	offset  74 125
+	bbox    61 30 28 70
+        grabin 1 10
+	sound   data/sounds/zomatk.wav
+	frame	data/chars/ghoul/b1
+	attack  84 50 17 17 10 0 0 0 30
+	frame	data/chars/ghoul/b2
+anim pain2
+	delay 2
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/13
+	delay  30
+	frame	data/chars/ghoul/a13
+	delay 10
+	frame	data/chars/ghoul/13
+anim pain
+	delay 2
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/14
+	delay  30
+	frame	data/chars/ghoul/15
+	delay 10
+	frame	data/chars/ghoul/14
+anim pain5
+	delay 2
+	offset  74 125
+	bbox    61 30 28 70
+	movea 1
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+	frame	data/chars/ghoul/15
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  74 125
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/13
+anim grabbedwalk
+	delay 1
+	offset  74 165
+	bbox    61 30 28 70
+	frame	data/chars/ghoul/13
+anim fall
+	delay 1000
+	offset  74 125
+	bbox    0 0 0 0
+	landframe 1
+	hitflash bflash
+	attack 33 71 29 28 6 1 0 0 20
+	frame	data/chars/ghoul/16
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/ghoul/17
+	delay 30
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+anim fall5
+	delay 1000
+	offset  74 125
+	bbox    33 71 29 28
+	landframe 1
+	hitflash bflash
+	attack 33 71 29 28 6 1 0 0 20
+	frame	data/chars/ghoul/16
+	delay 20
+	attack  0 0 0 0
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/17
+	delay 60
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+anim fall8
+	delay 1000
+	offset  74 125
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/ghoul/13b
+	frame	data/chars/ghoul/x1
+	hitflash bflash
+	attack 33 71 29 28 6 1 0 0 20
+	frame	data/chars/ghoul/16
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/ghoul/17
+	delay 30
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+anim rise
+	delay 10
+	offset  74 125
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/19
+	frame	data/chars/ghoul/20
+	delay 30
+	frame	data/chars/ghoul/a12
+	delay 10
+	frame	data/chars/ghoul/a11
+	frame	data/chars/ghoul/a06
+anim death
+	@cmd death
+	offset  74 125
+	bbox    0 0 0 0
+	delay 20
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	delay  15
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	delay  10
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	delay  5
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/23
+	delay  15
+	sound data/sounds/n/brainout.wav
+	frame	data/chars/ghoul/24
+	frame	data/chars/ghoul/25
+	frame	data/chars/ghoul/26
+	frame	data/chars/ghoul/27
+	delay   200
+	frame	data/chars/ghoul/27
+anim death2
+	@cmd death
+	offset  74 125
+	bbox    0 0 0 0
+	delay 15
+	sound data/sounds/skeldie2.wav
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/a14
+	frame	data/chars/ghoul/a15
+	frame	data/chars/ghoul/a16
+	frame	data/chars/ghoul/a17
+	frame	data/chars/ghoul/a18
+	frame	data/chars/ghoul/a19
+	frame	data/chars/ghoul/a20
+	delay   200
+	frame	data/chars/ghoul/a21
+anim death3
+	delay 30
+	jumpframe 0 3 -2 0
+	landframe 2
+	offset  74 125
+	bbox    0 0 0 0
+	landframe 1
+	hitflash bflash
+	attack 33 71 29 28 6 1 0 0 20
+	frame	data/chars/ghoul/16
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/ghoul/17
+	delay 30
+	bbox    30 107 89 25
+	frame	data/chars/ghoul/18
+	delay 20
+	offset  74 125
+	bbox    0 0 0 0
+	delay 15
+	sound data/sounds/skeldie2.wav
+	frame	data/chars/ghoul/a22
+	frame	data/chars/ghoul/a23
+	frame	data/chars/ghoul/a24
+	delay 200
+	frame	data/chars/ghoul/a25
+anim death4
+	@cmd death
+	offset  74 125
+	bbox    0 0 0 0
+	delay 15
+	sound data/sounds/skeldie2.wav
+	frame	data/chars/ghoul/22
+	frame	data/chars/ghoul/a14
+	frame	data/chars/ghoul/a15
+	frame	data/chars/ghoul/a16
+	frame	data/chars/ghoul/a17
+	frame	data/chars/ghoul/a18
+	frame	data/chars/ghoul/a19
+	frame	data/chars/ghoul/a20
+	delay 200
+	frame	data/chars/ghoul/a21
+

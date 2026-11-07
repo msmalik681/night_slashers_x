@@ -1,0 +1,2 @@
+music           data/music/bossend2.bor 0
+animation	data/scenes/demo/gameover.gif 0 0

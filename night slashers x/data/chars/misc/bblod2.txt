@@ -1,0 +1,29 @@
+name	bblod2
+type	none
+shadow	0
+nolife 1
+toflip 1
+load blood2
+palette	data/chars/misc/bblod1
+anim idle
+	delay	3
+	offset	68 86
+	custbomb blood2
+	tossframe 2 1
+	bbox 0 0 0 0
+	quakeframe 0 1 2
+	frame	data/chars/misc/bblod1
+	delay 4
+	frame	data/chars/misc/bblod2
+	delay 5
+	frame	data/chars/misc/bblod3
+	delay 6
+	frame	data/chars/misc/bblod4
+	delay 7
+	frame	data/chars/misc/bblod5
+	delay 8
+	frame	data/chars/misc/bblod6
+	delay 9
+	frame	data/chars/misc/bblod7
+	delay 10
+	frame	data/chars/misc/bblod8

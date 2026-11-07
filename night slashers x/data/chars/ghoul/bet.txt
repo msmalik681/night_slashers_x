@@ -1,0 +1,146 @@
+name	bet
+health	1
+speed	5
+type	enemy
+aimove chase
+aimove wander
+aiattack dodgemove
+shadow	3
+noquake 1
+score	400	5
+falldie 2
+nodieblink 3
+throwdamage	20
+grabdistance 24
+cantgrab 1
+nolife 1
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+hostile player 
+candamage player npc obstacle
+projectilehit   enemy obstacle npc
+dust dust
+height  1000
+diesound data/sounds/batdie.wav
+animationscript data/scripts/zombie.c
+palette data/chars/ghoul/00a
+anim spawn
+	delay	50
+	offset  84 122
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/a27
+	movea 5
+	delay	10
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	bbox    65 80 32 62
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+anim idle
+	loop	1
+	delay	10
+	offset  84 102
+	seta  80
+	bbox    65 80 32 62
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/ghoul/a28
+	seta  78
+	frame	data/chars/ghoul/a29
+	seta  82
+	frame	data/chars/ghoul/a30
+anim walk
+	loop	1
+	delay	10
+	offset  84 102
+	seta  80
+	bbox    65 80 32 62
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/ghoul/a28
+	seta  78
+	frame	data/chars/ghoul/a29
+	seta  82
+	frame	data/chars/ghoul/a30
+anim run
+	loop	1
+	delay	10
+	offset  84 102
+	seta  80
+	bbox    65 80 32 62
+	frame	data/chars/ghoul/a28
+	seta  78
+	frame	data/chars/ghoul/a29
+	seta  82
+	frame	data/chars/ghoul/a30
+anim attack1
+	range   0 8
+	delay	10
+	offset  84 102
+	seta  80
+	bbox    65 80 32 62
+	attack  0 0 0 0
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/ghoul/a31
+	attack  77 91 18 20 10 0 0 0 20
+	frame	data/chars/ghoul/a32
+anim pain
+	delay	10
+	offset  84 102
+	seta  80
+	bbox    65 80 32 62
+	frame	data/chars/ghoul/a32
+anim fall
+	delay	1000
+	landframe 1
+	offset  84 122
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/a33
+	offset  92 123
+	delay 20
+	frame	data/chars/ghoul/a27
+anim rise
+	delay	10
+	offset  84 122
+	movea 5
+	bbox    65 80 32 62
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+	frame	data/chars/ghoul/a28
+	frame	data/chars/ghoul/a29
+	frame	data/chars/ghoul/a30
+anim death
+	delay	30
+	offset  84 122
+	bbox    0 0 0 0
+	frame	data/chars/ghoul/a34
+	delay 10
+	frame	data/chars/ghoul/a35
+	frame	data/chars/ghoul/a36
+	delay 200
+	frame	data/chars/ghoul/a37
+	

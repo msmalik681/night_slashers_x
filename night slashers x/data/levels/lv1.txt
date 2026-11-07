@@ -1,0 +1,175 @@
+loadingbg data/scenes/lvs/1 1 1000 1000 1 1000 1000
+music		data/music/lv1.bor 1996221
+notime 1
+settime 0
+background	data/bgs/lv1/back1
+bglayer		data/bgs/lv1/back2 0.2 0.2 0 0 0 0 5 5 1 0 
+bglayer		data/bgs/lv1/back2 0.4 0.4 0 0 0 0 5 5 1 0 
+fglayer		data/bgs/lv1/f3 2 -0.5 0 0 0 0 0 1 1 1 0 
+fglayer		data/bgs/lv1/f4 2 -0.5 0 1100 0 0 0 1 1 1 0 
+panel		data/bgs/lv1/a1
+panel		data/bgs/lv1/a1b
+order	ab
+direction both
+spawn1 160 35 0
+spawn2 140 55 0
+wall 1585 253 -50 -50 20 45 50 1000
+wall 1579 253 0 0 1000 1000 30 1000
+wall 1966 155 -10 10 1000 1000 30 1000 
+#levelscript data/bgs/lv1/lv1.c
+load lv1p 1
+load tlk0c 1
+load jsn 1
+load Ghoul3 1
+load dog 1
+load dog2 1
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	stop
+flip 1
+coords	160 130
+at	0
+spawn	lv1p 
+flip 1
+coords	1550 232
+at	0
+
+
+
+spawn	zombiea
+coords	360 220
+at	50
+spawn	dog2 
+coords	350 160
+at	120
+spawn	zombie2a
+coords	380 200
+at	200
+
+spawn	zombie2
+coords	-100 200
+at	250
+spawn	zombie
+coords	240 180
+at	350
+
+spawn	zombie3
+coords	-100 200
+at	550
+spawn	barel
+item grit
+coords	370 150
+at	590
+spawn	barelex
+coords	480 175
+at	590
+spawn	barel
+item zombie
+coords	425 150
+at	590
+spawn	zombie
+flip 1
+coords	180 200
+at	650
+spawn	zombie2
+coords	350 200
+at	750
+blockade 850
+at 850
+wait
+at 850
+spawn	zombie
+coords	160 220
+at	850
+spawn	zombie2
+flip 1
+coords	50 180
+at	850
+group 100 100
+at 1000
+spawn	zombie2
+coords	280 160
+at	1050
+
+spawn	zombie
+coords	240 180
+at	1250
+spawn	zombie3
+coords	380 200
+at	1330
+spawn	zombie3
+coords	-100 200
+at	1450
+blockade 1524
+at 1524
+spawn	jason
+item money2
+coords	350 180
+at	1524
+spawn	jsn 
+coords	360 220
+at	1620
+spawn	ghoul3 
+item money2
+coords	320 160
+at	1624
+
+group 5 5
+at 1800
+
+spawn	zombie3
+coords	-250 160
+at	1800
+spawn	zombie2
+coords	-200 180
+at	1800
+spawn	zombie
+flip 1
+coords	50 170
+at	1800
+spawn	zombie3
+coords	-250 180
+at	1800
+spawn	zombie2
+coords	-300 180
+at	1800
+
+
+group 1 1
+at 1800
+spawn	tlk0c 
+coords	160 220
+at	1800
+group 100 100
+at 1800
+spawn	zombie3
+flip 1
+coords	-150 200
+at	1800
+spawn	zombie2
+flip 1
+coords	-100 160
+at	1800
+spawn	zombie
+flip 1
+coords	-200 160
+at	1800
+
+spawn	zombie3
+flip 1
+coords	-250 200
+at	1800
+spawn	zombie2
+flip 1
+coords	-300 160
+at	1800
+spawn	zombie
+flip 1
+coords	-300 160
+at	1800
+spawn	zombie2
+flip 1
+coords	-350 160
+at	1800

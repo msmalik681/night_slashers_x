@@ -1,0 +1,67 @@
+name	bagzb2
+health	10
+speed	5
+type	enemy
+nomove 1 1
+cantgrab 1
+nolife 1
+jumpheight 3
+load zombie3l
+falldie 1
+nodieblink 3
+animationscript data/scripts/spawn.c
+dust dust
+anim spawn
+	delay	1
+	offset  68 115
+	bbox    0 0 0 0
+	seta  22
+	frame	data/chars/misc/empty
+	delay 1000
+	frame	data/chars/bags/01
+	seta 0
+	delay 15
+	frame	data/chars/bags/02
+	frame	data/chars/bags/03
+	@cmd velo001 -0.3 0.4 0
+	frame	data/chars/bags/04
+	frame	data/chars/bags/01
+	frame	data/chars/bags/02
+	@cmd velo001 0 0 0
+	frame	data/chars/bags/05
+	frame	data/chars/bags/06
+	frame	data/chars/bags/05
+	frame	data/chars/bags/06
+	frame	data/chars/bags/b1
+	frame	data/chars/bags/b2
+	frame	data/chars/bags/b3
+	frame	data/chars/bags/b4
+	delay 50
+	frame	data/chars/bags/b5
+	delay  200
+	@cmd spawn02 "zombie3l" -3 0 1
+	frame	data/chars/bags/11
+	delay 5
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+anim idle
+	@script
+	void self = getlocalvar("self");
+	if (frame == 1){
+	damageentity(self, self, 1000, 1, openborconstant("ATK_NORMAL"));
+	}
+	@end_script
+	delay	1
+	offset  68 117
+	bbox    0 0 0 0
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+anim death
+	delay	15
+	offset  68 117
+	bbox    0 0 0 0
+	frame	data/chars/bags/11

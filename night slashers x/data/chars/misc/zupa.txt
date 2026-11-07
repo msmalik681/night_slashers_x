@@ -1,0 +1,30 @@
+name zupa
+type item
+health 40
+noatflash 1
+nolife 1
+subject_to_screen 0
+anim spawn
+	delay 10
+	offset 20 36
+	bbox 7 0 25 37 5
+	jumpframe 0 2 0 0
+	movez -1
+	frame data/chars/misc/fooda1
+	movez 0
+	frame data/chars/misc/fooda2
+	frame data/chars/misc/fooda1
+	frame data/chars/misc/fooda3
+	frame data/chars/misc/fooda1
+	frame data/chars/misc/fooda4
+anim idle 
+	loop 1
+	delay 10
+	offset 20 36
+	bbox 7 0 25 37 5
+	frame data/chars/misc/fooda1
+	frame data/chars/misc/fooda2
+	frame data/chars/misc/fooda1
+	frame data/chars/misc/fooda3
+	frame data/chars/misc/fooda1
+	frame data/chars/misc/fooda4

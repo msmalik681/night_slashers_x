@@ -1,0 +1,60 @@
+name brlknf2
+type enemy
+health 1
+speed 10
+noatflash 1
+flash bflash
+noquake 1
+bounce 1
+nolife 1
+jumpheight 2
+load dust
+remove 0
+candamage enemy obstacle npc
+subject_to_gravity 1
+anim spawn
+	offset  47 60
+	bbox 29 0 45 61
+	delay 10
+	jumpframe 0 2 1 0
+	landframe 8
+	hitflash flashb
+	sound data/sounds/drum.wav
+	attack3 29 0 45 61 40 1 1 0 0 20
+	otg 1
+	dropv 3 2
+	frame data/chars/chris/chrbrl/a3
+	frame data/chars/chris/chrbrl/a4
+	frame data/chars/chris/chrbrl/a5
+	frame data/chars/chris/chrbrl/a6
+	frame data/chars/chris/chrbrl/a3
+	frame data/chars/chris/chrbrl/a4
+	frame data/chars/chris/chrbrl/a5
+	frame data/chars/chris/chrbrl/a6
+	delay 1
+	throwframe 0 -1
+	custknife dust
+	frame data/chars/chris/chrbrl/a3
+anim idle
+	loop 1
+	offset  47 60
+	bbox 29 0 45 61
+	delay 10
+	hitflash flashb
+	sound data/sounds/drum.wav
+	attack3 29 0 45 61 40 1 1 0 0 20
+	otg 1
+	dropv 3 2
+	throwframe 0 -1
+	custknife dust
+	quakeframe 0 4 1
+	frame data/chars/chris/chrbrl/a3
+	frame data/chars/chris/chrbrl/a4
+	frame data/chars/chris/chrbrl/a5
+	frame data/chars/chris/chrbrl/a6
+anim fall
+	delay 30
+	offset  47 60
+	bbox 0 0 0 0
+	sound data/sounds/drum.wav
+	frame data/chars/chris/chrbrl/a7

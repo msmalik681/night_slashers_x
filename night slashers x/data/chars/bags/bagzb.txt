@@ -1,0 +1,79 @@
+name	bagzb
+health	10
+speed	5
+type	enemy
+nomove 1 1
+cantgrab 1
+nolife 1
+jumpheight 3
+load zombiel
+falldie 1
+nodieblink 3
+animationscript data/scripts/spawn.c
+#remap data/chars/zombie/01 data/chars/zombie/alt1
+#remap data/chars/zombie/01 data/chars/zombie/alt2
+#remap data/chars/zombie/01 data/chars/zombie/alt3
+#remap data/chars/zombie/01 data/chars/zombie/alt4
+dust dust
+anim spawn
+	delay	1
+	offset  68 117
+	bbox    0 0 0 0
+	seta  120
+	frame	data/chars/misc/empty
+	delay 500
+	frame	data/chars/bags/01
+	seta 0
+	delay 15
+	frame	data/chars/bags/02
+	frame	data/chars/bags/03
+	frame	data/chars/bags/04
+	frame	data/chars/bags/01
+	@cmd velo001 -0.4 0.4 0
+	frame	data/chars/bags/02
+	frame	data/chars/bags/03
+	frame	data/chars/bags/04
+	frame	data/chars/bags/01
+	frame	data/chars/bags/02
+	frame	data/chars/bags/03
+	frame	data/chars/bags/04
+	frame	data/chars/bags/01
+	@cmd velo001 0 0 0
+	frame	data/chars/bags/05
+	frame	data/chars/bags/06
+	frame	data/chars/bags/05
+	frame	data/chars/bags/06
+	frame	data/chars/bags/a1
+	frame	data/chars/bags/a2
+	frame	data/chars/bags/a3
+	frame	data/chars/bags/a4
+	frame	data/chars/bags/a5
+	delay 50
+	frame	data/chars/bags/a6
+	delay  200
+	@cmd spawn02 "zombiel" 0 0 0
+	frame	data/chars/bags/11
+	delay 5
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+anim idle
+	@script
+	void self = getlocalvar("self");
+	if (frame == 1){
+	damageentity(self, self, 1000, 1, openborconstant("ATK_NORMAL"));
+	}
+	@end_script
+	delay	1
+	offset  68 117
+	bbox    0 0 0 0
+	frame	data/chars/bags/11
+	frame	data/chars/bags/11
+anim death
+	delay	15
+	offset  68 117
+	bbox    0 0 0 0
+	frame	data/chars/bags/11

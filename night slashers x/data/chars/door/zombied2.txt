@@ -1,0 +1,53 @@
+name	Zombied2
+type	none
+animationscript data/scripts/spawn.c
+palette data/chars/zombie/00a
+alternatepal data/chars/zombie/alt1a
+alternatepal data/chars/zombie/alt2a
+alternatepal data/chars/zombie/alt3a
+alternatepal data/chars/zombie/alt4a
+alternatepal data/chars/zombie/alt4a
+setlayer 1
+load zombiel
+anim spawn
+	@script
+	if(frame == 3){
+	void self = getlocalvar("self");
+	int map = rand()%5;
+	if(map < 0)
+	{
+	-map == map;
+	}
+	changeentityproperty(self, "map", map);
+	}
+	@end_script
+	delay 1
+	offset  34 150
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	delay 10
+	frame	data/chars/door/c01
+	frame	data/chars/door/c02
+	frame	data/chars/door/c03
+	frame	data/chars/door/c04
+	frame	data/chars/door/c05
+	frame	data/chars/door/c06
+	frame	data/chars/door/c07
+	frame	data/chars/door/c08
+	frame	data/chars/door/c09
+	frame	data/chars/door/c10
+	frame	data/chars/door/c11
+	frame	data/chars/door/c12
+	delay	1
+	offset  53 108
+	bbox    0 0 0 0
+	@cmd spawn02 "zombiel" 0 0 3
+	frame	data/chars/misc/empty
+anim idle
+	loop	1
+	delay	15
+	offset  53 108
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

@@ -1,0 +1,45 @@
+name	stop
+type	text
+subtype noskip
+setlayer 1000
+anim idle
+	@script
+	int iHP=0;
+	int i;
+	void ip;
+	void self = getlocalvar("self");
+	if(frame == 0){
+	for (i=0; i<=3;i++){
+	ip = getplayerproperty(i, "entity");
+	iHP = getentityproperty(ip, "health");
+	changeentityproperty(ip, "health", iHP + 150);
+	changeopenborvariant("slowmotion", 0);
+	}
+	}
+	@end_script
+	delay 8
+	offset	160 130
+	frame	data/chars/stop/01
+	frame	data/chars/stop/02
+	frame	data/chars/stop/03
+	frame	data/chars/stop/04
+	frame	data/chars/stop/05
+	frame	data/chars/stop/06
+	delay 4
+	frame	data/chars/stop/07
+	frame	data/chars/stop/08
+	delay 8
+	frame	data/chars/stop/09
+	frame	data/chars/stop/10
+	frame	data/chars/stop/11
+	frame	data/chars/stop/12
+	frame	data/chars/stop/13
+	frame	data/chars/stop/14
+	frame	data/chars/stop/15
+	frame	data/chars/stop/16
+	frame	data/chars/stop/17
+	frame	data/chars/stop/18
+	frame	data/chars/stop/19
+	delay 1
+	sound  data/sounds/letsrck.wav
+	frame	data/chars/misc/empty

@@ -1,0 +1,12 @@
+name itemr2
+nolife 1
+type none
+lifespan 3
+animationscript data/scripts/item2.c
+anim idle 
+	delay 1
+	offset 15 20
+	bbox 0 0 0 0
+	frame data/chars/misc/empty
+	@cmd Rspawn2 0 0 0
+	frame data/chars/misc/empty

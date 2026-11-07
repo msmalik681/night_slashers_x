@@ -1,0 +1,35 @@
+name	tlk1
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 300
+facing 1
+animationscript data/scripts/tlk.c
+palette data/scenes/demo/tlk1a
+anim idle
+	delay	1
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+        delay	200
+	sound   data/sounds/n2/docdie.wav
+	frame	data/scenes/demo/tlk1a
+	@cmd tlk
+        frame	data/scenes/demo/tlk1b
+anim freespecial2
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk1b
+anim freespecial3
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk1bj
+anim freespecial4
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk1jk

@@ -1,0 +1,22 @@
+name cntfl
+type text
+subtype noskip
+
+alpha 5
+
+anim idle 
+delay 3
+offset 77 224
+bbox 0 0 0 0
+sound data/sounds/shing.wav
+frame data/chars/misc/cntfl1
+frame data/chars/misc/cntfl2
+frame data/chars/misc/cntfl3
+frame data/chars/misc/cntfl4
+frame data/chars/misc/cntfl5
+frame data/chars/misc/cntfl6
+frame data/chars/misc/cntfl7
+#sound data/sounds/counter.wav
+frame data/chars/misc/cntfl8
+@cmd killentity getlocalvar("self")
+frame data/chars/misc/empty

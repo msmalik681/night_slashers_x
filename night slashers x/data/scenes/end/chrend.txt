@@ -1,0 +1,41 @@
+animation	data/scenes/end/1a.gif 0 0 0 1
+animation	data/scenes/end/1b.gif 0 0 0 1
+animation	data/scenes/end/1c.gif 0 0 0 1
+music data/music/end3.bor 0
+animation	data/scenes/end/2a.gif 0 0 0 1
+animation	data/scenes/end/3a.gif 0 0 0 1
+animation	data/scenes/end/3b.gif 0 0 0 1
+animation	data/scenes/end/4.gif 0 0 0 1
+music data/music/end2.bor 1
+animation	data/scenes/end/chre1.gif 0 0 0 1
+animation	data/scenes/end/chre2.gif 0 0 0 1
+animation	data/scenes/end/chre3.gif 0 0 0 1
+animation	data/scenes/end/chre4.gif 0 0 0 1
+
+animation	data/scenes/end/crda01.gif 0 0 0 1
+animation	data/scenes/end/crd01.gif 0 0 0 1
+animation	data/scenes/end/crda02.gif 0 0 0 1
+animation	data/scenes/end/crd03.gif 0 0 0 1
+animation	data/scenes/end/crda03.gif 0 0 0 1
+animation	data/scenes/end/crd07.gif 0 0 0 1
+animation	data/scenes/end/crda04.gif 0 0 0 1
+animation	data/scenes/end/crd02.gif 0 0 0 1
+animation	data/scenes/end/crda05.gif 0 0 0 1
+animation	data/scenes/end/crd06.gif 0 0 0 1
+animation	data/scenes/end/crda06.gif 0 0 0 1
+animation	data/scenes/end/crd05.gif 0 0 0 1
+animation	data/scenes/end/crda07.gif 0 0 0 1
+animation	data/scenes/end/crd04.gif 0 0 0 1
+animation	data/scenes/end/crda09.gif 0 0 0 1
+animation	data/scenes/end/crd08.gif 0 0 0 1
+animation	data/scenes/end/crda08.gif 0 0 0 1
+animation	data/scenes/end/crd09.gif 0 0 0 1
+animation	data/scenes/end/crda10.gif 0 0 0 1
+animation	data/scenes/end/crd10.gif 0 0 0 1
+animation	data/scenes/end/crda11.gif 0 0 0 1
+animation	data/scenes/end/crd11.gif 0 0 0 1
+animation	data/scenes/end/crda12.gif 0 0 0 1
+animation	data/scenes/end/crd12.gif 0 0 0 1
+animation	data/scenes/end/crda13.gif 0 0 0 1
+animation	data/scenes/end/crd13.gif 0 0 0 1
+animation	data/scenes/end/crda14.gif 0 0 0 1

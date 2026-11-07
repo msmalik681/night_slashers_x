@@ -1,0 +1,19 @@
+name	flashe
+type	none
+toflip 1
+nomove 1 0
+load smashbg
+palette data/chars/misc/zb1
+anim idle
+	offset	174 171
+	spawnframe 0 160 120 0 0
+	subentity smashbg	
+	quakeframe 1 1 1
+	delay	4
+	frame	data/chars/misc/zb1
+	frame	data/chars/misc/zb2
+	frame	data/chars/misc/zb3
+	frame	data/chars/misc/zb4
+	frame	data/chars/misc/zb5
+	frame	data/chars/misc/zb6
+	frame	data/chars/misc/zb7

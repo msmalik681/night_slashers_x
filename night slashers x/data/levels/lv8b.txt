@@ -1,0 +1,209 @@
+music		data/music/escape.bor
+notime 1
+settime 0
+background	data/bgs/lv8b/a1
+panel		data/chars/misc/empty
+order	a
+bgspeed 20
+direction both
+spawn1 100 20 0
+spawn2 80 50 0
+cameratype 1
+setweap 3
+load fir2 1
+load cyb2 1
+load cybfir3 1
+load fir3 1
+load werern 1
+noslow 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	fir2
+flip 1
+coords	160 248
+at	0
+spawn	fir3
+flip 1
+coords	160 120
+at	0
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+wait
+at 0
+spawn	cyb2
+boss 1
+coords	-400 180
+at	0
+group 4 4
+at 0
+spawn	werern
+coords	-500 180
+at	0
+spawn	werern
+coords	-450 230
+at	0
+spawn	werern
+flip 1
+coords	-400 200
+at	0
+spawn	werern
+coords	-350 160
+at	0
+spawn	werern
+coords	-50 200
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	350 210
+at	0
+spawn	werern
+coords	350 180
+at	0
+spawn	werern
+coords	350 180
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+group 5 5
+at 0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 230
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 200
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 210
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 230
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 200
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 210
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 230
+at	0
+group 6 6
+at 0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 200
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 210
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 230
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+group 7 7
+at 0
+spawn	werern
+coords	-50 160
+at	0
+spawn	werern
+coords	-50 200
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 210
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 180
+at	0
+spawn	werern
+coords	-50 230
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 160
+at	0
+spawn	werern
+coords	-50 200
+at	0
+spawn	werern
+flip 1
+coords	-50 200
+at	0
+spawn	werern
+coords	-50 210
+at	0

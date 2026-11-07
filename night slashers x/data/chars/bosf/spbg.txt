@@ -1,0 +1,72 @@
+name	spbg
+type	text
+subtype noskip
+cantgrab 1
+nolife 1
+setlayer 800
+subject_to_screen 1
+palette data/chars/bosf/spbg01
+anim idle
+	offset  160 120
+	delay   1
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	delay 2
+	frame	data/chars/bosf/spbg01
+	frame	data/chars/bosf/spbg02
+	frame	data/chars/bosf/spbg03
+	frame	data/chars/bosf/spbg04
+	frame	data/chars/bosf/spbg05
+	frame	data/chars/bosf/spbg06
+	frame	data/chars/bosf/spbg07
+	frame	data/chars/bosf/spbg08
+	frame	data/chars/bosf/spbg09
+	frame	data/chars/bosf/spbg10
+	frame	data/chars/bosf/spbg11
+	frame	data/chars/bosf/spbg12
+	frame	data/chars/bosf/spbg13
+	frame	data/chars/bosf/spbg14
+	frame	data/chars/bosf/spbg15
+	frame	data/chars/bosf/spbg01
+	frame	data/chars/bosf/spbg02
+	frame	data/chars/bosf/spbg03
+	frame	data/chars/bosf/spbg04
+	frame	data/chars/bosf/spbg05
+	frame	data/chars/bosf/spbg06
+	frame	data/chars/bosf/spbg07
+	frame	data/chars/bosf/spbg08
+	frame	data/chars/bosf/spbg09
+	frame	data/chars/bosf/spbg10
+	frame	data/chars/bosf/spbg11
+	frame	data/chars/bosf/spbg12
+	frame	data/chars/bosf/spbg13
+	frame	data/chars/bosf/spbg14
+	frame	data/chars/bosf/spbg15
+	frame	data/chars/bosf/spbg01
+	frame	data/chars/bosf/spbg02
+	frame	data/chars/bosf/spbg03
+	frame	data/chars/bosf/spbg04
+	frame	data/chars/bosf/spbg05
+	frame	data/chars/bosf/spbg06
+	frame	data/chars/bosf/spbg07
+	frame	data/chars/bosf/spbg08
+	frame	data/chars/bosf/spbg09
+	frame	data/chars/bosf/spbg10
+	frame	data/chars/bosf/spbg11
+	frame	data/chars/bosf/spbg12
+	frame	data/chars/bosf/spbg13
+	frame	data/chars/bosf/spbg14
+	frame	data/chars/bosf/spbg15
+	frame	data/chars/bosf/spbg01
+	frame	data/chars/bosf/spbg02
+	frame	data/chars/bosf/spbg03
+	frame	data/chars/bosf/spbg04
+	frame	data/chars/bosf/spbg05
+	frame	data/chars/bosf/spbg06
+	frame	data/chars/bosf/spbg07
+	frame	data/chars/bosf/spbg08
+	frame	data/chars/bosf/spbg09
+	frame	data/chars/bosf/spbg10
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

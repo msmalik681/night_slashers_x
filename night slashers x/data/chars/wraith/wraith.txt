@@ -1,0 +1,650 @@
+name	wraith
+health	400
+speed	8
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+score	5000	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+thold 30
+blockodds 1
+bflash flashf
+load zombie
+escapehits 5
+hostile player 
+candamage player enemy obstacle
+projectilehit enemy obstacle npc
+icon data/chars/doc/icon
+animationscript data/scripts/boss.c
+dust dust
+load dust
+load dst
+height  1000
+load zombieb
+load zombie2
+load zombie3
+aggression 50
+palette data/chars/wraith/00
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  78 139
+	delay 10
+	nodrawmethod 
+	bbox    39 131 117 17
+	frame	data/chars/wraith/55
+	frame	data/chars/wraith/56
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  78 139
+	delay 10
+	nodrawmethod 
+	bbox    39 131 117 17
+	frame	data/chars/wraith/55
+	frame	data/chars/wraith/56
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  78 139
+	delay 10
+	nodrawmethod 
+	bbox    39 131 117 17
+	frame	data/chars/wraith/55
+	frame	data/chars/wraith/56
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  78 139
+	delay 10
+	nodrawmethod 
+	bbox    39 131 117 17
+	frame	data/chars/wraith/55
+	frame	data/chars/wraith/56
+anim spawn
+	delay	1
+	offset  78 139
+	bbox    0 0 0 0
+	jumpframe 1 6 0 0
+	dropframe 2
+	landframe 3
+	quakeframe 3 3 -2
+	fshadow 0
+	frame	data/chars/misc/empty
+	delay 1000
+	frame	data/chars/misc/empty
+	fshadow 3
+	bbox    54 37 43 77
+	frame	data/chars/wraith/26
+	delay 10
+	@cmd shoot "dust" 0 0 1
+	sound data/sounds/bigfal.wav
+	frame	data/chars/wraith/30
+	frame	data/chars/wraith/20
+	frame	data/chars/wraith/21
+	sound data/sounds/hdie.wav
+	frame	data/chars/wraith/45
+	delay 30
+	frame	data/chars/wraith/31
+	delay 10
+	frame	data/chars/wraith/32
+	delay 100
+	frame	data/chars/wraith/61
+anim idle
+	loop 1
+	delay	20
+	offset  78 139
+	bbox    54 37 43 77
+	subentity zombieb
+	summonframe 1 100 0 0 0
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/02
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/03
+anim block
+	delay	5
+	offset  78 139
+	bbox    0 0 0 0 
+	frame	data/chars/wraith/62
+	offset  79 139
+	frame	data/chars/wraith/62
+	offset  78 139
+	frame	data/chars/wraith/62
+	@cmd velo001 -2 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/wraith/62
+	frame	data/chars/wraith/62
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/wraith/62
+	frame	data/chars/wraith/62
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/wraith/62
+	frame	data/chars/wraith/62
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/wraith/62
+	frame	data/chars/wraith/62
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/wraith/62
+	frame	data/chars/wraith/62
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    54 37 43 77
+	frame	data/chars/wraith/62
+anim walk
+	loop	1
+	delay	8
+	offset  78 139
+	bbox    54 37 43 77
+	subentity zombie2
+	summonframe 1 150 0 0 0
+	frame	data/chars/wraith/04
+	frame	data/chars/wraith/05
+	frame	data/chars/wraith/06
+	frame	data/chars/wraith/07
+	frame	data/chars/wraith/08
+	frame	data/chars/wraith/09
+	frame	data/chars/wraith/10
+	frame	data/chars/wraith/11
+	frame	data/chars/wraith/12
+	frame	data/chars/wraith/13
+	frame	data/chars/wraith/14
+	frame	data/chars/wraith/15
+anim run
+	loop	1
+	delay	6
+	offset  78 139
+	bbox    54 37 43 77
+	subentity zombie3
+	summonframe 1 -100 0 0 0
+	frame	data/chars/wraith/04
+	frame	data/chars/wraith/05
+	frame	data/chars/wraith/06
+	frame	data/chars/wraith/07
+	frame	data/chars/wraith/08
+	frame	data/chars/wraith/09
+	frame	data/chars/wraith/10
+	frame	data/chars/wraith/11
+	frame	data/chars/wraith/12
+	frame	data/chars/wraith/13
+	frame	data/chars/wraith/14
+	frame	data/chars/wraith/15
+anim runattack
+	@cmd velo001 2 0 0
+	delay	10
+	offset  78 139
+	bbox    54 37 43 77
+	frame	data/chars/wraith/16
+	frame	data/chars/wraith/17
+	blast 106 60 79 21 10 0 0 20
+	@cmd velo001 1 0 0
+	frame	data/chars/wraith/18
+	@cmd velo001 0.5 0 0
+	frame	data/chars/wraith/19
+anim attack1
+	range   40 70
+	delay	10
+	offset  78 139
+	bbox    54 37 43 77
+	frame	data/chars/wraith/16
+	frame	data/chars/wraith/17
+	blast 106 60 79 21 10 0 0 20
+	frame	data/chars/wraith/18
+	attack 0 
+	frame	data/chars/wraith/19
+	delay	20
+	offset  78 139
+	bbox    54 37 43 77
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/02
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/03
+anim attack2
+	range   40 70
+	delay	10
+	offset  78 139
+	bbox    54 37 43 77
+	frame	data/chars/wraith/43
+	frame	data/chars/wraith/44
+	frame	data/chars/wraith/45
+	frame	data/chars/wraith/46
+	blast 112 75 61 35 10 0 0 20
+	frame	data/chars/wraith/47
+	blast 0
+	frame	data/chars/wraith/48
+	frame	data/chars/wraith/20
+	frame	data/chars/wraith/21
+anim attack3
+	range 160 170
+	delay	40
+	offset  78 139
+	bbox    54 37 43 77
+	sound data/sounds/hdie.wav
+	frame	data/chars/wraith/31
+	delay 10
+	frame	data/chars/wraith/32
+	attack  112 59 81 39 2 0 0 0 10
+	frame	data/chars/wraith/33
+	attack  112 59 114 39 2 0 0 0 10
+	frame	data/chars/wraith/34
+	attack  112 59 165 39 2 0 0 0 10
+	frame	data/chars/wraith/35
+	attack 0
+	frame	data/chars/wraith/36
+	attack  112 59 165 39 2 0 0 0 10
+	frame	data/chars/wraith/37
+	attack  0
+	frame	data/chars/wraith/38
+	attack  112 59 165 39 10 1 0 0 10
+	frame	data/chars/wraith/39
+	frame	data/chars/wraith/40
+	attack  0
+	frame	data/chars/wraith/41
+	frame	data/chars/wraith/42
+	delay	20
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/02
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/03
+anim attack4
+	rangez -40 -30
+	range 160 170
+	delay	10
+	offset  78 139
+	bbox    54 37 43 77
+	dropframe 4
+	landframe 7
+	quakeframe 7 3 -2
+	frame	data/chars/wraith/21
+	@cmd    targetL 5 0 0
+	frame	data/chars/wraith/21
+	delay 20
+	@cmd    leap 5
+	frame	data/chars/wraith/22
+	delay 1000
+	frame	data/chars/wraith/23
+	delay 5
+	frame	data/chars/wraith/27
+	frame	data/chars/wraith/28
+	delay 1000
+	blast 91 65 89 23 10 0 0 5
+	frame	data/chars/wraith/29	
+	@cmd shoot "dust" 0 0 0
+	sound data/sounds/bigfal.wav
+	delay 10
+	frame	data/chars/wraith/30
+	frame	data/chars/wraith/30
+	frame	data/chars/wraith/21
+anim attack5
+	rangez 30 40
+	range 160 170
+	delay	10
+	offset  78 139
+	bbox    54 37 43 77
+	dropframe 4
+	landframe 7
+	quakeframe 7 3 -2
+	frame	data/chars/wraith/21
+	@cmd    targetL 5 0 0
+	frame	data/chars/wraith/21
+	delay 20
+	@cmd    leap 5
+	frame	data/chars/wraith/22
+	delay 1000
+	frame	data/chars/wraith/23
+	delay 5
+	frame	data/chars/wraith/27
+	frame	data/chars/wraith/28
+	delay 1000
+	blast 91 65 89 23 10 0 0 5
+	frame	data/chars/wraith/29	
+	@cmd shoot "dust" 0 0 0
+	sound data/sounds/bigfal.wav
+	delay 10
+	frame	data/chars/wraith/30
+	frame	data/chars/wraith/30
+	frame	data/chars/wraith/21
+anim attack6
+	range 160 170
+	delay	20
+	offset  78 139
+	bbox    54 37 43 77
+	jumpframe 1 5 3 0
+	landframe 5
+	quakeframe 5 3 -2
+	frame	data/chars/wraith/21
+	delay 20
+	frame	data/chars/wraith/57
+	frame	data/chars/wraith/58
+	frame	data/chars/wraith/59
+	delay 1000
+	frame	data/chars/wraith/60	
+	@cmd shoot "dust" 0 0 0
+	sound data/sounds/bigfal.wav
+	delay 10
+	frame	data/chars/wraith/30
+	frame	data/chars/wraith/30
+	frame	data/chars/wraith/21
+anim special
+	delay	5
+	offset  78 139
+	bbox    0 0 0 0
+	frame	data/chars/wraith/31
+	frame	data/chars/wraith/32
+	attack  112 59 81 39 2 0 0 0 10
+	bbox    54 37 43 77
+	frame	data/chars/wraith/33
+	attack  112 59 114 39 2 0 0 0 10
+	frame	data/chars/wraith/34
+	attack  112 59 165 39 2 0 0 0 10
+	frame	data/chars/wraith/35
+	attack 0
+	frame	data/chars/wraith/36
+	attack  112 59 165 39 2 0 0 0 10
+	frame	data/chars/wraith/37
+	attack  0
+	frame	data/chars/wraith/38
+	attack  112 59 165 39 10 1 0 0 10
+	frame	data/chars/wraith/39
+	frame	data/chars/wraith/40
+	attack  0
+	frame	data/chars/wraith/41
+	frame	data/chars/wraith/42
+	delay	20
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/02
+	frame	data/chars/wraith/01
+	frame	data/chars/wraith/03
+anim pain
+	delay 2
+	offset  78 139
+	bbox    54 37 43 77
+	frame	data/chars/wraith/49
+	delay  35
+	frame	data/chars/wraith/50
+	delay 10
+	frame	data/chars/wraith/49
+anim pain2
+	delay 2
+	offset  78 139
+	bbox    54 37 43 77
+	frame	data/chars/wraith/51
+	delay  35
+	frame	data/chars/wraith/52
+	delay 10
+	frame	data/chars/wraith/51
+anim pain5
+	delay 1
+	offset  78 139
+	bbox    54 37 43 77
+	movea 1
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+	frame	data/chars/wraith/50
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	bbox    54 37 43 77
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	bbox    54 37 43 77
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	bbox    54 37 43 77
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 5
+	offset  78 139
+	bbox    54 37 43 77
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	bbox    54 37 43 77
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	bbox    54 37 43 77
+	nodrawmethod
+	frame	data/chars/wraith/62
+anim death9
+	offset 42 92
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  78 139
+	nodrawmethod
+	frame	data/chars/wraith/62
+	offset 42 92
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	delay 100
+	@cmd fademusic 1 "data/music/bossend.bor" 0 0
+	frame data/chars/misc/freze1
+	frame data/chars/misc/freze1
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  78 139
+	bbox    54 37 43 77
+	frame	data/chars/wraith/51
+anim grabbedwalk
+	delay 1
+	offset  68 184
+	bbox    54 37 43 77
+	frame	data/chars/wraith/53
+anim fall
+	delay 1000
+	offset  78 139
+	bbox    0 0 0 0
+	landframe 3
+	attack 29 66 60 50 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/wraith/54
+	offset  88 139
+	attack  0 0 0 0 0
+	frame	data/chars/wraith/56
+	offset  78 139
+ 	frame	data/chars/wraith/56
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/wraith/55
+	delay 15
+	bbox    15 133 126 19
+	frame	data/chars/wraith/56
+anim fall5
+	delay 1000
+	offset  78 139
+	bbox    29 66 60 50
+	landframe 1
+	attack 29 66 60 50 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/wraith/54
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/wraith/55
+	delay 15
+	bbox    15 133 126 19
+	frame	data/chars/wraith/56
+anim fall8
+	delay 1000
+	offset  78 139
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/wraith/63
+	frame	data/chars/wraith/64
+	attack 29 66 60 50 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/wraith/54
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/wraith/55
+	delay 15
+	bbox    15 133 126 19
+	frame	data/chars/wraith/56
+anim rise
+	delay 15
+	offset  78 139
+	bbox    15 133 126 19
+	frame	data/chars/wraith/56
+	bbox    0 0 0 0
+	frame	data/chars/wraith/44
+	frame	data/chars/wraith/43
+anim death
+	delay 1000
+	offset  78 139
+	bbox    29 66 60 50
+	landframe 1
+	jumpframe 0 3 -2 0
+	attack 29 66 60 50 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/wraith/54
+	delay 20
+	attack  0 0 0 0 0
+	frame	data/chars/wraith/55
+	delay 15
+	bbox    15 133 126 19
+	frame	data/chars/wraith/56
+	offset  78 139
+	frame	data/chars/wraith/d1
+	frame	data/chars/wraith/d2
+	frame	data/chars/wraith/d3
+	frame	data/chars/wraith/d4

@@ -1,0 +1,655 @@
+name	werebig
+health	400
+speed	8
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	3
+score	10000	5
+death 1
+nodieblink 3
+paingrab 1
+throwdamage	20
+grabdistance 24
+running  16 4 2 1 0
+gfxshadow 1
+jumpheight 3
+hostile player 
+candamage player enemy npc obstacle
+projectilehit enemy obstacle npc
+animationscript data/scripts/boss.c
+icon data/chars/doc/icon
+blockodds 1
+thold 30
+bflash flashf
+dust dust
+load dust
+load zombie
+load zombie2
+load zombie3
+load tlk0a
+height  1000
+palette data/chars/werebig/00
+aggression 25
+anim spawn
+	delay	1
+	offset  89 159
+	bbox    0 0 0 0
+	jumpframe 2 6 0 0
+	dropframe 3
+	landframe 4
+	quakeframe 4 3 -2
+	fshadow 0
+	hitflash flashe
+	spawnframe 1 160 220 0 1
+	subentity tlk0a
+	frame	data/chars/misc/empty
+	delay 10
+	frame	data/chars/misc/empty
+	delay 1000
+	sound data/sounds/wood.wav
+	frame	data/chars/misc/empty
+	fshadow 3
+	delay 1000
+	attack2 63 130 45 34 10 1 0
+	frame	data/chars/werebig/14
+	delay 10
+	@cmd shoot "dust" 0 0 1
+	blast 0
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+	delay 5
+	sound data/sounds/houl.wav
+	frame	data/chars/werebig/06
+	frame	data/chars/werebig/01
+	frame	data/chars/werebig/35
+	delay 100
+	bbox    63 51 63 86
+	frame	data/chars/werebig/34
+	delay 5
+	frame	data/chars/werebig/35
+anim block
+	delay	5
+	offset  89 159
+	bbox    0 0 0 0
+	frame	data/chars/werebig/23
+	offset  90 159
+	frame	data/chars/werebig/23
+	offset  89 159
+	frame	data/chars/werebig/23
+	@cmd velo001 -2 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/werebig/23
+	frame	data/chars/werebig/23
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/werebig/23
+	frame	data/chars/werebig/23
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/werebig/23
+	frame	data/chars/werebig/23
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/werebig/23
+	frame	data/chars/werebig/23
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/werebig/23
+	frame	data/chars/werebig/23
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    63 51 63 86
+	frame	data/chars/werebig/23
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  89 159
+	nodrawmethod 
+	delay 20
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  89 159
+	nodrawmethod 
+	delay 20
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  89 159
+	nodrawmethod 
+	delay 20
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  89 159
+	nodrawmethod 
+	delay 20
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim idle
+	loop 1
+	delay	50
+	offset  89 159
+	bbox    63 51 63 86
+	summonframe 0 -200 200 0 1
+	subentity zombie
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/werebig/01
+	delay 10
+	frame	data/chars/werebig/02
+	frame	data/chars/werebig/03
+	frame	data/chars/werebig/04
+	frame	data/chars/werebig/05
+	delay 50
+	frame	data/chars/werebig/01
+anim walk
+	loop	1
+	delay	15
+	offset  89 159
+	bbox    63 51 63 86
+	summonframe 1 -200 200 0 1
+	subentity zombie3
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/werebig/06
+	frame	data/chars/werebig/07
+	frame	data/chars/werebig/08
+	frame	data/chars/werebig/09
+	frame	data/chars/werebig/10
+	frame	data/chars/werebig/11
+anim run
+	loop	1
+	delay	10
+	offset  89 159
+	bbox    63 51 63 86
+	summonframe 1 -200 200 0 1
+	subentity zombie2
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/werebig/06
+	frame	data/chars/werebig/07
+	frame	data/chars/werebig/08
+	frame	data/chars/werebig/09
+	frame	data/chars/werebig/10
+	frame	data/chars/werebig/11
+anim runattack
+	range   60 100
+	delay 10
+	offset  89 159
+	bbox    63 51 63 86
+	@cmd velo001 2 0 0
+	hitfx   data/sounds/knifes.wav
+	@cmd shoot "dust" 0 0 0
+	frame	data/chars/werebig/19
+	delay 5
+	sound data/sounds/growll.wav
+	@cmd velo001 1.5 0 0
+	frame	data/chars/werebig/20
+	@cmd velo001 1 0 0
+	frame	data/chars/werebig/21
+	attack5 118 72 102 30 10 1 0 0 30
+	dropv 3 3
+	@cmd velo001 0.5 0 0
+	frame	data/chars/werebig/22
+	attack 0
+	delay 30
+	@cmd velo001 0 0 0
+	frame	data/chars/werebig/23
+anim attack1
+	range   60 100
+	delay 10
+	offset  89 159
+	bbox    63 51 63 86
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/werebig/19
+	delay 5
+	sound data/sounds/growll.wav
+	frame	data/chars/werebig/20
+	frame	data/chars/werebig/21
+	attack5 118 72 102 30 10 1 0 0 30
+	dropv 3 3
+	frame	data/chars/werebig/22
+	attack 0
+	delay 30
+	frame	data/chars/werebig/23
+anim attack2
+	fastattack 1
+	rangez -5 -1 
+	range  -20 20
+	delay 10
+	offset  89 159
+	bbox    63 51 63 86
+	grabin 0 -1
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/werebig/30
+	attack5 29 72 103 27 5 0 1 0 30 
+	sound data/sounds/growll.wav
+	frame	data/chars/werebig/31
+	attack 0
+	frame	data/chars/werebig/32
+	bbox 0 0 0 0
+	attack5 29 72 103 27 10 1 1 0 30
+	dropv 3 3
+	frame	data/chars/werebig/33
+	attack 0
+	bbox    63 51 63 86
+	delay 30
+	frame	data/chars/werebig/01
+anim attack3
+	range   150 170
+	delay 20
+	offset  89 159
+	bbox    63 51 63 86
+	jumpframe 1 5 2 0
+	dropframe 2
+	landframe 5
+	quakeframe 5 3 -2
+	frame	data/chars/werebig/12
+	delay 1000
+	sound data/sounds/jump.wav
+	sound data/sounds/growll.wav
+	frame	data/chars/werebig/14
+	delay 5
+	frame	data/chars/werebig/13
+	frame	data/chars/werebig/15
+	delay 1000
+	attack 68 88 95 42 10 1 0 0 30
+	dropv 2 3
+	frame	data/chars/werebig/16
+	attack 0
+	delay 10
+	attack 0
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 0
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+anim attack4
+	rangez -50 50
+	range   155 165
+	delay 30
+	offset  89 159
+	bbox    63 51 63 86
+	dropframe 2
+	landframe 4
+	quakeframe 4 3 -2
+	hitflash bflash
+	@cmd    targetL 5 0 0
+	frame	data/chars/werebig/12
+	delay 1000
+	@cmd    leap 5
+	sound data/sounds/jump.wav
+	sound data/sounds/growll.wav
+	frame	data/chars/werebig/14
+	delay 5
+	frame	data/chars/werebig/13
+	delay 1000
+	attack 46 94 96 35 10 1 0 0 30
+	dropv 2 3
+	frame	data/chars/werebig/17
+	attack 0
+	delay 10
+	attack 0
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 0
+	frame	data/chars/werebig/18
+	frame	data/chars/werebig/18
+	frame	data/chars/werebig/18
+	frame	data/chars/werebig/29
+anim attack6
+	range   150 170
+	delay 20
+	offset  89 159
+	bbox    63 51 63 86
+	jumpframe 1 5 2 0.5
+	dropframe 2
+	landframe 4
+	quakeframe 4 3 -2
+	frame	data/chars/werebig/12
+	delay 1000
+	sound data/sounds/jump.wav
+	frame	data/chars/werebig/14
+	delay 10
+	frame	data/chars/werebig/13
+	delay 1000
+	frame	data/chars/werebig/14
+	attack 0
+	delay 10
+	attack 0
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 0
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+anim attack7
+	range   150 170
+	delay 20
+	offset  89 159
+	bbox    63 51 63 86
+	jumpframe 1 5 2 -0.5
+	dropframe 2
+	landframe 4
+	quakeframe 4 3 -2
+	frame	data/chars/werebig/12
+	delay 1000
+	sound data/sounds/jump.wav
+	frame	data/chars/werebig/14
+	delay 10
+	frame	data/chars/werebig/13
+	delay 1000
+	frame	data/chars/werebig/14
+	attack 0
+	delay 10
+	attack 0
+	sound data/sounds/bigfal.wav
+	@cmd shoot "dust" 0 0 0
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+	frame	data/chars/werebig/12
+anim grabbed
+	offset  89 159
+	bbox    63 51 63 86
+	frame	data/chars/werebig/24
+anim grabbedwalk
+	offset  89 189
+	bbox    63 51 63 86
+	frame	data/chars/werebig/25
+anim pain
+	offset  89 159
+	bbox    63 51 63 86
+	delay  35
+	frame	data/chars/werebig/25
+	delay 10
+	frame	data/chars/werebig/01
+anim pain2
+	offset  89 159
+	bbox    63 51 63 86
+	delay  35
+	frame	data/chars/werebig/24
+	delay 10
+	frame	data/chars/werebig/01
+anim pain5
+	delay 2
+	offset  89 159
+	bbox    63 51 63 86
+	movea 1
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+	frame	data/chars/werebig/25
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	bbox    63 51 63 86
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	bbox    63 51 63 86
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	bbox    63 51 63 86
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 5
+	offset  89 159
+	bbox    63 51 63 86
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	bbox    63 51 63 86
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	bbox    63 51 63 86
+	nodrawmethod
+	frame	data/chars/werebig/24
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	offset  89 159
+	nodrawmethod
+	frame	data/chars/werebig/24
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim fall
+	delay 1000
+	offset  89 159
+	bbox    0 0 0 0
+	landframe 2
+	hitflash bflash
+	attack 46 80 43 51 6 1 0 0 20
+	frame	data/chars/werebig/26
+	delay 30
+	attack  0 0 0 0
+	frame	data/chars/werebig/27
+	sound data/sounds/bigfal.wav
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim death
+	delay 1000
+	offset  89 159
+	bbox    0 0 0 0
+	landframe 1
+	jumpframe 0 3 -2 0
+	hitflash bflash
+	attack 46 80 43 51 6 1 0 0 20
+	frame	data/chars/werebig/26
+	delay 30
+	sound data/sounds/bigfal.wav
+	attack  0 0 0 0
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim fall5
+	delay 1000
+	offset  89 159
+	bbox    46 80 66 59
+	landframe 1
+	hitflash bflash
+	frame	data/chars/werebig/26
+	delay 30
+	sound data/sounds/bigfal.wav
+	attack  0 0 0 0
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim fall8
+	delay 1000
+	offset  89 149
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/werebig/14a
+	offset  89 159
+	frame	data/chars/werebig/15a
+	offset 99 149
+	hitflash bflash
+	attack 46 80 43 51 6 1 0 0 20
+	frame	data/chars/werebig/26
+	offset  89 149
+	delay 30
+	attack  0 0 0 0
+	sound data/sounds/bigfal.wav
+	bbox    35 146 97 23
+	frame	data/chars/werebig/27
+anim rise
+	delay 10
+	offset  89 159
+	bbox    0 0 0 0
+	frame	data/chars/werebig/27
+	frame	data/chars/werebig/28
+	frame	data/chars/werebig/29
+anim special
+	fastattack 1
+	rangez -5 -1 
+	range  -20 20
+	delay 10
+	offset  89 159
+	bbox    0 0 0 0
+	grabin 0 -1
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/werebig/30
+	attack5 29 72 103 27 5 0 1 0 30 
+	sound data/sounds/growll.wav
+	frame	data/chars/werebig/31
+	attack 0
+	frame	data/chars/werebig/32
+	bbox 0 0 0 0
+	attack5 29 72 103 27 10 1 1 0 30
+	dropv 3 3
+	frame	data/chars/werebig/33
+	attack 0
+	bbox    63 51 63 86
+	delay 30
+	frame	data/chars/werebig/01

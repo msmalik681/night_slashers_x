@@ -1,0 +1,38 @@
+name	cybfir3
+type	pshot
+nolife 1
+speed 15
+noatflash dflash
+candamage player enemy npc obstacle
+palette data/chars/cyborg/c1
+remove 0
+anim spawn
+	delay 2
+	hitflash dflash
+	offset  39 37
+	bbox 0 0 0 0
+	frame	data/chars/cyborg/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/c1
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/c1
+	frame	data/chars/misc/empty
+anim idle
+	loop 1
+	delay 2
+	offset  39 37
+	bbox 0 0 0 0
+	hitflash dflash
+	burn   28 19 36 31 10 1 0 0 30
+	frame	data/chars/cyborg/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/c2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/c3
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/c3
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/c3
+	frame	data/chars/misc/empty

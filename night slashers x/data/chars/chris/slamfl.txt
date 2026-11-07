@@ -1,0 +1,55 @@
+name	slamfl
+type	pshot
+speed 5
+toflip 1
+nomove 1 1
+remove 0
+facing 1
+candamage enemy npc obstacle
+palette data/chars/chris/000
+anim idle
+	offset	33 16
+	hitflash bflash
+	summonframe 0 160 240 0 1
+	subentity dstfl
+	delay 3
+	sound data/sounds/crush2.wav
+	frame	data/chars/misc/empty
+	blast   0 -30 67 106 10 1 
+	otg 1
+	sound data/sounds/crush.wav
+	frame	data/chars/chris/131b 
+	blast   0 -30 67 106 10 1 
+	otg 1
+	dropv 3 2 -1
+	frame   data/chars/chris/131b
+	blast   0 -30 67 106 10 1 
+	dropv 3 2 1
+	otg 1
+	frame   data/chars/chris/131b
+	delay 9
+	offset	33 21
+	frame	data/chars/misc/empty
+	delay 3
+	blast   0 -30 67 106 10 1 
+	otg 1
+	frame	data/chars/chris/131b 
+	blast   0 -30 67 106 10 1 
+	otg 1
+	dropv 3 2 1
+	frame   data/chars/chris/131b
+	blast   0 -30 67 106 10 1 
+	otg 1
+	dropv 3 2 -1
+	frame   data/chars/chris/131b
+	delay 9
+	offset	33 11
+	blast   0 0 0 0
+	frame	data/chars/misc/empty
+	delay 3
+	frame	data/chars/chris/131b 
+	frame   data/chars/chris/131b
+	frame   data/chars/chris/131b
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

@@ -1,0 +1,27 @@
+name	shdym3
+type	none
+speed 5
+toflip 1
+nomove 1 1
+alpha 1
+anim idle
+	delay	2
+	offset	0 33
+	flipframe 0
+	frame	data/chars/chris/shdym01 
+	frame	data/chars/chris/shdym02 
+	frame	data/chars/chris/shdym03 
+	frame	data/chars/chris/shdym04 
+	frame	data/chars/chris/shdym05 
+	frame	data/chars/chris/shdym06 
+	frame	data/chars/chris/shdym07 
+	frame	data/chars/chris/shdym08 
+	frame	data/chars/chris/shdym09 
+	frame	data/chars/chris/shdym10 
+	frame	data/chars/chris/shdym11 
+	frame	data/chars/chris/shdym12
+	frame	data/chars/chris/shdym13 
+	frame	data/chars/chris/shdym14 
+	frame	data/chars/chris/shdym15 
+	frame	data/chars/chris/shdym15 
+	frame	data/chars/misc/empty

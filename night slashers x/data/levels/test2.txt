@@ -1,0 +1,27 @@
+music		data/music/lv1.bor
+notime 1
+settime 0
+background	data/chars/bosf/b1
+panel		data/chars/bosf/b1
+order	a
+direction both
+spawn1 100 50 0
+spawn2 80 70 0
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+group 3 3
+at 0
+spawn	barel
+item shtgun
+coords	280 200
+at	0
+spawn	zombie
+coords	-50 200
+at	50

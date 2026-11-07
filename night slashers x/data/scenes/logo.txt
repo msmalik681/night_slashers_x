@@ -1,0 +1,2 @@
+silence 1
+animation	data/scenes/logo.gif 0 0

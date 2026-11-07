@@ -1,0 +1,347 @@
+name	dog2
+health	20
+speed	8
+type	enemy
+aimove chase
+aimove wander
+aiattack dodgemove
+shadow	3
+noquake 1
+score	400	5
+throwdamage	20
+cantgrab 1
+grabdistance 24
+nolife 1
+running  16 4 2 1 0
+gfxshadow 1
+jumpheight 3
+hostile player 
+candamage player npc obstacle
+projectilehit   enemy obstacle npc
+animationscript data/scripts/were.c
+dust dust
+diesound data/sounds/dogdie.wav
+falldie 2
+nodieblink 3
+height  1000
+anim spawn
+	delay	20
+	offset  76 117
+	bbox    46 45 63 49
+	sound data/sounds/wrrr.wav
+	frame	data/chars/dog/21
+	frame	data/chars/dog/22
+	frame	data/chars/dog/21
+	frame	data/chars/dog/22
+	frame	data/chars/dog/21
+anim idle
+	range   100 100000
+	loop	1
+	delay	15
+	offset  76 117
+	bbox    46 45 63 49
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/dog/02
+anim walk
+	loop	1
+	delay	15
+	offset  76 117
+	bbox    46 45 63 49
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/dog/03
+	frame	data/chars/dog/04
+	frame	data/chars/dog/07
+	frame	data/chars/dog/05
+	frame	data/chars/dog/06
+	frame	data/chars/dog/08
+anim run
+	loop	1
+	delay	10
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/09
+	frame	data/chars/dog/10
+	frame	data/chars/dog/11
+	frame	data/chars/dog/12
+	frame	data/chars/dog/14
+	frame	data/chars/dog/15
+anim runattack
+	offset  76 117
+	bbox    46 45 63 49
+	jumpframe 1 4 2 0
+	landframe 3
+	delay 10
+	@cmd velo001 1 0 0
+	frame	data/chars/dog/09
+	delay  30
+	attack  62 74 61 23 6 1 0 0 20
+	frame	data/chars/dog/10
+	delay 1000
+	frame	data/chars/dog/11
+	delay 10
+	attack 0 0 0 0
+	@cmd velo001 2 0 0
+	frame	data/chars/dog/12
+	@cmd velo001 1.5 0 0
+	frame	data/chars/dog/16
+	@cmd velo001 1 0 0
+	frame	data/chars/dog/16
+	@cmd velo001 0.5 0 0
+	frame	data/chars/dog/16
+	delay 20
+	@cmd velo001 0 0 0
+	frame	data/chars/dog/16
+anim attack1
+	range   5 10
+	delay	15
+	offset  76 117
+	bbox    46 45 63 49
+	followanim 1
+	followcond 3
+	attackone 1
+	grabin 1 1
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/dog/23
+	frame	data/chars/dog/24
+	attack  67 21 28 28 3 0 0 0 20
+	frame	data/chars/dog/25
+	delay 30
+	frame	data/chars/dog/02
+anim follow1
+	delay	20
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/25
+	delay 15
+	attack  0 0 0 0
+	frame	data/chars/dog/24
+	attack  67 21 28 28 3 0 0 0 20
+	frame	data/chars/dog/25
+	attack 0 0 0 0
+	frame	data/chars/dog/24
+	attack  67 21 28 28 3 1 0 0 40
+	frame	data/chars/dog/25
+	attack  0 0 0 0 0
+	delay 30
+	frame	data/chars/dog/02
+anim attack2
+	range   200 210 
+	delay	30
+	offset  76 117
+	bbox    46 45 63 49
+	sound data/sounds/wrrr.wav
+	frame	data/chars/dog/21
+	frame	data/chars/dog/22
+	frame	data/chars/dog/21
+	frame	data/chars/dog/22
+	frame	data/chars/dog/21
+	frame	data/chars/dog/22
+anim attack3
+	range   170 180 
+	offset  76 117
+	bbox    46 45 63 49
+	jumpframe 1 4 2 0
+	landframe 3
+	delay 10
+	@cmd velo001 1 0 0
+	frame	data/chars/dog/09
+	delay  30
+	attack  62 74 61 23 6 1 0 0 20
+	frame	data/chars/dog/10
+	delay 1000
+	frame	data/chars/dog/11
+	delay 10
+	attack 0 0 0 0
+	@cmd velo001 2 0 0
+	frame	data/chars/dog/12
+	@cmd velo001 1.5 0 0
+	frame	data/chars/dog/16
+	@cmd velo001 1 0 0
+	frame	data/chars/dog/16
+	@cmd velo001 0.5 0 0
+	frame	data/chars/dog/16
+	delay 20
+	@cmd velo001 0 0 0
+	frame	data/chars/dog/16
+anim pain
+	delay 10
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset  81 117
+	frame	data/chars/dog/18
+	offset  76 117
+	frame	data/chars/dog/18
+	offset  81 117
+	frame	data/chars/dog/18
+	offset  76 117
+	frame	data/chars/dog/18
+anim pain5
+	delay 2
+	offset  76 117
+	bbox    46 45 63 49
+	movea 1
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+	frame	data/chars/dog/18
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  76 117
+	bbox    46 45 63 49
+	frame	data/chars/dog/18
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	#delay 30
+	#bbox    57 49 36 65
+	#offset  76 117
+	#frame	data/chars/dog/18
+	delay	15
+	offset  76 117
+	bbox    46 45 63 49
+	followanim 1
+	followcond 3
+	attackone 1
+	grabin 1 1
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/dog/23
+	frame	data/chars/dog/24
+	attack  67 21 28 28 3 0 0 0 20
+	frame	data/chars/dog/25
+	delay 30
+	frame	data/chars/dog/02
+anim fall
+	delay 1000
+	bbox    0 0 0 0
+	landframe 1
+	hitflash bflash
+	offset  76 117
+	frame	data/chars/dog/18
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/dog/19
+	delay 30
+	offset  76 110
+	bbox    38 87 84 30
+	frame	data/chars/dog/19
+anim rise
+	delay 20
+	bbox    0 0 0 0
+	offset  76 117
+	frame	data/chars/dog/20
+	sound data/sounds/wrrr.wav
+	frame	data/chars/dog/21
+	frame	data/chars/dog/22
+	frame	data/chars/dog/21
+	frame	data/chars/dog/22
+	frame	data/chars/dog/21
+anim death
+	offset  76 110
+	bbox    46 45 63 49
+	delay  15
+	frame	data/chars/dog/a1
+	frame	data/chars/dog/a2
+	frame	data/chars/dog/a3
+	delay 200
+	frame	data/chars/dog/a4
+

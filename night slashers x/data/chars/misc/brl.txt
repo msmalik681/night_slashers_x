@@ -1,0 +1,34 @@
+name	brl
+type	item
+subtype weapon
+weapnum	8
+counter	3
+typeshot 0
+shootnum 1
+gfxshadow 1
+load dust
+anim spawn
+	delay	100
+	offset  47 84
+	bbox    0 0 0 0
+	landframe 1
+	throwframe 1 -1
+	custknife dust
+	jumpframe 0 2 0 0
+	frame	data/chars/chris/chrbrl/a8
+	delay 1
+	offset  47 63
+	bbox    10 13 80 47
+	sound data/sounds/drum.wav
+	frame	data/chars/chris/chrbrl/a1
+anim idle
+	loop 1
+	delay	10
+	offset  47 63
+	bbox    10 13 80 47
+	frame	data/chars/chris/chrbrl/a1
+anim fall
+	delay	250
+	offset  47 63
+	bbox    10 13 80 47
+	frame	data/chars/chris/chrbrl/a1

@@ -1,0 +1,58 @@
+name door
+type none
+facing 1
+load zombiedr
+load zombied2
+animationscript data/scripts/spawn.c
+anim spawn
+	delay 300
+	offset 89 150
+	bbox 0 0 0 0
+	frame data/chars/door/00
+anim idle
+	delay 3
+	offset 89 150
+	bbox 0 0 0 0
+	sound data/sounds/wood.wav
+	frame data/chars/door/01
+	frame data/chars/misc/empty
+	frame data/chars/door/02
+	frame data/chars/misc/empty
+	frame data/chars/door/03
+	frame data/chars/misc/empty
+	frame data/chars/door/04
+	frame data/chars/misc/empty
+	frame data/chars/door/05
+	frame data/chars/misc/empty
+	frame data/chars/door/06
+	frame data/chars/misc/empty
+	frame data/chars/door/07
+	frame data/chars/misc/empty
+	frame data/chars/door/08
+	frame data/chars/misc/empty
+	frame data/chars/door/09
+	frame data/chars/misc/empty
+	frame data/chars/door/10
+	frame data/chars/misc/empty
+	frame data/chars/door/11
+	frame data/chars/misc/empty
+	frame data/chars/door/12
+	frame data/chars/misc/empty
+	frame data/chars/door/13
+	frame data/chars/misc/empty
+	frame data/chars/door/14
+	@cmd spawn01 "zombiedr" 0 0 0
+	frame data/chars/misc/empty
+	frame data/chars/door/15
+	delay  150
+	frame data/chars/misc/empty
+	@cmd spawn01 "zombied2" 0 0 0
+	frame data/chars/misc/empty
+	frame data/chars/misc/empty
+	@cmd spawn01 "zombied2" 0 0 0
+	frame data/chars/misc/empty
+	frame data/chars/misc/empty
+	@cmd spawn01 "zombiedr" 0 0 0
+	frame data/chars/misc/empty
+	@cmd killentity getlocalvar("self")
+	frame data/chars/misc/empty

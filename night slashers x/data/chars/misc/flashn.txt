@@ -1,0 +1,17 @@
+name	Flashn
+type	none
+nomove 1 0
+toflip 1
+anim idle
+	delay	6
+	offset	32 46
+	custbomb blood
+	tossframe 2 1
+	quakeframe 0 1 1
+	frame	data/chars/misc/f1
+	frame	data/chars/misc/f2
+	frame	data/chars/misc/f3
+	frame	data/chars/misc/f4
+	frame	data/chars/misc/f5
+	frame	data/chars/misc/f6
+	frame	data/chars/misc/f7

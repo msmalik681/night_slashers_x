@@ -1,0 +1,33 @@
+name	tlk7
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 300
+facing 1
+animationscript data/scripts/tlk.c
+palette data/scenes/demo/tlk71
+anim idle
+	delay	1
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+	@cmd tlk
+        frame	data/chars/misc/empty
+anim freespecial2
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk71
+        frame	data/scenes/demo/tlk72
+anim freespecial3
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk72
+anim freespecial4
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk72

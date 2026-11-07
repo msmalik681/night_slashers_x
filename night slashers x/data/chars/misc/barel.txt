@@ -1,0 +1,26 @@
+name barel
+type obstacle
+health 1
+gfxshadow 1
+noatflash 1
+flash bflash
+noquake 1
+diesound data/sounds/drum.wav
+bounce 1
+nolife 1
+jumpheight 3
+anim idle 
+	loop 1
+	offset 29 84
+	bbox 7 5 44 71 5
+	delay 1000
+	seta 0
+	platform 29 85 -45 -45 45 45 16 1070
+	frame data/chars/misc/barel1
+anim fall
+	offset 29 84
+	bbox 0 0 0 0
+	delay 1000
+	landframe 1
+	frame data/chars/misc/barel2   
+	frame data/chars/misc/barel2      

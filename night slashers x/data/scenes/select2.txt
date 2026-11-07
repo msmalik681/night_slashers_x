@@ -1,0 +1,4 @@
+music   	data/music/menu.bor 1
+animation	data/scenes/select.gif 0 0
+
+

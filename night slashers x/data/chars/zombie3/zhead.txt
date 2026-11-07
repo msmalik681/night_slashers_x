@@ -1,0 +1,29 @@
+name zhead
+type pshot
+speed 5
+jumpheight 0
+weapons zhead3 zhead
+load zhead3 
+palette data/chars/zombie3/00a
+alternatepal data/chars/zombie3/alt1a
+alternatepal data/chars/zombie3/alt2a
+alternatepal data/chars/zombie3/alt3a
+alternatepal data/chars/zombie3/alt4a
+alternatepal data/chars/zombie3/alt5a
+alternatepal data/chars/zombie3/alt5a
+anim idle 
+	offset 24 17
+	bbox 0 0 0 0
+	delay 1000
+	flipframe 0
+	frame data/chars/zombie3/38
+anim attack1
+	offset 24 17
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 200
+	landframe 1
+	weaponframe 1 1
+	frame data/chars/zombie3/39
+	delay 999999999999
+	frame data/chars/zombie3/39

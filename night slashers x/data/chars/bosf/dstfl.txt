@@ -1,0 +1,19 @@
+name dstfl
+type text
+subtype noskip
+setlayer 900
+nolife 1
+lifespan 1
+anim idle
+	delay 2
+	offset 160 240
+	bbox 0 0 0 0
+	frame data/chars/bosf/zz1
+	frame data/chars/bosf/zz2
+	frame data/chars/bosf/zz3
+	frame data/chars/bosf/zz4
+	frame data/chars/bosf/zz1
+	frame data/chars/bosf/zz2
+	frame data/chars/bosf/zz3
+	frame data/chars/bosf/zz4
+#	frame data/chars/misc/empty

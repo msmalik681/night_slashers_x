@@ -1,0 +1,4 @@
+maxscriptvars   5
+maxentityvars   250
+maxindexedvars  1000
+maxglobalvars  2048

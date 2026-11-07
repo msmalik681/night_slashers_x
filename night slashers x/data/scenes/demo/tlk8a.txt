@@ -1,0 +1,45 @@
+name	tlk8a
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 300
+facing 1
+animationscript data/scripts/tlk.c
+palette data/scenes/demo/tlk8a1
+anim idle
+	delay	1
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+        delay	200
+	sound data/sounds/n/bighaha2.wav
+	frame	data/scenes/demo/tlk8a1
+        frame	data/scenes/demo/tlk8a2
+	@cmd tlk
+        frame	data/chars/misc/empty
+anim freespecial2
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+	frame	data/scenes/demo/tlk8a3
+	delay 150
+	sound data/sounds/n/tfinalw.wav
+        frame	data/scenes/demo/tlk8a3
+anim freespecial3
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+        frame	data/scenes/demo/tlk8a3j
+	sound data/sounds/n/castundr.wav
+	delay 150
+	frame	data/scenes/demo/tlk8a3j
+anim freespecial4
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+        frame	data/scenes/demo/tlk8a3jk
+	delay 150
+	sound data/sounds/n/timeclen.wav
+	frame	data/scenes/demo/tlk8a3jk

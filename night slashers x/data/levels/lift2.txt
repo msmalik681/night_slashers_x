@@ -1,0 +1,108 @@
+music data/music/lift.bor
+notime 1
+settime 0
+background	data/bgs/lift2/back
+#bglayer    	data/bgs/lift2/c1 0 0.4 0 300 0 0 90000000 900000000 1 
+#bglayer    	data/bgs/lift2/c2 0 0.2 0 300 0 0 90000000 900000000 1 
+fglayer 	data/bgs/lift2/f1 4 0 0 0 300 0 0 1 1 1 2 0 0 0 2 2 2 2 2 
+panel		data/chars/misc/empty
+order	a
+direction up
+spawn1 110 50 0
+spawn2 100 30 0
+cameratype 1
+wall 0 220 -1000 -1000 100 50 105 10000
+hole 0 220 -1000 -1000 95 45 105 
+wall 315 220 -100 -50 1000 1000 105 10000
+hole 315 220 -95 -45 1000 1000 105 
+#levelscript data/bgs/lift2/lift2.c
+load lift2 1
+load barelb2 1
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn lift2
+coords	160 240
+at 0
+spawn	lift2b
+coords	160 120
+at	0
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+spawn	ghoul3
+coords	240 200
+at	450
+spawn	zombieb
+coords	140 161
+at	470
+spawn	zombieb
+coords	202 167
+at	490
+group 3 3
+at 500
+spawn	kat3
+item itemr
+coords	166 175
+at	500
+spawn	ghoul3
+coords	106 156
+at	500
+spawn	zombieb
+coords	200 164
+at	500
+spawn	zombieb
+coords	107 206
+at	500
+spawn	zombieb
+coords	228 184
+at	500
+spawn	were3
+coords	117 160
+at	500
+spawn	barelb2
+item itemr
+coords	160 160
+at	500
+spawn	barelb2
+item itemr2
+coords	234 204
+at	500
+spawn	zombieb
+coords	100 204
+at	500
+group 5 5
+at 500
+spawn	zombieb
+coords	50 200
+at	500
+spawn	zombieb
+coords	100 204
+at	500
+spawn	zombieb
+coords	228 184
+at	500
+spawn	zombieb
+coords	212 164
+at	500
+spawn	kat3
+item itemr
+coords	166 175
+at	500
+group 3 3
+at 500
+spawn	zombieb
+coords	80 204
+at	500
+spawn	zombieb
+coords	100 204
+at	500
+spawn	jason4
+coords	228 184
+at	500
+spawn	zombieb
+coords	212 164
+at	500

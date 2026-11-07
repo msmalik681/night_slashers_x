@@ -1,0 +1,210 @@
+music		data/music/boss.bor 291327
+bossmusic       data/music/snake.bor 1557365
+notime 1
+settime 0
+background	data/bgs/lv3/back2
+bglayer	        data/bgs/lv3/back2 0.6 0 0 0 0 0 100 1
+bglayer	        data/bgs/lv3/back1 0.5 0 0 0 0 0 2 1 1
+panel		data/bgs/lv3/a1
+fglayer		data/bgs/lv1/f3 1 -0.5 0 -45 0 999999999 0 1 1 1 0 
+order	a
+direction both
+spawn1 100 20 0
+spawn2 80 50 0
+load kar3 1
+load igor 1
+load mutant3 1
+load mut3bl 1
+load tlk3c 1
+load tomb 1
+load golem 1
+load golem1 1
+load tlk3c2 1
+load fogc1 1
+load fogc2 1
+load fogc3 1
+noslow 1
+#--group1-----
+wall 353 256 12 -8 313 313 38 1000
+wall 394 165 30 0 320 300 50 1000
+shadowalpha 2
+at 0 
+wait
+at 0
+light 256 33
+at 0
+##############
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+spawn   kar3 
+flip 1
+coords	180 180
+at	0
+spawn igor 
+item bosslow
+map 1
+coords 270 212
+at 0
+spawn mutant3 
+item bosslow
+coords 300 225
+at 0
+spawn   tlk3c 
+coords	160 220
+at	0
+
+#########################
+spawn	zombie
+coords	200 160
+at	1
+spawn	zombie2
+coords	290 165
+at	2
+spawn	barelb
+item itemr
+coords	433 210
+at	2
+spawn	barelb
+item itemr
+coords	455 180
+at	2
+spawn	ghoul
+coords	370 200
+at	50
+spawn	zombiea
+coords	350 200
+at	250
+spawn	zombie2
+flip 1
+coords	70 200
+at	300
+wait
+at 370
+spawn	were
+coords	350 200
+at	370
+
+###########################
+blockade 370
+at 370
+spawn   fogc1
+coords	320 195
+at	371
+spawn	barelb
+item itemr2
+coords	345 150
+at	371
+spawn   tomb
+item	zombie
+coords	400 200
+at	371
+spawn   jason2
+coords	350 190
+at	371
+spawn   ghoul
+coords	-50 200
+at	371
+blockade 421
+at 421
+spawn tomb
+item zombie2
+coords 400 160
+at	421
+ 
+blockade 471
+at 471
+spawn   tomb
+item	zombie
+coords	400 220
+at	471
+blockade 521
+at 521
+spawn tomb
+item zombie2
+coords 400 190
+at at	521
+blockade 571
+at 571
+spawn   tomb
+item	zombie
+coords	400 160
+at	571
+spawn   tomb
+item	zombie2
+coords	420 220
+at	571
+blockade 671
+at 671
+spawn tomb
+item zombie2
+coords 400 160
+at	671
+ 
+spawn   tomb
+item	zombie
+coords	400 220
+at	721
+spawn tomb
+item zombie2
+coords 400 190
+at at	771
+spawn   tomb
+item	zombie
+coords	400 200
+at	821
+spawn tomb
+item zombie2
+coords 400 160
+at	871
+ 
+wait 
+at 1071
+spawn zombie
+item itemr
+coords 800 190
+at 1071
+blockade 1071
+at 1071
+#######################
+spawn barelb
+item hotdog
+coords 360 150
+at 1072
+group 3 3
+at 1151
+blockade 1151
+at 1151
+blockade 1300
+at 1300
+#######################
+spawn	golem
+dying 1 600 300
+boss 1
+item bosslow
+coords	350 160
+at	1300
+spawn zombie
+coords 800 230
+at 1071
+spawn zombie
+coords -400 230
+at 1071
+spawn zombie
+coords 700 190
+at 1071
+spawn zombie
+item itemr
+coords -200 190
+at 1071
+spawn zombie
+coords 700 190
+at 1071
+spawn zombie
+coords -200 190
+at 1071
+spawn zombie
+item zupa
+coords -200 190
+at 1071

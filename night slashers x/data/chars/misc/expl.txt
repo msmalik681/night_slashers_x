@@ -1,0 +1,42 @@
+name	expl
+type	none
+nolife 1
+lifespan 5
+nomove 1 1
+remove 0
+candamage player enemy npc obstacle
+anim idle
+	delay	5
+	offset  143 204
+	bbox    0 0 0 0
+	hitflash bflash
+	quakeframe 0 12 -2
+	sound data/sounds/granat.wav
+	burn 46 115 194 91 30 1 1 0 0 30
+	dropv 5 2
+	frame	data/chars/misc/explb01
+	frame	data/chars/misc/explb02
+	frame	data/chars/misc/explb03
+	frame	data/chars/misc/explb04
+	frame	data/chars/misc/explb05
+	frame	data/chars/misc/explb06
+	frame	data/chars/misc/explb07
+	frame	data/chars/misc/explb08
+	frame	data/chars/misc/explb09
+	burn 0
+	frame	data/chars/misc/explb10
+	frame	data/chars/misc/explb11
+	frame	data/chars/misc/explb12
+	frame	data/chars/misc/explb13
+	frame	data/chars/misc/explb14
+	frame	data/chars/misc/explb15
+	frame	data/chars/misc/explb16
+	frame	data/chars/misc/explb17
+	frame	data/chars/misc/explb18
+	frame	data/chars/misc/explb19
+	frame	data/chars/misc/explb20
+	frame	data/chars/misc/explb21
+	frame	data/chars/misc/explb22
+	frame	data/chars/misc/explb23
+	frame	data/chars/misc/explb24
+	frame	data/chars/misc/empty

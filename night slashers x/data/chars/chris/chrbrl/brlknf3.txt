@@ -1,0 +1,43 @@
+name brlknf3
+type pshot
+health 1
+speed 13
+noatflash 1
+flash bflash
+noquake 1
+bounce 1
+nolife 1
+jumpheight 0
+remove 0
+load brlknf2
+load brlknf3
+candamage enemy obstacle npc
+anim idle 
+	loop 1
+	offset  47 60
+	bbox 0 0 0 0
+	delay 10
+	hitflash flashb
+	frame data/chars/chris/chrbrl/a3
+	attack2 29 0 45 61 40 1 1 0 0 20
+	otg 1
+	dropv 3 2
+	frame data/chars/chris/chrbrl/a4
+	frame data/chars/chris/chrbrl/a5
+	frame data/chars/chris/chrbrl/a6
+anim attack2
+	offset  47 60
+	bbox 0 0 0 0
+	delay 1
+	tossframe 0 1
+	custbomb brlknf3
+	hitflash flashb
+	frame data/chars/misc/empty
+anim attack1
+	offset  47 60
+	bbox 0 0 0 0
+	delay 1
+	throwframe 0 1
+	custknife brlknf2
+	hitflash flashb
+	frame data/chars/misc/empty

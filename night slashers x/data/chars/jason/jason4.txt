@@ -1,0 +1,596 @@
+name	jason4
+health	50
+speed	5
+type	enemy
+aimove chase
+aimove wander
+aiattack dodgemove
+shadow	3
+noquake 1
+score	400	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+nolife 1
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+load jashead
+load jashead2
+hostile player 
+candamage player npc obstacle
+projectilehit   enemy obstacle npc
+animationscript data/scripts/were.c
+dust dust
+height  1000
+aggression -10
+palette data/chars/jason/01
+alternatepal data/chars/jason/alt1a
+alternatepal data/chars/jason/alt2a
+alternatepal data/chars/jason/alt3a
+alternatepal data/chars/jason/alt4a
+alternatepal data/chars/jason/alt5a
+alternatepal data/chars/jason/alt6a
+alternatepal data/chars/jason/alt7a
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 30
+	bbox    39 141 104 28
+	offset  90 162
+	frame	data/chars/jason/24
+	frame	data/chars/jason/34
+	frame	data/chars/jason/35
+	frame	data/chars/jason/36
+	delay   200
+	frame	data/chars/jason/37
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 30
+	bbox    39 141 104 28
+	offset  90 162
+	frame	data/chars/jason/24
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 30
+	bbox    39 141 104 28
+	offset  90 162
+	frame	data/chars/jason/24
+	frame	data/chars/jason/34
+	frame	data/chars/jason/35
+	frame	data/chars/jason/36
+	delay   200
+	frame	data/chars/jason/37
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 30
+	bbox    39 141 104 28
+	offset  90 162
+	frame	data/chars/jason/24
+anim spawn
+	delay	1
+	offset  90 162
+	bbox    0 0 0 0
+	jumpframe 1 6 0 0
+	dropframe 2
+	landframe 3
+	quakeframe 3 1 1
+	fshadow 0
+	@script
+	if(frame == 0){
+	void self = getlocalvar("self");
+	int map = rand()%7;
+	if(map < 0)
+	{
+	-map == map;
+	}
+	changeentityproperty(self, "map", map);
+	}
+	@end_script
+	frame	data/chars/misc/empty
+	delay 1000
+	frame	data/chars/misc/empty
+	fshadow 3
+	bbox    68 75 40 64
+	frame	data/chars/jason/13
+	delay 40
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/jason/11
+anim idle
+	range   100 100000
+	loop	1
+	delay	15
+	offset  90 162
+	bbox    68 75 40 64
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/jason/01
+anim walk
+	loop	1
+	delay	15
+	offset  90 162
+	bbox    68 75 40 64
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/jason/03
+	frame	data/chars/jason/04
+	frame	data/chars/jason/05
+	frame	data/chars/jason/06
+	frame	data/chars/jason/07
+	frame	data/chars/jason/08
+	frame	data/chars/jason/09
+	frame	data/chars/jason/10
+anim run
+	loop	1
+	delay	10
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/03
+	frame	data/chars/jason/04
+	frame	data/chars/jason/05
+	frame	data/chars/jason/06
+	frame	data/chars/jason/07
+	frame	data/chars/jason/08
+	frame	data/chars/jason/09
+	frame	data/chars/jason/10
+anim attack1
+	range   20 40
+	delay	10
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	hitfx data/sounds/knifes.wav
+	attack2 98 100 45 12 6 0 0 0 30
+	frame	data/chars/jason/02
+	attack2 98 100 64 12 6 0 0 0 30
+	frame	data/chars/jason/02a
+	attack2 0 0 0 0
+	frame	data/chars/jason/02
+	frame	data/chars/jason/01
+anim runattack
+	range   40 50
+	delay	5
+	offset  90 162
+	bbox    68 75 40 64
+	@cmd velo001 1 0 0
+	frame	data/chars/jason/18
+	hitfx data/sounds/knifes.wav
+	delay 10
+	attack2 98 100 45 12 6 1 0 0 30
+	frame	data/chars/jason/02
+	attack2 98 100 64 12 6 0 0 0 30
+	frame	data/chars/jason/02a
+	attack2 0 0 0 0
+	delay 10
+	@cmd velo001 0.5 0 0
+	frame	data/chars/jason/02
+	@cmd velo001 0 0 0
+	frame	data/chars/jason/01
+anim attack3
+	range	100 120
+	delay 20
+	offset  90 162
+	bbox    68 75 40 64
+	jumpframe 1 4 1.5 0
+	landframe 5
+	frame	data/chars/jason/11
+	delay 10
+	sound data/sounds/jump.wav
+	frame	data/chars/jason/12
+	frame	data/chars/jason/13
+	delay 45
+	offset  90 194
+	attack 83 139 66 27 10 1 0 0 30
+	frame	data/chars/jason/14
+	offset  90 162
+	delay 1000
+	attack 0 0 0 0
+	frame	data/chars/jason/22
+	delay 20
+	frame	data/chars/jason/11
+anim attack4
+	range	100 120
+	delay 20
+	offset  90 162
+	bbox    68 75 40 64
+	jumpframe 1 5 1.5 0
+	landframe 16
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/jason/11
+	sound data/sounds/jump.wav
+	frame	data/chars/jason/12
+	frame	data/chars/jason/13
+	frame	data/chars/jason/27
+	delay 10
+	attack  77 147 31 24 6 0 0 0 15
+	frame	data/chars/jason/15
+	frame	data/chars/jason/16
+	attack  0 0 0 0 0
+	frame	data/chars/jason/17
+	attack  77 147 31 24 6 0 0 0 15
+	frame	data/chars/jason/15
+	frame	data/chars/jason/16
+	attack  0 0 0 0 0
+	frame	data/chars/jason/17
+	attack2  77 147 31 24 6 0 0 0 15
+	frame	data/chars/jason/15
+	frame	data/chars/jason/16
+	attack  0 0 0 0 0
+	frame	data/chars/jason/17
+	attack2  77 147 31 24 6 1 0 0 15
+	frame	data/chars/jason/15
+	frame	data/chars/jason/16
+	attack  0 0 0 0 0
+	frame	data/chars/jason/17
+	delay   10
+	@cmd velo001 1 0 0
+	frame	data/chars/jason/27
+	@cmd velo001 0.5 0 0
+	frame	data/chars/jason/25
+	@cmd velo001 0 0 0
+	delay 20
+	frame	data/chars/jason/29
+anim attack5
+	range	100 122
+	delay 10
+	offset  90 162
+	bbox    68 75 40 64
+	jumpframe 2 0 2 0
+	landframe 5
+	frame	data/chars/jason/29
+	frame	data/chars/jason/27
+	delay  50
+	@cmd shoot "dust" 0 0 0
+	attack2 73 116 78 51 6 0 0 0 30
+	frame	data/chars/jason/14
+	attack2 73 116 78 51 6 1 0 0 30
+	frame	data/chars/jason/14
+	delay  10
+	@cmd velo001 1.5 0 0
+	frame	data/chars/jason/14
+	@cmd velo001 1 0 0
+	frame	data/chars/jason/14
+	@cmd velo001 0.5 0 0
+	attack2 0 0 0 0
+	frame	data/chars/jason/14
+	delay 20
+	offset  90 162
+	@cmd velo001 0 0 0
+	frame	data/chars/jason/25
+	delay 10
+	frame	data/chars/jason/26
+	frame	data/chars/jason/27
+	frame	data/chars/jason/28
+	frame	data/chars/jason/29
+anim pain2
+	delay 2
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	delay  35
+	frame	data/chars/jason/19
+	delay 10
+	frame	data/chars/jason/18
+anim pain
+	delay 2
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/20
+	delay  35
+	frame	data/chars/jason/21
+	delay 10
+	frame	data/chars/jason/21
+anim pain5
+	delay 2
+	offset  90 162
+	bbox    68 75 40 64
+	movea 1
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+	frame	data/chars/jason/21
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  90 162
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+anim grabbedwalk
+	delay 1
+	offset  90 202
+	bbox    68 75 40 64
+	frame	data/chars/jason/18
+anim fall
+	delay 1000
+	offset  90 162
+	bbox    0 0 0 0
+	landframe 1
+	hitflash bflash
+	attack 58 84 26 42 6 1 0 0 20
+	frame	data/chars/jason/22
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/jason/23
+	delay 30
+	bbox    39 141 104 28
+	frame	data/chars/jason/24
+anim fall5
+	delay 1000
+	offset  90 162
+	bbox    58 84 26 42
+	landframe 1
+	hitflash bflash
+	attack 58 84 26 42 6 1 0 0 20
+	frame	data/chars/jason/22
+	delay 20
+	bbox    0 0 0 0
+	attack  0 0 0 0
+	frame	data/chars/jason/23
+	delay 60
+	bbox    39 141 104 28
+	frame	data/chars/jason/24
+anim fall8
+	delay 1000
+	offset  90 162
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/jason/20a
+	frame	data/chars/jason/x1
+	hitflash bflash
+	attack 58 84 26 42 6 1 0 0 20
+	frame	data/chars/jason/22
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/jason/23
+	delay 30
+	bbox    39 141 104 28
+	frame	data/chars/jason/24
+anim rise
+	delay 20
+	offset  90 162
+	bbox    0 0 0 0
+	jumpframe 2 1 -1 0
+	landframe 4
+	frame	data/chars/jason/25
+	delay 15
+	frame	data/chars/jason/26
+	frame	data/chars/jason/27
+	delay  1000
+	frame	data/chars/jason/28
+	delay 15
+	frame	data/chars/jason/29
+anim death
+	@cmd death
+	offset  90 162
+	bbox    0 0 0 0
+	delay 15
+	sound data/sounds/die7.wav
+	frame	data/chars/jason/38
+	delay 40
+	@cmd toss "jashead" -42 96 0
+	frame	data/chars/jason/39
+	frame	data/chars/jason/40
+anim death2
+	@cmd death
+	offset  90 162
+	bbox    0 0 0 0
+	delay 30
+	frame	data/chars/jason/30
+	frame	data/chars/jason/31
+	frame	data/chars/jason/32
+	delay 200
+	frame	data/chars/jason/33
+anim death3
+	delay 30
+	offset  90 162
+	bbox    0 0 0 0
+	jumpframe 0 3 -2 0
+	landframe 2
+	frame	data/chars/jason/22
+	delay 1000
+	frame	data/chars/jason/23
+	delay 10 
+	frame	data/chars/jason/24
+	delay 15
+	frame	data/chars/jason/34
+	frame	data/chars/jason/35
+	frame	data/chars/jason/36
+	frame	data/chars/jason/37
+anim death4
+	@cmd death
+	offset  90 162
+	bbox    0 0 0 0
+	delay 15
+	frame	data/chars/jason/30
+	frame	data/chars/jason/31
+	frame	data/chars/jason/32
+	frame	data/chars/jason/33
+anim death5
+	@cmd death
+	offset  90 162
+	bbox    0 0 0 0
+	delay 5
+	sound data/sounds/die7.wav
+	frame	data/chars/jason/38
+	delay 1
+	@cmd toss "jashead2" -30 84 0
+	frame	data/chars/jason/39
+	delay 39
+	frame	data/chars/jason/39
+	frame	data/chars/jason/40

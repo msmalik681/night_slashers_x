@@ -1,0 +1,61 @@
+name	noone2
+health	300
+speed	5
+type	enemy
+shadow	0
+noquake 1
+nomove 1 1
+falldie 1
+nodieblink 1
+nopain 1
+cantgrab 1
+nolife 1
+load tlk0b
+load zombie
+anim spawn
+	delay	100
+	offset  124 124
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+anim idle
+	loop	1
+	delay	15
+	summonframe 0 -200 200 0 1
+	subentity zombie
+	offset  124 124
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+anim walk
+	loop	1
+	delay	15
+	offset  124 124
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim pain
+	delay	15
+	offset  124 124
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim fall
+	delay	15
+	offset  124 124
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim rise
+	delay	15
+	offset  124 124
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim death
+	delay	500
+	offset  124 124
+	bbox    0 0 0 0
+	spawnframe 1 160 220 0 1
+	subentity tlk0b
+	frame	data/chars/misc/empty
+	delay 30
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty

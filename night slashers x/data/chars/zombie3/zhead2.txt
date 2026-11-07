@@ -1,0 +1,33 @@
+name zhead2
+type pshot
+health 1
+speed 15
+candamage enemy obstacle
+noatflash 1
+flash bblod
+palette data/chars/zombie3/00a
+alternatepal data/chars/zombie3/alt1a
+alternatepal data/chars/zombie3/alt2a
+alternatepal data/chars/zombie3/alt3a
+alternatepal data/chars/zombie3/alt4a
+alternatepal data/chars/zombie3/alt5a
+alternatepal data/chars/zombie3/alt5a
+anim idle 
+	offset 24 17
+	bbox 21 15 14 13
+	delay 20
+	flipframe 0
+	hitflash bblod
+	frame data/chars/zombie3/38
+	delay 1000
+	attack 21 15 14 13 30 0 0 0 20
+	frame data/chars/zombie3/38
+anim fall
+	offset 24 17
+	bbox 0 0 0 0
+	jumpframe 0 3 -1 0
+	delay 200
+	landframe 1
+	frame data/chars/zombie3/39
+	delay 10
+	frame data/chars/zombie3/39

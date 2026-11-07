@@ -1,0 +1,30 @@
+name	jasspc2
+type	none
+cantgrab 1
+nolife 1
+setlayer 500
+anim idle
+	offset  25 25
+	bbox    0 0 0 0
+	delay 10
+	drawmethod  2048 2048 0 0 0 6 0 0 0 0
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspc1
+	frame	data/chars/bosf/chrspc2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspc1
+	frame	data/chars/bosf/chrspc2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspc1
+	frame	data/chars/bosf/chrspc2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspc1
+	frame	data/chars/bosf/chrspc2
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/chrspc1
+	frame	data/chars/bosf/chrspc2
+	frame	data/chars/misc/empty
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty
+	

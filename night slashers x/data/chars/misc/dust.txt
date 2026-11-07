@@ -1,0 +1,24 @@
+name dust
+type none
+nomove 1 1
+palette data/chars/misc/dustb1
+lifespan 4
+
+alpha 1
+
+anim idle 
+	offset 55 63
+	movez 2
+	delay 5
+	frame data/chars/misc/empty
+	movez 0
+	frame data/chars/misc/dustb1
+	frame data/chars/misc/dustb2
+	frame data/chars/misc/dustb3
+	frame data/chars/misc/dustb4
+	frame data/chars/misc/dustb5
+	frame data/chars/misc/dustb6
+	frame data/chars/misc/dustb7
+	frame data/chars/misc/dustb8
+	frame data/chars/misc/dustb9
+	frame data/chars/misc/empty

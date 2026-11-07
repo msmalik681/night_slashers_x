@@ -1,0 +1,17 @@
+name	rain
+type	none
+
+alpha 1
+
+anim idle
+	loop 1
+	offset  0 244
+	delay   4
+	frame	data/chars/misc/rc1
+	frame	data/chars/misc/rc2
+	frame	data/chars/misc/rc3
+	frame	data/chars/misc/rc4
+	frame	data/chars/misc/rc5
+	frame	data/chars/misc/rc6
+	frame	data/chars/misc/rc7
+	frame	data/chars/misc/rc8

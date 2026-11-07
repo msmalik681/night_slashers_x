@@ -1,0 +1,55 @@
+name	Zomb2bk
+health	1
+speed	10
+type	enemy
+subtype arrow
+shadow	3
+noquake 1
+score	5000	5
+throwdamage	20
+cantgrab 1
+nolife 1
+gfxshadow 1
+jumpheight 3
+load zomb2bw
+hostile player npc
+candamage player npc enemy obstacle
+projectilehit   enemy obstacle
+subject_to_wall 1
+subject_to_obstacle 1
+subject_to_platform 1
+dust dust
+height  1000
+palette data/chars/zombie2/01a
+diesound data/sounds/wood.wav
+anim idle
+	loop	1
+	delay	5
+        offset  66 74
+        bbox    41 0 49 78
+        hitflash bflash
+        attack  18 43 95 37 6 1 1 0 15
+	frame	data/chars/misc/wozek1
+anim walk
+	loop	1
+	delay	5
+        offset  66 74
+        bbox    41 0 49 78
+        hitflash bflash
+        attack  18 43 95 37 6 1 1 0 15
+	frame	data/chars/misc/wozek1
+anim pain
+        delay	15
+        offset  66 74
+        bbox    41 0 49 78
+        hitflash bflash
+        attack  18 43 95 37 6 1 1 0 15
+	frame	data/chars/misc/wozek2
+anim fall
+        delay	50
+        offset  66 74
+        bbox    41 0 49 78
+        hitflash bflash
+        attack  18 43 95 37 6 1 1 0 15
+	frame	data/chars/misc/wozek2
+

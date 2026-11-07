@@ -1,0 +1,48 @@
+name	batb
+health 1
+type	pshot
+speed 15
+candamage enemy npc obstacle
+nolife 1
+remove 0
+noatflash 1
+flash flashd
+shadow 0
+anim idle
+	loop 1
+	delay 10 
+	offset  29 31
+	bbox    15 14 30 34
+	hitflash bblod
+	attack  15 14 30 34 50 1 0 0 15
+	frame	data/chars/misc/batb1
+	frame	data/chars/misc/batb2
+	frame	data/chars/misc/batb3
+	frame	data/chars/misc/batb4
+	frame	data/chars/misc/batb5
+	frame	data/chars/misc/batb6
+	frame	data/chars/misc/batb7
+	frame	data/chars/misc/batb8
+anim fall
+	delay 10 
+	offset  29 31
+	bbox    0 0 0 0 
+	jumpframe 0 2 -2 0
+	landframe 31
+	frame	data/chars/misc/batb8
+	frame	data/chars/misc/batb7
+	frame	data/chars/misc/batb6
+	frame	data/chars/misc/batb5
+	frame	data/chars/misc/batb4
+	frame	data/chars/misc/batb3
+	frame	data/chars/misc/batb2
+	frame	data/chars/misc/batb1
+	frame	data/chars/misc/batb8
+	frame	data/chars/misc/batb7
+	frame	data/chars/misc/batb6
+	frame	data/chars/misc/batb5
+	frame	data/chars/misc/batb4
+	frame	data/chars/misc/batb3
+	frame	data/chars/misc/batb2
+	frame	data/chars/misc/batb1
+	

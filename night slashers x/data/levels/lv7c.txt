@@ -1,0 +1,144 @@
+music		data/music/lv3.bor
+bossmusic       data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv7c/a1
+panel		data/bgs/lv7c/a1
+order	aaaaaaaa
+spawn1 100 20 0
+spawn2 80 50 0
+cameratype 1
+#levelscript data/bgs/lv7c/lv7c.c
+load blb 1
+load dracul2 1
+load death2 1
+load drfir 1
+load drpnt 1
+load drhnd 1
+noslow 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 244
+at	0
+spawn	blb
+flip 1
+coords	0 240
+at	0
+spawn	blb
+flip 1
+coords	960 240
+at	0
+#####################
+spawn	ghoul2
+coords	250 160
+at	0
+spawn	zombiea
+coords	270 230
+at	0
+spawn	ghoul
+coords	380 220
+at	100
+spawn	zombie
+coords	-180 160
+at	100
+spawn	zombie4
+coords	-180 220
+at	100
+spawn	barel
+item itemr
+coords	480 150
+at	100
+spawn	bareltr
+item brl
+coords	350 240
+at	200
+spawn	ghoul
+coords	380 200
+at	300
+spawn	zombie
+coords	480 160
+at	300
+spawn	zombie
+coords	480 220
+at	300
+spawn	zombie
+coords	-280 160
+at	300
+spawn	barel
+item itemr2
+coords	480 150
+at	300
+spawn	zombie4
+coords	380 200
+at	500
+spawn	zombie
+coords	480 160
+at	500
+spawn	barel
+item itemr
+coords	480 150
+at	500
+spawn	zombie4
+coords	-280 220
+at	500
+spawn	zombie4
+coords	-280 160
+at	500
+spawn	zombie
+coords	480 160
+at	600
+spawn	ghoul2
+coords	380 230
+at	700
+spawn	zombie
+coords	-280 220
+at	700
+spawn	ghoul2
+coords	480 160
+at	800
+spawn	ghoul2
+coords	480 180
+at	800
+spawn	ghoul2
+coords	480 200
+at	800
+spawn	zombie4
+coords	-80 160
+at	800
+spawn	ghoul2
+coords	380 190
+at	850
+wait
+at 1000
+spawn	zombie4
+coords	480 160
+at	1000
+spawn	bet
+coords	-180 150
+at	1000
+spawn	ghoul
+coords	-280 220
+at	1000
+spawn	ghoul
+coords	-280 160
+at	1000
+spawn	zombie
+coords	480 160
+at	1000
+wait
+at 1300
+spawn	dracul2
+item bosslow
+boss 1
+flip 1
+coords	220 190
+at	1300
+spawn	death2
+map 1
+coords	280 190
+at	1300

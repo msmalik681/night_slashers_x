@@ -1,0 +1,126 @@
+name	jkspa
+type	text
+subtype noskip
+cantgrab 1
+nolife 1
+load jkspb
+animationscript data/scripts/flash.c
+palette data/chars/jack/f1
+candamage enemy
+grabdistance 1000
+anim idle
+	fastattack 1
+	offset  104 92
+	delay   1
+	bbox    0 0 0 0
+	@cmd velo001 0 0 -2.5
+	spawnframe 0 160 120 0 1
+	subentity jkspb
+	quakeframe 20 46 -3
+	hitfx data/sounds/empty.wav
+	frame	data/chars/misc/empty
+	delay 5
+	sound data/sounds/n/pbomb.wav
+	frame	data/chars/jack/f1
+	frame	data/chars/jack/f2
+	frame	data/chars/jack/f3
+	frame	data/chars/jack/f1
+	frame	data/chars/jack/f2
+	frame	data/chars/jack/f3
+	frame	data/chars/jack/f1
+	frame	data/chars/jack/f2
+	frame	data/chars/jack/f3
+	frame	data/chars/jack/f1
+	frame	data/chars/jack/f2
+	frame	data/chars/jack/f3
+	frame	data/chars/jack/f1
+	frame	data/chars/jack/f2
+	frame	data/chars/jack/f3
+	frame	data/chars/jack/f1
+	frame	data/chars/jack/f2
+	frame	data/chars/jack/f3
+	frame	data/chars/jack/f4
+	frame	data/chars/jack/f5
+	frame	data/chars/jack/f4
+	frame	data/chars/jack/f5
+	frame	data/chars/jack/f4
+	frame	data/chars/jack/f5
+	frame	data/chars/jack/f4
+	frame	data/chars/jack/f5
+	frame	data/chars/jack/f6
+	frame	data/chars/jack/f7
+	attack2 -1000 -1000 2000 2000 0 0 1  
+	frame	data/chars/jack/f8
+	attack2 0
+	frame	data/chars/jack/f6
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f7
+	attack 0
+	frame	data/chars/jack/f8
+	attack2 -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f6
+	attack2 0
+	frame	data/chars/jack/f7
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f8
+	attack 0
+	frame	data/chars/jack/f6
+	attack2 -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f7
+	attack2 0
+	frame	data/chars/jack/f8
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f6
+	attack 0
+	frame	data/chars/jack/f7
+	attack2 -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f8
+	attack2 0
+	frame	data/chars/jack/f6
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f7
+	attack 0
+	frame	data/chars/jack/f8
+	attack2 -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f6
+	attack2 0
+	frame	data/chars/jack/f7
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f8
+	attack 0
+	frame	data/chars/jack/f6
+	attack2 -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f7
+	attack2 0
+	frame	data/chars/jack/f8
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f6
+	attack 0
+	frame	data/chars/jack/f7
+	attack2 -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f8
+	attack2 0
+	frame	data/chars/jack/f6
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f7
+	attack 0
+	frame	data/chars/jack/f8
+	attack2 -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f6
+	attack2 0
+	frame	data/chars/jack/f7
+	attack -1000 -1000 2000 2000 0 0 1 
+	frame	data/chars/jack/f8
+	attack 0
+	frame	data/chars/jack/f9
+	drawmethod 198 198
+	frame	data/chars/jack/f9
+	drawmethod 128 128
+	frame	data/chars/jack/f9
+	drawmethod 64 64
+	frame	data/chars/jack/f9
+	sound   data/sounds/bosfinsh.wav
+	delay 1
+	frame	data/chars/misc/empty
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

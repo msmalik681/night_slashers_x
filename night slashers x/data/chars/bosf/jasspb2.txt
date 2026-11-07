@@ -1,0 +1,20 @@
+name	jasspb2
+type	text
+subtype noskip
+cantgrab 1
+nolife 1
+setlayer 500
+anim idle
+	offset  205 240
+	bbox    0 0 0 0
+	delay 5
+	#quakeframe 0 5 -2
+	sound data/sounds/piorun2.wav
+	frame	data/chars/bosf/jpr1
+	frame	data/chars/bosf/jpr2
+	frame	data/chars/bosf/jpr3
+	frame	data/chars/bosf/jpr4
+	frame	data/chars/bosf/jpr5
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty

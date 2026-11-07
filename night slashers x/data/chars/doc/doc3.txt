@@ -1,0 +1,833 @@
+name	Doctor3
+health	300
+speed	10
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+aiattack dodge
+shadow	3
+noquake 1
+score	5000	5
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+thold 30
+blockodds 1
+bflash flashf
+load zombie
+load docsht
+load docgr1
+load docgr2
+load docgr3
+load dust
+escapehits 5
+hostile player 
+candamage player npc enemy obstacle
+projectilehit   enemy obstacle npc
+icon data/chars/doc/icon
+animationscript data/scripts/were.c
+diesound data/sounds/death1.wav
+dust dust
+falldie 1
+nodieblink 3
+height  1000
+palette data/chars/doc/01a
+alternatepal data/chars/doc/alt1
+aggression 50
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  70 118
+	delay 30
+	frame	data/chars/doc/32
+	delay 15
+	frame	data/chars/doc/33
+	frame	data/chars/doc/34
+	frame	data/chars/doc/35
+	frame	data/chars/doc/36
+	frame	data/chars/doc/37
+	frame	data/chars/doc/38
+	frame	data/chars/doc/39
+	frame	data/chars/doc/40
+	frame	data/chars/doc/41
+	frame	data/chars/doc/42
+	frame	data/chars/doc/43
+	frame	data/chars/doc/44
+	frame	data/chars/doc/45
+	frame	data/chars/doc/46
+	frame	data/chars/doc/47
+	frame	data/chars/doc/48
+	delay   100
+	frame	data/chars/doc/49
+	frame	data/chars/doc/49
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  70 118
+	delay 30
+	bbox   28 100 96 17
+	frame	data/chars/doc/32
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  70 118
+	delay 30
+	frame	data/chars/doc/32
+	delay 15
+	frame	data/chars/doc/33
+	frame	data/chars/doc/34
+	frame	data/chars/doc/35
+	frame	data/chars/doc/36
+	frame	data/chars/doc/37
+	frame	data/chars/doc/38
+	frame	data/chars/doc/39
+	frame	data/chars/doc/40
+	frame	data/chars/doc/41
+	frame	data/chars/doc/42
+	frame	data/chars/doc/43
+	frame	data/chars/doc/44
+	frame	data/chars/doc/45
+	frame	data/chars/doc/46
+	frame	data/chars/doc/47
+	frame	data/chars/doc/48
+	delay   100
+	frame	data/chars/doc/49
+	frame	data/chars/doc/49
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  70 118
+	delay 30
+	bbox   28 100 96 17
+	frame	data/chars/doc/32
+anim spawn
+	delay	260
+	offset  70 118
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	delay 15
+	frame	data/chars/doc/49
+	frame	data/chars/doc/48
+	frame	data/chars/doc/47
+	frame	data/chars/doc/46
+	frame	data/chars/doc/45
+	frame	data/chars/doc/44
+	frame	data/chars/doc/43
+	frame	data/chars/doc/42
+	frame	data/chars/doc/41
+	frame	data/chars/doc/40
+	frame	data/chars/doc/39
+	frame	data/chars/doc/38
+	frame	data/chars/doc/37
+	frame	data/chars/doc/36
+	delay   20
+	frame	data/chars/doc/01
+	sound   data/sounds/haha.wav
+	bbox    52 24 33 75
+	frame	data/chars/doc/02
+	frame	data/chars/doc/03
+	frame	data/chars/doc/04
+	frame	data/chars/doc/03
+	frame	data/chars/doc/02
+anim idle
+	loop	1
+	delay	200
+	offset  70 118
+	bbox    52 24 33 75
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/doc/01
+anim block
+	delay	5
+	offset  71 118
+	bbox    0 0 0 0
+	frame	data/chars/doc/a1
+	offset  70 118
+	frame	data/chars/doc/a1
+	offset  71 118
+	frame	data/chars/doc/a1
+	@cmd velo001 -2 0 0
+	offset  70 118
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/doc/a1
+	frame	data/chars/doc/a1
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/doc/a1
+	frame	data/chars/doc/a1
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/doc/a1
+	frame	data/chars/doc/a1
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/doc/a1
+	frame	data/chars/doc/a1
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/doc/a1
+	frame	data/chars/doc/a1
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    52 24 33 75
+	frame	data/chars/doc/a1
+anim walk
+	loop	1
+	delay	10
+	offset  70 118
+	bbox    52 24 33 75
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/doc/06
+	frame	data/chars/doc/07
+	frame	data/chars/doc/08
+	frame	data/chars/doc/09
+	frame	data/chars/doc/10
+	frame	data/chars/doc/11
+	frame	data/chars/doc/12
+	frame	data/chars/doc/05
+anim run
+	loop	1
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/06
+	frame	data/chars/doc/07
+	frame	data/chars/doc/08
+	frame	data/chars/doc/09
+	frame	data/chars/doc/10
+	frame	data/chars/doc/11
+	frame	data/chars/doc/12
+	frame	data/chars/doc/05
+anim runattack
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	@cmd velo001 2 0 0
+	hitflash bblod
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/a2
+	attack  64 6 47 62 10 1 0 0 10
+	frame	data/chars/doc/a3
+	@cmd velo001 1 0 0
+	frame	data/chars/doc/a4
+	attack  0 0 0 0
+	@cmd velo001 0.5 0 0
+	frame	data/chars/doc/a5
+anim attack1
+	range   20 60
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/13
+	attack  71 3 49 94 10 0 0 0 10
+	frame	data/chars/doc/14
+	frame	data/chars/doc/15
+	attack  0 0 0 0
+	frame	data/chars/doc/16
+anim attack2
+	range   10 20
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/16
+	attack  56 40 44 32 10 1 0 0 10
+	delay 4
+	dropv 4 2
+	frame	data/chars/doc/17
+	attack  0 0 0 0 0
+	frame	data/chars/doc/17
+	delay 8
+	frame	data/chars/doc/19
+	attack  0 0 0 0 
+	frame	data/chars/doc/20
+anim attack3
+	range   20 50
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/13
+	attack  71 3 49 94 10 0 0 0 10
+	frame	data/chars/doc/14
+	frame	data/chars/doc/15
+	attack  0 0 0 0
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/16
+	attack  56 40 44 32 10 0 0 0 10
+	delay 4
+	frame	data/chars/doc/17
+	attack  0 0 0 0 0
+	frame	data/chars/doc/17
+	delay 8
+	frame	data/chars/doc/19
+	attack  0 0 0 0 
+	frame	data/chars/doc/20
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/a2
+	attack  64 6 47 62 10 1 0 0 20
+	frame	data/chars/doc/a3
+	frame	data/chars/doc/a4
+	attack  0 0 0 0
+	frame	data/chars/doc/a5
+anim attack4
+	range   20 60
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/13
+	attack  71 3 49 94 10 1 0 0 10
+	frame	data/chars/doc/14
+	frame	data/chars/doc/15
+	attack  0 0 0 0
+	frame	data/chars/doc/16
+anim attack5
+	range   20 60
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/a2
+	attack  64 6 47 62 10 1 0 0 10
+	frame	data/chars/doc/a3
+	frame	data/chars/doc/a4
+	attack  0 0 0 0
+	frame	data/chars/doc/a5
+anim attack6
+	range   150 160
+	delay 20
+	offset  70 118
+	bbox    52 24 33 75
+	spawnframe 1 450 100 0 0
+	subentity zombie
+	sound   data/sounds/haha.wav
+	frame	data/chars/doc/02
+	frame	data/chars/doc/03
+	frame	data/chars/doc/04
+	frame	data/chars/doc/03
+	frame	data/chars/doc/02
+	frame	data/chars/doc/03
+	frame	data/chars/doc/04
+	frame	data/chars/doc/03
+	sound   data/sounds/haha.wav
+	frame	data/chars/doc/02
+	frame	data/chars/doc/03
+	frame	data/chars/doc/04
+	frame	data/chars/doc/03
+	frame	data/chars/doc/02
+	frame	data/chars/doc/03
+	frame	data/chars/doc/04
+	frame	data/chars/doc/03
+	sound   data/sounds/haha.wav
+	frame	data/chars/doc/02
+	frame	data/chars/doc/03
+	frame	data/chars/doc/04
+	frame	data/chars/doc/03
+	frame	data/chars/doc/02
+	frame	data/chars/doc/03
+	frame	data/chars/doc/04
+	frame	data/chars/doc/03
+anim attack7
+	range   150 160
+	delay	10
+	offset  70 118
+	bbox    52 24 33 75
+	jumpframe 1 4 2 0
+	landframe 2
+	frame	data/chars/doc/35
+	delay   1000
+	frame	data/chars/doc/36
+	delay  30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/doc/35
+anim attack8
+	range   145 155
+	delay	10
+	offset  70 118
+	bbox    52 24 33 75
+	jumpframe 1 4 2 1
+	landframe 2
+	frame	data/chars/doc/35
+	delay   1000
+	frame	data/chars/doc/36
+	delay  30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/doc/35
+anim attack9
+	range   145 155
+	delay	10
+	offset  70 118
+	bbox    52 24 33 75
+	jumpframe 1 4 2 -1
+	landframe 2
+	frame	data/chars/doc/35
+	delay   1000
+	frame	data/chars/doc/36
+	delay  30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/doc/35
+anim attack10
+	range   140 155
+	delay	20
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/21
+	delay   2
+	@cmd toss "docgr1" 56 50 0
+	frame	data/chars/doc/22
+	@cmd toss "docgr2" 56 50 0
+	frame	data/chars/doc/22
+	@cmd toss "docgr3" 56 50 0
+	frame	data/chars/doc/22
+	delay 7
+	frame	data/chars/doc/22
+	delay  30
+	frame	data/chars/doc/23
+anim attack11
+	range   200 210
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/16
+	@cmd shoot "docsht" 56 50 0
+	frame	data/chars/doc/24
+	frame	data/chars/doc/25
+	delay   30
+	frame	data/chars/doc/23
+anim upper
+	range   20 50
+	delay	8
+	offset  70 118
+	bbox    52 24 33 75
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/16
+	attack  56 40 44 32 10 0 0 0 10
+	delay 4
+	frame	data/chars/doc/17
+	attack  0 0 0 0 0
+	frame	data/chars/doc/17
+	delay 8
+	attack  55 9 43 27 10 0 0 0 10
+	frame	data/chars/doc/19
+	attack  0 0 0 0 
+	frame	data/chars/doc/20
+anim special
+	range   0 60
+	delay	8
+	offset  70 118
+	bbox    0 0 0 0
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/13
+	attack  71 3 49 94 10 0 0 0 10
+	frame	data/chars/doc/14
+	frame	data/chars/doc/15
+	attack  0 0 0 0
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/16
+	attack  56 40 44 32 10 0 0 0 10
+	delay 4
+	frame	data/chars/doc/17
+	attack  0 0 0 0 0
+	frame	data/chars/doc/17
+	delay 8
+	frame	data/chars/doc/19
+	attack  0 0 0 0 
+	frame	data/chars/doc/20
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/a2
+	attack  64 6 47 62 10 1 0 0 10
+	frame	data/chars/doc/a3
+	frame	data/chars/doc/a4
+	attack  0 0 0 0
+	frame	data/chars/doc/a5
+anim special2
+	range   0 60
+	delay	8
+	offset  70 118
+	bbox    0 0 0 0
+	hitfx   data/sounds/knifes.wav
+	frame	data/chars/doc/13
+	attack  71 3 49 94 10 0 0 0 10
+	frame	data/chars/doc/14
+	frame	data/chars/doc/15
+	attack  0 0 0 0
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/16
+	attack  56 40 44 32 10 0 0 0 10
+	delay 4
+	frame	data/chars/doc/17
+	attack  0 0 0 0 0
+	frame	data/chars/doc/17
+	delay 8
+	frame	data/chars/doc/19
+	attack  0 0 0 0 
+	frame	data/chars/doc/20
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/a2
+	attack  64 6 47 62 10 1 0 0 10
+	frame	data/chars/doc/a3
+	frame	data/chars/doc/a4
+	attack  0 0 0 0
+	frame	data/chars/doc/a5
+anim pain
+	delay 2
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/28
+	delay  30
+	frame	data/chars/doc/29
+	delay 10
+	frame	data/chars/doc/28
+anim pain2
+	delay 2
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/26
+	delay  30
+	frame	data/chars/doc/27
+	delay 10
+	frame	data/chars/doc/26
+anim pain5
+	delay 1
+	offset  70 118
+	bbox    38 20 65 55
+	movea 1
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+	frame	data/chars/doc/30
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+anim grabbed
+	delay 1
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/26
+anim grabbedwalk
+	delay 1
+	offset  70 158
+	bbox    52 24 33 75
+	frame	data/chars/doc/26
+anim fall
+	delay 1000
+	offset  70 118
+	bbox    0 0 0 0
+	landframe 1
+	attack  29 89 39 28 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/doc/30
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/doc/31
+	delay 15
+	bbox   28 100 96 17
+	frame	data/chars/doc/32
+anim fall5
+	delay 1000
+	offset  70 118
+	bbox    31 20 58 57
+	landframe 1
+	attack  29 89 39 28 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/doc/30
+	delay 20
+	attack  0 
+	bbox    0 0 0 0
+	frame	data/chars/doc/31
+	delay 30
+	bbox   28 100 96 17
+	frame	data/chars/doc/32
+anim fall8
+	delay 1000
+	offset  70 118
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/doc/28a
+	frame	data/chars/doc/x1
+	offset  100 100
+	attack  29 89 39 28 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/doc/30
+	offset  70 118
+	delay 20
+	attack  0 
+	frame	data/chars/doc/31
+	delay 15
+	bbox   28 100 96 17
+	frame	data/chars/doc/32
+anim dodge
+	range   145 155
+	delay	10
+	offset  70 118
+	bbox    52 24 33 75
+	jumpframe 1 3 2 -1
+	landframe 2
+	frame	data/chars/doc/35
+	delay   1000
+	frame	data/chars/doc/36
+	delay  30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/doc/35
+anim rise
+	delay 15
+	offset  70 118
+	bbox   28 100 96 17
+	frame	data/chars/doc/32
+	bbox    0 0 0 0
+	frame	data/chars/doc/33
+	frame	data/chars/doc/34
+	frame	data/chars/doc/35
+	frame	data/chars/doc/36
+anim riseattack
+	rangez -30 30
+	range 100 150
+	delay 10
+	offset  70 118
+	bbox    0 0 0 0
+	frame	data/chars/doc/33
+	frame	data/chars/doc/34
+	frame	data/chars/doc/35
+	frame	data/chars/doc/36
+	delay	20
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/21
+	delay   1
+	@cmd toss "docgr1" 56 50 0
+	frame	data/chars/doc/22
+	@cmd toss "docgr2" 56 50 0
+	frame	data/chars/doc/22
+	@cmd toss "docgr3" 56 50 0
+	frame	data/chars/doc/22
+	delay 7
+	frame	data/chars/doc/22
+	delay  30
+	frame	data/chars/doc/23
+anim death
+	@cmd death
+	delay  15
+	offset  70 118
+	bbox    0 0 0 0
+	frame	data/chars/doc/37
+	frame	data/chars/doc/38
+	frame	data/chars/doc/39
+	frame	data/chars/doc/40
+	frame	data/chars/doc/41
+	frame	data/chars/doc/42
+	frame	data/chars/doc/43
+	frame	data/chars/doc/44
+	frame	data/chars/doc/45
+	frame	data/chars/doc/46
+	frame	data/chars/doc/47
+	frame	data/chars/doc/48
+	delay   100
+	frame	data/chars/doc/49
+	frame	data/chars/doc/49
+anim death3
+	delay 1000
+	offset  70 118
+	bbox    0 0 0 0
+	landframe 1
+	jumpframe 0 3 -1 0
+	frame	data/chars/doc/30
+	delay 30
+	attack  29 89 39 28 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/doc/31
+	attack  0 0 0 0 
+	frame	data/chars/doc/32
+	delay 15
+	offset  70 118
+	bbox    0 0 0 0
+	frame	data/chars/doc/33
+	frame	data/chars/doc/34
+	frame	data/chars/doc/35
+	frame	data/chars/doc/36
+	frame	data/chars/doc/37
+	frame	data/chars/doc/38
+	frame	data/chars/doc/39
+	frame	data/chars/doc/40
+	frame	data/chars/doc/41
+	frame	data/chars/doc/42
+	frame	data/chars/doc/43
+	frame	data/chars/doc/44
+	frame	data/chars/doc/45
+	frame	data/chars/doc/46
+	frame	data/chars/doc/47
+	frame	data/chars/doc/48
+	delay   100
+	frame	data/chars/doc/49
+	frame	data/chars/doc/49
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  70 118
+	bbox    52 24 33 75
+	frame	data/chars/doc/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim dodge 
+	delay	10
+	offset  70 118
+	bbox    52 24 33 75
+	jumpframe 1 2 1 -1
+	landframe 2
+	frame	data/chars/doc/35
+	delay   1000
+	frame	data/chars/doc/36
+	delay  30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/doc/35

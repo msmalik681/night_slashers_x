@@ -1,0 +1,618 @@
+name	kat3
+health	100
+speed	10
+type	enemy
+aimove chase
+aimove wander
+aiattack movedodge
+shadow	3
+score	1000	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  12 4 2 1 0
+gfxshadow 1
+jumpheight 3
+thold 30
+nolife 1
+blockodds 3
+bflash flashf
+escapehits 5
+hostile player 
+candamage player enemy npc obstacle
+projectilehit   enemy obstacle npc
+animationscript data/scripts/were.c
+palette data/chars/kat/00
+alternatepal data/chars/kat/alt1a
+alternatepal data/chars/kat/alt2a
+alternatepal data/chars/kat/alt3a
+alternatepal data/chars/kat/alt4a
+alternatepal data/chars/kat/alt5a
+alternatepal data/chars/kat/alt6a
+alternatepal data/chars/kat/alt7a
+alternatepal data/chars/kat/alt8a
+dust dust
+load dust
+height  1000
+aggression -10
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	nodrawmethod
+	offset  83 167
+	delay 30
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+	delay 20
+	offset  103 167
+	bbox    0 0 0 0
+	frame	data/chars/kat/40
+	frame	data/chars/kat/41
+	frame	data/chars/kat/42
+	frame	data/chars/kat/43
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	nodrawmethod
+	offset  83 167
+	delay 30
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	nodrawmethod
+	offset  83 167
+	delay 30
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+	delay 20
+	offset  103 167
+	bbox    0 0 0 0
+	frame	data/chars/kat/40
+	frame	data/chars/kat/41
+	frame	data/chars/kat/42
+	frame	data/chars/kat/43
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	drawmethod 320 320
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	nodrawmethod
+	offset  83 167
+	delay 30
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+anim spawn
+	delay	1
+	offset  83 167
+	bbox    0 0 0 0
+	jumpframe 1 6 0 0
+	dropframe 2
+	landframe 3
+	quakeframe 3 1 2
+	@script
+	if(frame == 0){
+	void self = getlocalvar("self");
+	int map = rand()%8;
+	if(map < 0)
+	{
+	-map == map;
+	}
+	changeentityproperty(self, "map", map);
+	}
+	@end_script
+	frame	data/chars/misc/empty
+	delay 1000
+	frame	data/chars/misc/empty
+	fshadow 3
+	bbox    64 42 36 94
+	frame	data/chars/kat/29
+	delay 40
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/kat/26
+anim idle
+	loop	1
+	offset  83 167
+	bbox    64 42 36 94
+	delay 20
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/kat/01
+	frame	data/chars/kat/03
+	frame	data/chars/kat/02
+	frame	data/chars/kat/03
+anim block
+	delay	5
+	offset  83 167
+	bbox    0 0 0 0
+	frame	data/chars/kat/25
+	offset  84 167
+	frame	data/chars/kat/25
+	offset  83 167
+	frame	data/chars/kat/25
+	@cmd velo001 -2 0 0
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/kat/25
+	frame	data/chars/kat/25
+	@cmd velo001 -1.6 0 0
+	frame	data/chars/kat/25
+	frame	data/chars/kat/25
+	@cmd velo001 -1.2 0 0
+	frame	data/chars/kat/25
+	frame	data/chars/kat/25
+	@cmd velo001 -0.8 0 0
+	frame	data/chars/kat/25
+	frame	data/chars/kat/25
+	@cmd velo001 -0.4 0 0
+	frame	data/chars/kat/25
+	frame	data/chars/kat/25
+	@cmd velo001 0 0 0
+	delay 10
+	bbox    64 42 36 94
+	frame	data/chars/kat/25
+anim walk
+	loop	1
+	offset  83 167
+	bbox    64 42 36 94
+	delay 13
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	frame	data/chars/kat/11
+	frame	data/chars/kat/04
+	frame	data/chars/kat/05
+	frame	data/chars/kat/06
+	frame	data/chars/kat/07
+	frame	data/chars/kat/08
+	frame	data/chars/kat/09
+	frame	data/chars/kat/10
+anim run
+	loop	1
+	offset  83 167
+	bbox    64 42 36 94
+	delay 8
+	frame	data/chars/kat/11
+	frame	data/chars/kat/04
+	frame	data/chars/kat/05
+	frame	data/chars/kat/06
+	frame	data/chars/kat/07
+	frame	data/chars/kat/08
+	frame	data/chars/kat/09
+	frame	data/chars/kat/10
+anim runattack
+	offset  100 167
+	bbox    64 42 36 94
+	delay 10
+	@cmd velo001 2 0 0
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/kat/12
+	@cmd velo001 1.5 0 0
+	frame	data/chars/kat/13
+	delay 2
+	@cmd velo001 1 0 0
+	sound data/sounds/sword1.wav
+	attack  126 66 73 103 6 1 0 0 10
+	frame	data/chars/kat/15
+	frame	data/chars/kat/14
+	frame	data/chars/kat/15
+	frame	data/chars/kat/14
+	frame	data/chars/kat/15
+	delay   30
+	@cmd velo001 0 0 0
+	attack 0 0 0 0 
+	frame	data/chars/kat/14
+anim attack1
+	range   30 90
+	offset  100 167
+	bbox    64 42 36 94
+	delay 10
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/kat/12
+	frame	data/chars/kat/13
+	delay 2
+	sound data/sounds/sword1.wav
+	attack  126 66 73 103 6 0 0 0 10
+	frame	data/chars/kat/15
+	frame	data/chars/kat/14
+	frame	data/chars/kat/15
+	frame	data/chars/kat/14
+	frame	data/chars/kat/15
+	delay   30
+	attack 0 0 0 0 
+	frame	data/chars/kat/14
+anim attack2
+	range   30 90
+	offset  100 167
+	bbox    64 42 36 94
+	delay 20
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/kat/12
+	delay  10
+	frame	data/chars/kat/13
+	delay 2
+	sound data/sounds/sword1.wav
+	attack  126 66 73 103 10 1 0 0 10
+	frame	data/chars/kat/15
+	frame	data/chars/kat/14
+	frame	data/chars/kat/15
+	frame	data/chars/kat/14
+	frame	data/chars/kat/15
+	delay   30
+	attack 0 0 0 0 
+	frame	data/chars/kat/14
+anim attack3
+	range  150 160
+	offset  83 167
+	bbox    64 42 36 94
+	delay 20
+	jumpframe 1 3 2 0
+	landframe 9
+	quakeframe 9 1 -2
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/kat/26
+	delay 15
+	frame	data/chars/kat/27
+	frame	data/chars/kat/28
+	frame	data/chars/kat/29
+	delay 2
+	sound data/sounds/sword1.wav
+	attack  126 66 73 103 10 1 0 0 10
+	frame	data/chars/kat/30
+	frame	data/chars/kat/31
+	frame	data/chars/kat/30
+	frame	data/chars/kat/31
+	delay  1000
+	frame	data/chars/kat/30
+	delay   30
+	@cmd shoot "dust" 0 0 1
+	attack 0 0 0 0 
+	frame	data/chars/kat/26
+anim upper
+	offset  83 167
+	bbox    64 42 36 94
+	delay 20
+	jumpframe 1 3 0 0
+	landframe 9
+	quakeframe 9 1 -2
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/kat/26
+	delay 15
+	frame	data/chars/kat/27
+	frame	data/chars/kat/28
+	frame	data/chars/kat/29
+	delay 2
+	sound data/sounds/sword1.wav
+	attack  126 66 73 103 10 1 0 0 10
+	frame	data/chars/kat/30
+	frame	data/chars/kat/31
+	frame	data/chars/kat/30
+	frame	data/chars/kat/31
+	delay  1000
+	frame	data/chars/kat/30
+	delay   30
+	@cmd shoot "dust" 0 0 1
+	attack 0 0 0 0 
+	frame	data/chars/kat/26
+anim pain
+	delay 2
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/18a
+	delay  40
+	frame	data/chars/kat/18
+	delay 10
+	frame	data/chars/kat/18a
+anim pain2
+	delay 2
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	delay  40
+	frame	data/chars/kat/17
+	delay 10
+	frame	data/chars/kat/16
+anim pain5
+	delay 1
+	offset  83 167
+	bbox    47 57 63 73
+	movea 1
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+	frame	data/chars/kat/19
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	drawmethod 384 384
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 5
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	drawmethod 384 384
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	nodrawmethod
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	drawmethod 384 384
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  83 167
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+anim grabbedwalk
+	delay 1
+	offset  83 207
+	bbox    64 42 36 94
+	frame	data/chars/kat/16
+anim fall
+	delay 1000
+	offset  83 162
+	bbox    0 0 0 0
+	landframe 1
+	attack  42 70 36 58 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/kat/19
+	offset  83 167
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/kat/20
+	delay 30
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+anim fall5
+	delay 1000
+	offset  83 162
+	bbox    42 70 36 58
+	landframe 1
+	attack  42 70 36 58 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/kat/19
+	offset  83 167
+	delay 20
+	attack  0 0 0 0
+	bbox    0 0 0 0
+	frame	data/chars/kat/20
+	delay 60
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+anim fall8
+	delay 1000
+	offset  83 162
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/kat/16a
+	frame	data/chars/kat/x1
+	attack  42 70 36 58 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/kat/19
+	offset  83 167
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/kat/20
+	delay 30
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+anim rise
+	delay 20
+	offset  83 167
+	bbox   0 0 0 0 
+	frame	data/chars/kat/22
+	frame	data/chars/kat/23
+	frame	data/chars/kat/24
+anim death
+	sound   data/sounds/uraaaw.wav
+	offset  127 166
+	bbox   0 0 0 0
+	delay 15
+	@cmd death
+	frame	data/chars/kat/32
+	frame	data/chars/kat/33
+	frame	data/chars/kat/34
+	frame	data/chars/kat/35
+anim death2
+	sound   data/sounds/uraaaw.wav
+	offset  83 168
+	bbox   0 0 0 0 
+	@cmd death
+	delay 15
+	frame	data/chars/kat/36
+	frame	data/chars/kat/37
+	frame	data/chars/kat/38
+	frame	data/chars/kat/39
+anim death3
+	jumpframe 0 3 -1 0
+	landframe 1
+	delay 1000
+	offset  83 167
+	bbox    0 0 0 0
+	landframe 1
+	attack  42 70 36 58 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/kat/19
+	delay 20
+	@cmd shoot "dust" 0 0 1
+	attack  0 0 0 0
+	frame	data/chars/kat/20
+	delay 30
+	bbox   21 142 113 29
+	frame	data/chars/kat/21
+	delay 10
+	offset  103 167
+	bbox    0 0 0 0
+	frame	data/chars/kat/40
+	delay 30
+	frame	data/chars/kat/41
+	delay 10
+	frame	data/chars/kat/42
+	frame	data/chars/kat/43

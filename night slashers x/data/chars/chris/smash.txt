@@ -1,0 +1,26 @@
+name	smash
+type	none
+speed 5
+toflip 1
+nomove 1 1
+facing 1
+load smashbg
+load blood3
+palette data/chars/chris/smash
+
+anim idle
+	delay	8
+	offset	25 25
+	movez 1
+	spawnframe 0 160 120 0 1
+	subentity smashbg
+	custbomb blood3
+	tossframe 0 0	
+	quakeframe 0 1 1
+	frame	data/chars/chris/smash
+ 	frame	data/chars/misc/empty
+	offset	25 30
+	frame   data/chars/chris/smash
+	frame	data/chars/misc/empty
+	offset	25 20
+	frame   data/chars/chris/smash

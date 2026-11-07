@@ -1,0 +1,150 @@
+loadingbg data/scenes/lvs/4 1 1000 1000 1 1000 1000 
+music		data/music/lv6.bor 816816
+bossmusic		data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv4/back
+bglayer	        data/bgs/lv4/back 0.1 0 0 0 0 0 100 1 1 
+fglayer 	data/bgs/lv4/web 1 -0.5 0 0 0 99999999 0 2 1 1 
+fglayer 	data/bgs/lv4/web2 1 -0.5 0 1100 80 99999999 0 2 1 1 
+fglayer 	data/bgs/lv4/swc5a 4 1 1 0 0 99999999 0 2 1 1 2 
+panel		data/bgs/lv4/a1b
+order	a
+spawn1 100 45 0
+spawn2 80 70 0
+cameratype 1
+levelscript data/bgs/lv4/lv4.c
+load gilot2 1
+load Zombiedr 1
+load Zombied2 1
+load wraith 1
+noslow 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	stop
+flip 1
+coords	160 130
+at	0
+spawn	gilot2
+flip 1
+coords	708 244
+at	0
+spawn	barelb
+item itemr2
+coords	415 145
+at	0
+spawn	zombiea
+coords	280 200
+at	0
+spawn	zombie2
+coords	380 220
+at	20
+spawn	zombiea
+coords	380 200
+at	40
+spawn	zombiea
+coords	380 160
+at	80
+###################
+spawn	zombie3
+coords	-50 200
+at	100
+spawn	kat
+item itemr
+coords	380 200
+at	240
+spawn	flame
+flip 1
+coords	100 180
+at	260
+spawn	zombiea
+coords	380 160
+at	260
+spawn	zombie
+coords	-50 200
+at	260
+spawn	zombie3
+coords	380 230
+at	260
+#####################
+wait
+at 325
+group 100 100
+at 325
+spawn	Zombiedr
+coords	157 137
+at	325
+group 5 5
+at 325
+spawn	zombie
+coords	-100 200
+at	325
+spawn	zombie
+coords	380 230
+at	325
+spawn	kat
+coords	-100 200
+at	325
+spawn	zombie3
+coords	380 180
+at	325
+spawn	Zombied2
+coords	157 137
+at	325
+spawn	zombie
+coords	-80 200
+at	325
+spawn	ghoul
+coords	350 230
+at	325
+spawn	jason2
+coords	350 180
+at	325
+spawn	zombie3
+coords	380 200
+at	325
+spawn	Zombiedr
+coords	157 137
+at	325
+#########################
+group 100 100
+at 400
+spawn	flame
+health 100
+coords	310 160
+at	454
+spawn	zombiea
+coords	370 200
+at	470
+spawn	zombie2a
+coords	370 230
+at	500
+spawn	zombie3
+coords	400 160
+at	530
+group 4 4
+at 600
+spawn	kat
+coords	450 200
+at	600
+spawn	zombie4
+coords	-80 200
+at	600
+spawn	zombie2
+coords	400 230
+at	600
+spawn	zombie3
+coords	-80 160
+at	600
+spawn	zombie
+coords	400 180
+at	600
+group 1 1
+at 600
+spawn	wraith
+item bosslow
+coords	250 180
+at	600

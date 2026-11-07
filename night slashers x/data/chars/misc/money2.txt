@@ -1,0 +1,17 @@
+name money2
+type item
+score 2000
+subject_to_screen 0
+anim spawn
+	delay 10
+	offset 9 7
+	bbox 0 0 20 16 5
+	jumpframe 0 2 0 0
+	movez -1
+	frame data/chars/misc/money2
+anim idle 
+	loop 1
+	delay 10
+	offset 9 7
+	bbox 0 0 20 16 5
+	frame data/chars/misc/money2

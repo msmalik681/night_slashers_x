@@ -1,0 +1,163 @@
+music		data/music/lv4.bor
+settime 0
+notime 1
+background	data/bgs/bonus/a1a
+panel		data/chars/misc/empty
+fglayer data/bgs/bonus/ap1 1 0 0 500 0 5000 0 9999999999 1 1 0 0 0 0 0 1.25
+order	a
+direction both
+bgspeed 25
+spawn1 120 5
+spawn2 80 5
+rock 3
+load auto2 1
+wall 0 240 0 0 224 212 15 120
+#hole 210 130 30 0 1000 1000 30 1000
+#hole -1000 130 0 0 1000 1000 30 1000
+load auto2 1
+load zombieb 1
+load aramer 1
+load ghoul3 1
+load were3 1
+updatescript data/scripts/dropdead.c
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	lvbegin3
+flip 1
+coords	100 240
+at	0
+spawn	auto2
+flip 1
+coords	0 250
+at	0
+
+group 1 1
+at 50
+
+spawn	zombieb
+coords	150 232 320
+at	50
+
+group 1 2
+at 50
+
+spawn	ghoul3
+coords	150 232 320
+at	50
+spawn	zombieb
+coords	100 232 320
+at	50
+spawn	zombieb
+coords	50 232 320
+at	50
+spawn	were3
+coords	150 232 320
+at	50
+spawn	zombieb
+coords	100 232 320
+at	50
+spawn	were3
+coords	50 232 320
+at	50
+
+group 2 3
+at 50
+
+spawn	zombieb
+coords	150 232 320
+at	50
+spawn	zombieb
+coords	100 232 320
+at	50
+spawn	ghoul3
+coords	50 232 320
+at	50
+spawn	zombieb
+coords	150 232 320
+at	50
+spawn	zombieb
+coords	100 232 320
+at	50
+spawn	aramer
+boss 1
+item bosslow
+coords	480 232
+at	50
+spawn	zombieb
+coords	200 232 320
+at	50
+spawn	were3
+coords	50 232 320
+at	50
+spawn	zombieb
+coords	150 232 320
+at	50
+spawn	ghoul3
+coords	100 232 320
+at	50
+spawn	zombieb
+coords	50 232 320
+at	50
+spawn	ghoul3
+coords	150 232 320
+at	50
+spawn	were3
+coords	100 232 320
+at	50
+spawn	zombieb
+coords	50 232 320
+at	50
+spawn	zombieb
+coords	150 232 320
+at	50
+spawn	ghoul3
+coords	100 232 320
+at	50
+spawn	zombieb
+coords	50 232 320
+at	50
+spawn	zombieb
+coords	150 232 320
+at	50
+spawn	ghoul3
+coords	100 232 320
+at	50
+spawn	zombieb
+coords	50 232 320
+at	50
+spawn	were3
+coords	150 232 320
+at	50
+spawn	zombieb
+coords	100 232 320
+at	50
+spawn	ghoul3
+coords	50 232 320
+at	50
+spawn	zombieb
+coords	150 232 320
+at	50
+spawn	zombieb
+coords	100 232 320
+at	50
+spawn	zombieb
+coords	50 232 320
+at	50
+spawn	were3
+coords	150 232 320
+at	50
+spawn	ghoul3
+coords	100 232 320
+at	50
+spawn	zombieb
+coords	50 232 320
+at	50
+spawn	were3
+coords	150 232 320
+at	50
+spawn	ghoul3
+coords	100 232 320
+at	50

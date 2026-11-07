@@ -1,0 +1,29 @@
+name zbrain
+type pshot
+speed 5
+jumpheight 0
+palette data/chars/zombie/00a
+alternatepal data/chars/zombie/alt1a
+alternatepal data/chars/zombie/alt2a
+alternatepal data/chars/zombie/alt3a
+alternatepal data/chars/zombie/alt4a
+alternatepal data/chars/zombie/alt2a
+anim idle 
+	offset 15 33
+	bbox 0 0 0 0
+	delay 1000
+	flipframe 0
+	frame data/chars/zombie/39
+anim attack1
+	offset 15 33
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 1000
+	landframe 1
+	frame data/chars/zombie/38
+	delay 99999999999
+	frame data/chars/zombie/38
+anim attack2
+	offset 15 33
+	bbox 0 0 0 0
+	frame data/chars/zombie/38

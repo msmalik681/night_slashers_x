@@ -1,0 +1,104 @@
+name	cybfir1
+type	pshot
+nomove 1 1
+candamage player enemy npc obstacle
+nolife 1
+remove 0
+noatflash 1
+flash dflash
+palette data/chars/cyborg/a1
+anim idle
+	delay 4
+	offset  138 191
+	bbox    0 0 0 0
+	frame	data/chars/cyborg/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a1
+	frame	data/chars/misc/empty
+	burn    55 52 166 166 10 1 1 0 10
+	frame	data/chars/cyborg/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a3
+	burn 0 0 0 0
+	frame	data/chars/misc/empty
+	burn    55 52 166 166 10 1 1 0 10
+	frame	data/chars/cyborg/a4
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a4
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a4
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a5
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a5
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a5
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a6
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a6
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a6
+	burn 0 0 0 0
+	frame	data/chars/misc/empty
+	burn    55 52 166 166 10 1 1 0 10
+	frame	data/chars/cyborg/a7
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a7
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a7
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a8
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a8
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a8
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a9
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a9
+	burn   0 0 0 0
+	frame	data/chars/misc/empty
+	burn    55 52 166 166 10 1 1 0 10
+	frame	data/chars/cyborg/a9
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a10
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a10
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a10
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a3
+	burn    0 0 0 0
+	frame	data/chars/misc/empty
+	burn    55 52 166 166 10 1 1 0 10
+	frame	data/chars/cyborg/a3
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a2
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a2
+	burn    0 0 0 0 0 0
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/cyborg/a1
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+
+

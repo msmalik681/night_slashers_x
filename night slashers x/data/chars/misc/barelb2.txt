@@ -1,0 +1,40 @@
+name barelb2
+type obstacle
+health 1
+gfxshadow 1
+noatflash 1
+flash bflash
+noquake 1
+diesound data/sounds/wood.wav
+bounce 1
+nolife 1
+jumpheight 3
+load dust
+anim spawn
+	offset 61 77
+	bbox 0 0 0 0
+	delay 1000
+	jumpframe 0 6 0 0
+	dropframe 1
+	landframe 2
+	quakeframe 2 1 1
+	throwframe 2 -1
+	custknife dust
+	frame data/chars/misc/empty
+	bbox 38 15 46 63
+	frame data/chars/misc/barelb1
+	delay 1
+	frame data/chars/misc/barelb1
+anim idle 
+	loop 1
+	offset 61 77
+	bbox 38 15 46 63 5
+	delay 1000
+	platform 61 79 -50 -50 50 50 16 1050
+	frame data/chars/misc/barelb1
+anim fall
+	offset 61 77
+	bbox 0 0 0 0
+	delay 10
+	frame data/chars/misc/barelb2   
+	frame data/chars/misc/barelb3      

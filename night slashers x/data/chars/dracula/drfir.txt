@@ -1,0 +1,27 @@
+name	drfir
+type	pshot
+speed 10
+candamage player enemy npc obstacle
+nolife 1
+remove 0
+noatflash 1
+flash dflash
+anim spawn
+	delay 3 
+	offset  31 29
+	bbox    0 0 0 0
+	frame	data/chars/dracula/firec1
+	frame	data/chars/dracula/firec2
+	frame	data/chars/dracula/firec3
+	frame	data/chars/dracula/firec4
+	frame	data/chars/dracula/firec6
+anim idle
+	loop 1
+	offset  31 29
+	bbox 0 0 0 0
+	delay	5
+	burn  15 13 31 31 5 1 1 0 10
+	frame	data/chars/dracula/firec7
+	frame	data/chars/dracula/firec8
+	frame	data/chars/dracula/firec9
+	frame	data/chars/dracula/firec10

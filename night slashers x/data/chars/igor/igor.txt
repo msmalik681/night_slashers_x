@@ -1,0 +1,652 @@
+name	igor
+health	400
+speed	10
+type	enemy
+aimove chase
+aimove wander
+aiattack dodge
+shadow	3
+noquake 1
+score	10000	5
+falldie 1
+nodieblink 3
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+thold 30
+blockodds 3
+bflash flashf
+load zombie2
+load zombie 
+load zhead4
+escapehits 5
+hostile player 
+subject_to_hole 0
+subject_to_platform 0
+subject_to_wall 0
+subject_to_obstacle 0
+candamage player enemy npc obstacle
+projectilehit   enemy obstacle npc
+icon data/chars/doc/icon
+animationscript data/scripts/boss3.c
+dust dust
+load dust
+summonkill 0
+height  1000
+palette data/chars/igor/00
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  62 108
+	delay 30
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+	delay 20
+	bbox    0 0 0 0
+	frame	data/chars/igor/16
+	frame	data/chars/igor/17
+	frame	data/chars/igor/19
+	frame	data/chars/igor/20
+	frame	data/chars/igor/21
+	frame	data/chars/igor/22
+	frame	data/chars/igor/23
+	delay   100
+	frame	data/chars/igor/24
+	@cmd fademusic 0.1 "data/music/lv3.bor" 1 0
+	frame	data/chars/igor/24
+	delay 50
+	frame	data/chars/misc/empty
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	offset  62 108
+	delay 30
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  62 108
+	delay 30
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+	delay 20
+	bbox    0 0 0 0
+	frame	data/chars/igor/16
+	frame	data/chars/igor/17
+	frame	data/chars/igor/19
+	frame	data/chars/igor/20
+	frame	data/chars/igor/21
+	frame	data/chars/igor/22
+	frame	data/chars/igor/23
+	delay   100
+	frame	data/chars/igor/24
+	@cmd fademusic 0.1 "data/music/lv3.bor" 1 0
+	frame	data/chars/igor/24
+	delay 50
+	frame	data/chars/misc/empty
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	offset  62 108
+	delay 30
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+anim spawn
+	offset  62 108
+	bbox    40 33 38 51
+	delay 10
+	frame	data/chars/igor/01
+	delay 15
+	sound data/sounds/n2/igorha.wav
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+anim idle
+	loop	1
+	offset  62 108
+	delay 20
+	bbox    40 33 38 51
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/igor/01
+	frame	data/chars/igor/02
+	frame	data/chars/igor/01
+	frame	data/chars/igor/03
+anim faint
+	loop	1
+	offset  62 108
+	delay 20
+	bbox    40 33 38 51
+	summonframe 1 150 0 0 0
+	subentity zombie
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/igor/01
+	frame	data/chars/igor/02
+	frame	data/chars/igor/01
+	frame	data/chars/igor/03
+anim block
+	offset  62 108
+	delay 30
+	bbox    40 33 38 51
+	jumpframe 0 4 -2 0
+	dropframe 2
+	landframe 3
+	frame	data/chars/igor/06
+	frame	data/chars/igor/07
+	delay   1000
+	frame	data/chars/igor/08
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	bbox    40 33 38 51
+	frame	data/chars/igor/17
+anim walk
+	loop	1
+	offset  62 108
+	delay 15
+	bbox    40 33 38 51
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	frame	data/chars/igor/06
+	frame	data/chars/igor/07
+	frame	data/chars/igor/08
+anim run
+	loop	1
+	offset  62 108
+	delay 10
+	bbox    40 33 38 51
+	frame	data/chars/igor/06
+	frame	data/chars/igor/07
+	frame	data/chars/igor/08
+anim runattack
+	offset  62 108
+	delay 10
+	bbox    40 33 38 51
+	@cmd velo001 2 0 0
+	frame	data/chars/igor/25
+	delay 20
+	blast  74 30 55 20 10 0 0 30
+	dropv  4 2
+	frame	data/chars/igor/26
+	delay 10
+	blast  0 0 0 0 0
+	@cmd velo001 1 0 0
+	frame	data/chars/igor/25
+anim attack1
+	range   130 160
+	offset  62 108
+	delay 8
+	bbox    40 33 38 51
+	frame	data/chars/igor/18
+	frame	data/chars/igor/a1
+	attack  72 39 74 17 10 0 0 0 20
+	frame	data/chars/igor/a2
+	attack  65 41 141 11 10 0 0 0 20
+	frame	data/chars/igor/a3
+	attack  64 40 176 14 10 0 0 0 20
+	frame	data/chars/igor/a4
+	attack  67 40 206 14 10 0 0 0 20
+	frame	data/chars/igor/a5
+	attack  0 0 0 0 0
+	frame	data/chars/igor/a6
+	frame	data/chars/igor/a7
+	frame	data/chars/igor/a8
+	frame	data/chars/igor/a9
+	frame	data/chars/igor/a10
+anim attack2
+	range   130 160
+	offset  62 108
+	delay 20
+	bbox    40 33 38 51
+	frame	data/chars/igor/18
+	delay 4
+	frame	data/chars/igor/a1
+	attack  72 39 74 17 10 1 0 0 20
+	frame	data/chars/igor/a2
+	attack  65 41 141 11 10 1 0 0 20
+	frame	data/chars/igor/a3
+	attack  64 40 176 14 10 1 0 0 20
+	frame	data/chars/igor/a4
+	attack  67 40 206 14 10 1 0 0 20
+	frame	data/chars/igor/a5
+	attack  0 0 0 0 0
+	frame	data/chars/igor/a6
+	frame	data/chars/igor/a7
+	frame	data/chars/igor/a8
+	frame	data/chars/igor/a9
+	frame	data/chars/igor/a10
+anim attack3
+	range  10 50
+	offset  62 108
+	delay 10
+	bbox    40 33 38 51
+	frame	data/chars/igor/25
+	delay 15
+	blast  74 30 55 20 10 0 0 30
+	dropv  4 2
+	frame	data/chars/igor/26
+	delay 5
+	blast  0 0 0 0 0
+	frame	data/chars/igor/25
+anim attack4
+	range  130 160
+	offset  62 108
+	bbox    40 33 38 51
+	delay 10
+	jumpframe 1 4 2 0
+	dropframe 3 
+	landframe 4
+	frame	data/chars/igor/01
+	delay 15
+	frame	data/chars/igor/06
+	frame	data/chars/igor/07
+	delay   1000
+	frame	data/chars/igor/08
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/igor/17
+anim attack5
+	rangez -1000 -50
+	range 152 162
+	offset  62 108
+	bbox    40 33 38 51
+	delay 15
+	sound data/sounds/n2/igorha.wav
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+	@cmd spawn01 "zombie" 100 0 0
+	@cmd spawn01 "zombie2" 0 0 50
+	@cmd spawn01 "zombie" 0 0 -50
+	@cmd spawn01 "zombie2" -100 0 0
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+	frame	data/chars/igor/05
+	frame	data/chars/igor/04
+anim attack6
+	range   130 160
+	offset  62 108
+	delay 30
+	bbox    40 33 38 51
+	frame	data/chars/igor/27
+	@cmd shoot "zhead4" 48 61 -1
+	delay 40
+	frame	data/chars/igor/28
+anim special2
+	range  10 50
+	offset  62 108
+	delay 10
+	bbox    0 0 0 0
+	sound data/sounds/n2/igor.wav
+	frame	data/chars/igor/25
+	delay 15
+	blast  74 30 55 20 10 0 0 30
+	dropv  4 2
+	bbox    40 33 38 51
+	frame	data/chars/igor/26
+	delay 5
+	blast  0 0 0 0 0
+	frame	data/chars/igor/25
+anim upper
+	offset  62 108
+	delay 30
+	bbox    40 33 38 51
+	jumpframe 0 4 -2 0
+	landframe 3
+	frame	data/chars/igor/06
+	frame	data/chars/igor/07
+	delay   1000
+	frame	data/chars/igor/08
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	bbox    40 33 38 51
+	frame	data/chars/igor/17
+anim pain2
+	delay 2
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/09
+	delay  30
+	frame	data/chars/igor/10
+	delay 10
+	frame	data/chars/igor/09
+anim pain
+	delay 2
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/11
+	delay  30
+	frame	data/chars/igor/12
+	delay 10
+	frame	data/chars/igor/11
+anim pain5
+	delay 1
+	offset  62 108
+	bbox    40 35 48 64
+	movea 1
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+	frame	data/chars/igor/13
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/01
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	@cmd fademusic 0.1 "data/music/lv3.bor" 1 0
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  62 108
+	bbox    40 33 38 51
+	frame	data/chars/igor/09
+anim grabbedwalk
+	delay 1
+	offset  62 148
+	bbox    40 33 38 51
+	frame	data/chars/igor/09
+anim fall
+	delay 1000
+	offset  62 108
+	bbox    0 0 0 0
+	landframe 1
+	attack  31 36 30 41 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/igor/13
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/igor/14
+	delay 15
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+anim fall5
+	delay 1000
+	offset  62 108
+	bbox    31 36 30 41
+	landframe 1
+	attack  31 36 30 41 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/igor/13
+	delay 20
+	attack  0 0 0 0
+	bbox    0 0 0 0
+	frame	data/chars/igor/14
+	delay 30
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+anim fall8
+	delay 1000
+	offset  62 108
+	bbox    0 0 0 0
+	landframe 3
+	frame	data/chars/igor/12a
+	frame	data/chars/igor/x1
+	attack  31 36 30 41 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/igor/13
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/igor/14
+	delay 15
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+anim dodge
+	offset  62 108
+	bbox    40 33 38 51
+	delay 10
+	jumpframe 0 3 0 0
+	dropframe 2 
+	landframe 3
+	delay 15
+	frame	data/chars/igor/06
+	frame	data/chars/igor/07
+	delay   1000
+	frame	data/chars/igor/08
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/igor/17
+anim rise
+	delay 15
+	offset  62 108
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+	bbox    0 0 0 0
+	frame	data/chars/igor/16
+	frame	data/chars/igor/17
+anim riseattack
+	rangez 50 150
+	offset  62 108
+	bbox  0 0 0 0
+	delay 10
+	jumpframe 1 4 2 1
+	dropframe 3 
+	landframe 4
+	frame	data/chars/igor/01
+	delay 15
+	frame	data/chars/igor/06
+	frame	data/chars/igor/07
+	delay   1000
+	bbox    40 33 38 51
+	frame	data/chars/igor/08
+	delay 30
+	@cmd shoot "dust" 0 0 1
+	frame	data/chars/igor/17
+anim death
+	@cmd death
+	delay  20
+	offset  62 108
+	bbox    0 0 0 0
+	sound   data/sounds/uaaaa.wav
+	frame	data/chars/igor/17
+	frame	data/chars/igor/19
+	frame	data/chars/igor/20
+	frame	data/chars/igor/21
+	frame	data/chars/igor/22
+	frame	data/chars/igor/23
+	delay   100
+	@cmd fademusic 0.5 "data/music/lv3.bor" 1 0
+	frame	data/chars/igor/24
+	frame	data/chars/igor/24	
+	delay 1
+	frame	data/chars/igor/24
+anim death3
+	landframe 1
+	jumpframe 0 3 -1 0
+	delay 1000
+	offset  62 108
+	bbox    0 0 0 0
+	landframe 1
+	attack  31 36 30 41 6 1 0 0 20
+	hitflash bflash
+	frame	data/chars/igor/13
+	delay 20
+	@cmd shoot "dust" 0 0 1
+	attack  0 0 0 0
+	frame	data/chars/igor/14
+	delay 30
+	bbox   17 85 67 25
+	frame	data/chars/igor/15
+	delay 20
+	bbox    0 0 0 0
+	frame	data/chars/igor/16
+	frame	data/chars/igor/17
+	frame	data/chars/igor/19
+	frame	data/chars/igor/20
+	frame	data/chars/igor/21
+	frame	data/chars/igor/22
+	frame	data/chars/igor/23
+	delay   100
+	@cmd fademusic 0.5 "data/music/lv3.bor" 1 0
+	frame	data/chars/igor/24
+	frame	data/chars/igor/24		
+	delay 1
+	frame	data/chars/igor/24

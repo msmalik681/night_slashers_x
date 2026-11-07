@@ -1,0 +1,32 @@
+name tomb
+type npc
+nomove 1 1
+health 30
+gfxshadow 1
+noatflash 1
+flash bflash
+bounce 1
+nolife 1
+jumpheight 2
+score 1000 5
+facing 1
+anim idle 
+	@script
+	void self = getlocalvar("self");
+	if (frame == 1){
+		damageentity(self, self, 1000, 1, openborconstant("ATK_NORMAL"));
+	}
+	@end_script
+	offset 33 47
+	bbox 14 -20 42 82 5
+	delay 2000
+	platform 33 52 -43 -43 43 43 10 1100
+	frame data/chars/misc/tomb
+	frame data/chars/misc/tomb
+anim fall
+	throwframe 0 -1
+	custknife dust
+	offset 33 47
+	bbox 0 0 0 0
+	delay 1000
+	frame data/chars/misc/tomb 

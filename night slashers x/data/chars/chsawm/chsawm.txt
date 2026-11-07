@@ -1,0 +1,736 @@
+name	chsawm
+health	300
+speed	5
+type	enemy
+aimove chase
+aimove wander
+aiattack dodgemove
+shadow	3
+noquake 1
+falldie 2
+nodieblink 3
+score	400	5
+throwdamage	20
+paingrab 1
+grabdistance 24
+running  10 4 2 1 0
+gfxshadow 1
+jumpheight 3
+hostile player 
+candamage player npc enemy obstacle
+projectilehit   enemy obstacle npc
+animationscript data/scripts/were.c
+dust dust
+height  1000
+aggression -20
+icon data/chars/doc/icon
+anim bdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 30
+	offset  59 133
+	bbox    11 109 66 27
+	frame	data/chars/chsawm/30
+	offset  104 116
+	bbox    0 0 0 0
+	delay 20
+	frame	data/chars/chsawm/d1
+	delay 30
+	frame	data/chars/chsawm/d2
+	frame	data/chars/chsawm/d3
+	delay 200
+	frame	data/chars/chsawm/d4
+anim burn
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	frame	data/chars/burn/1
+	frame	data/chars/burn/2
+	frame	data/chars/burn/3
+	delay 30
+	offset  59 133
+	bbox    11 109 66 27
+	frame	data/chars/chsawm/30
+anim sdie
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	jumpframe 0 3 -1 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 30
+	offset  59 133
+	bbox    11 109 66 27
+	frame	data/chars/chsawm/30
+	offset  104 116
+	bbox    0 0 0 0
+	delay 20
+	frame	data/chars/chsawm/d1
+	delay 30
+	frame	data/chars/chsawm/d2
+	frame	data/chars/chsawm/d3
+	delay 200
+	frame	data/chars/chsawm/d4
+anim shock
+	offset	65 93
+	delay 10
+	bbox    0 0 0 0
+	landframe 15
+	bounce 1
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	frame	data/chars/burn/a1
+	frame	data/chars/burn/a2
+	frame	data/chars/burn/a3
+	delay 30
+	offset  59 133
+	bbox    11 109 66 27
+	frame	data/chars/chsawm/30
+anim spawn
+	delay	5
+	jumpframe 0 3 0 0.2
+	offset  59 133
+	bbox    0 0 0 0
+	landframe 54
+	quakeframe 54 3 1
+	sound data/sounds/jump.wav
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	@cmd shoot "dust" 0 0 0
+	frame	data/chars/chsawm/31
+	frame	data/chars/chsawm/32
+	frame	data/chars/chsawm/33
+	frame	data/chars/chsawm/31
+	frame	data/chars/chsawm/32
+	frame	data/chars/chsawm/33
+anim idle
+	range   100 100000
+	loop	1
+	delay	5
+	offset  59 133
+	bbox    42 56 33 55
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	frame	data/chars/chsawm/01
+	frame	data/chars/chsawm/02
+	frame	data/chars/chsawm/03
+	frame	data/chars/chsawm/34
+	frame	data/chars/chsawm/35
+	frame	data/chars/chsawm/36
+anim turn
+	delay	5
+	offset  59 133
+	bbox    42 56 33 55
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/chsawm/01
+	frame	data/chars/chsawm/02
+	frame	data/chars/chsawm/03
+anim walk
+	loop	1
+	delay	8
+	offset  59 133
+	bbox    42 56 33 55
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/chsawm/04
+	frame	data/chars/chsawm/05
+	frame	data/chars/chsawm/06
+	frame	data/chars/chsawm/07
+	frame	data/chars/chsawm/08
+	frame	data/chars/chsawm/09
+	frame	data/chars/chsawm/04
+	frame	data/chars/chsawm/05
+	frame	data/chars/chsawm/06
+	frame	data/chars/chsawm/01
+	frame	data/chars/chsawm/02
+	frame	data/chars/chsawm/03
+anim run
+	loop	1
+	delay	6
+	offset  59 133
+	bbox    42 56 33 55
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	frame	data/chars/chsawm/04
+	frame	data/chars/chsawm/05
+	frame	data/chars/chsawm/06
+	frame	data/chars/chsawm/07
+	frame	data/chars/chsawm/08
+	frame	data/chars/chsawm/09
+	frame	data/chars/chsawm/04
+	frame	data/chars/chsawm/05
+	frame	data/chars/chsawm/06
+	frame	data/chars/chsawm/01
+	frame	data/chars/chsawm/02
+	frame	data/chars/chsawm/03
+anim runattack
+	delay	15
+	offset  59 133
+	bbox    42 56 33 55
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/13
+	delay  5
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay 10
+	@cmd velo001 2 0 0
+	frame	data/chars/chsawm/13
+	delay 70
+	hitflash bblod
+	@cmd velo001 2.5 0 0
+	attack  78 76 75 15 10 1 1 0 20
+	frame	data/chars/chsawm/17
+	delay 10
+	@cmd velo001 2 0 0
+	attack  0 0 0 0 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1.5 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0.5 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0 0 0
+	attack  0 0 0 0
+	frame	data/chars/chsawm/17
+anim attack1
+	range   20 60
+	delay	15
+	offset  59 133
+	bbox    42 56 33 55
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/13
+	delay  5
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay 10
+	frame	data/chars/chsawm/13
+	hitflash bblod
+	attack  78 76 75 15 10 1 1 0 20
+	frame	data/chars/chsawm/17
+	delay 5
+	attack  0 0 0 0 0 0
+	frame	data/chars/chsawm/19
+	frame	data/chars/chsawm/20
+	frame	data/chars/chsawm/21
+	frame	data/chars/chsawm/19
+	frame	data/chars/chsawm/20
+	frame	data/chars/chsawm/21
+	delay 10
+	frame	data/chars/chsawm/18
+anim attack2
+	range   20 60
+	delay	5
+	offset  59 133
+	bbox    42 56 33 55
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/19
+	frame	data/chars/chsawm/20
+	frame	data/chars/chsawm/21
+	frame	data/chars/chsawm/18
+	delay 15
+	hitflash bblod
+	attack  78 76 75 15 10 1 1 0 20
+	dropv  4 1
+	frame	data/chars/chsawm/17
+	frame	data/chars/chsawm/13
+	delay 5
+	attack  0 0 0 0 0 0
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay 10
+	frame	data/chars/chsawm/13
+anim attack3
+	range   110 120
+	delay	15
+	offset  59 133
+	bbox    42 56 33 55
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/13
+	delay  5
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay 10
+	@cmd velo001 2 0 0
+	frame	data/chars/chsawm/13
+	delay 70
+	hitflash bblod
+	@cmd velo001 2.5 0 0
+	attack  78 76 75 15 10 1 1 0 20
+	frame	data/chars/chsawm/17
+	delay 10
+	@cmd velo001 2 0 0
+	attack  0 0 0 0 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1.5 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0.5 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0 0 0
+	attack  0 0 0 0
+	frame	data/chars/chsawm/17
+anim attack4
+	rangez 10 30
+	range   110 120
+	delay	15
+	offset  59 133
+	bbox    42 56 33 55
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/13
+	delay  5
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay 10
+	@cmd velo001 2 0.2 0
+	frame	data/chars/chsawm/13
+	delay 70
+	hitflash bblod
+	@cmd velo001 2.5 0.2 0
+	attack  78 76 75 15 10 1 1 0 20
+	frame	data/chars/chsawm/17
+	delay 10
+	@cmd velo001 2 0.2 0
+	attack  0 0 0 0 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1.5 0.2 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1 0.1 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0.5 0.1 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0 0 0
+	attack  0 0 0 0
+	frame	data/chars/chsawm/17
+anim attack5
+	rangez -30 -10
+	range   110 120
+	delay	15
+	offset  59 133
+	bbox    42 56 33 55
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/13
+	delay  5
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay 10
+	@cmd velo001 2 -0.2 0
+	frame	data/chars/chsawm/13
+	delay 70
+	hitflash bblod
+	@cmd velo001 2.5 -0.2 0
+	attack  78 76 75 15 10 1 1 0 20
+	frame	data/chars/chsawm/17
+	delay 10
+	@cmd velo001 2 -0.2 0
+	attack  0 0 0 0 0 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1.5 -0.2 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 1 -0.1 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0.5 -0.1 0
+	frame	data/chars/chsawm/17
+	@cmd velo001 0 0 0
+	attack  0 0 0 0
+	frame	data/chars/chsawm/17
+anim attack6
+	delay	15
+	offset  59 133
+	bbox    42 56 33 55
+	jumpframe 0 4 1 0
+	landframe 6
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/13
+	delay  5
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay 10
+	frame	data/chars/chsawm/13
+	hitflash bblod
+	delay  1000
+	attack  78 76 75 15 10 1 1 0 20
+	frame	data/chars/chsawm/17
+	delay 5
+	attack  0 0 0 0 0 0
+	frame	data/chars/chsawm/19
+	frame	data/chars/chsawm/20
+	frame	data/chars/chsawm/21
+	frame	data/chars/chsawm/19
+	frame	data/chars/chsawm/20
+	frame	data/chars/chsawm/21
+	delay 10
+	frame	data/chars/chsawm/18
+anim attack7
+	range   170 180
+	delay	15
+	offset  59 133
+	bbox    42 56 33 55
+	sound data/sounds/chain.wav
+	hitfx data/sounds/knifes.wav
+	frame	data/chars/chsawm/13
+	delay  5
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	frame	data/chars/chsawm/14
+	frame	data/chars/chsawm/15
+	frame	data/chars/chsawm/16
+	delay	15
+	frame	data/chars/chsawm/13
+anim pain
+	delay 5
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/28
+	delay  10
+	offset  61 133
+	frame	data/chars/chsawm/26
+	offset  59 133
+	frame	data/chars/chsawm/27
+	offset  61 133
+	frame	data/chars/chsawm/28
+	delay 10
+	offset  59 133
+	frame	data/chars/chsawm/26
+anim pain2
+	delay 5
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/25
+	delay  15
+	offset  61 133
+	frame	data/chars/chsawm/24
+	offset  59 133
+	frame	data/chars/chsawm/25
+	offset  61 133
+	delay 10
+	frame	data/chars/chsawm/24
+anim pain5
+	delay 2
+	offset  59 133
+	bbox    42 56 33 55
+	movea 1
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/26
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/27
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/28
+	frame	data/chars/chsawm/28
+anim pain9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 5
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+anim death9
+	offset 42 92
+	bbox   20 7 45 82
+	delay 5
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0 -2
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	frame data/chars/misc/freze4
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/22
+	offset 42 92
+	bbox   20 7 45 82
+	delay 300
+	frame data/chars/misc/freze4
+	delay 20
+	frame data/chars/misc/freze3
+	frame data/chars/misc/freze2
+	frame data/chars/misc/freze1
+anim grabbed
+	delay 1
+	offset  59 133
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/26
+anim grabbedwalk
+	delay 1
+	offset  59 173
+	bbox    42 56 33 55
+	frame	data/chars/chsawm/26
+anim fall
+	delay 1000
+	offset  59 133
+	bbox    0 0 0 0
+	landframe 1
+	hitflash bflash
+	attack 29 61 30 35 6 1 0 0 20
+	frame	data/chars/chsawm/37
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/chsawm/29
+	delay 30
+	offset  59 138
+	bbox    11 109 66 27
+	frame	data/chars/chsawm/30
+anim fall5
+	delay 1000
+	offset  59 133
+	bbox    29 61 30 35
+	landframe 1
+	hitflash bflash
+	attack 29 61 30 35 6 1 0 0 20
+	frame	data/chars/chsawm/37
+	delay 20
+	attack  0 0 0 0
+	bbox    0 0 0 0
+	frame	data/chars/chsawm/29
+	delay 60
+	offset  59 138
+	bbox    11 109 66 27
+	frame	data/chars/chsawm/30
+anim fall8
+	delay 1000
+	offset  59 133
+	bbox    0 0 0 0
+	landframe 3
+	hitflash bflash
+	frame	data/chars/chsawm/38
+	frame	data/chars/chsawm/x1
+	attack 29 61 30 35 6 1 0 0 20
+	frame	data/chars/chsawm/37
+	delay 20
+	attack  0 0 0 0
+	frame	data/chars/chsawm/29
+	delay 30
+	offset  59 138
+	bbox    11 109 66 27
+	frame	data/chars/chsawm/30
+anim rise
+	offset  59 133
+	bbox    0 0 0 0
+	delay 5
+	frame	data/chars/chsawm/32
+	frame	data/chars/chsawm/33
+	frame	data/chars/chsawm/31
+	frame	data/chars/chsawm/32
+	frame	data/chars/chsawm/33
+anim death
+	offset  104 116
+	bbox    0 0 0 0
+	delay 20
+	frame	data/chars/chsawm/d1
+	delay 30
+	frame	data/chars/chsawm/d2
+	frame	data/chars/chsawm/d3
+	delay 200
+	frame	data/chars/chsawm/d4

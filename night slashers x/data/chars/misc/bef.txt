@@ -1,0 +1,29 @@
+name bef
+type item
+health 80
+noatflash 1
+nolife 1
+anim spawn
+	delay 10
+	offset 17 32
+	bbox 1 0 31 33 5
+	jumpframe 0 2 0 0
+	movez -1
+	frame data/chars/misc/food5
+	movez 0
+	frame data/chars/misc/food6
+	frame data/chars/misc/food5
+	frame data/chars/misc/food7
+	frame data/chars/misc/food5
+	frame data/chars/misc/food8
+anim idle 
+	loop 1
+	delay 10
+	offset 17 32
+	bbox 1 0 31 33 5
+	frame data/chars/misc/food5
+	frame data/chars/misc/food6
+	frame data/chars/misc/food5
+	frame data/chars/misc/food7
+	frame data/chars/misc/food5
+	frame data/chars/misc/food8

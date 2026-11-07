@@ -1,0 +1,213 @@
+music		data/music/lv5.bor
+notime 1
+settime 0
+background	data/bgs/lv4/backb2
+bglayer 	data/bgs/lv4/c1 0.20 0 0 0 0 0 99999999 1 0
+bglayer         data/bgs/lv4/c2 0.25 0 0 0 0 0 99999999 1 1
+panel		data/bgs/lv4/b1
+order	a
+spawn1 100 20 0
+spawn2 80 50 0
+cameratype 1
+wall 310 197  -10 -5 375 360 100 1100
+wall 1605 250 -25 50 1000 1000 150 1100
+#levelscript data/bgs/lv4/lv4b.c
+load knight 1
+load tlk42 1
+load kfire 1
+load piorun2 1
+load okn 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+#######################
+wait
+at 0
+spawn	knight
+item bosslow
+coords	280 175
+at	0
+######################
+
+spawn	zombie4
+coords	380 200
+at	150
+spawn	zombiea
+coords	370 230
+at	150
+######################
+blockade 327
+at 327
+group 4 4 
+at 327
+wait
+at 327
+spawn	zombie3
+coords	400 230
+at	300
+spawn	zombie2
+coords	-80 230
+at	327
+spawn	flame
+item hotdog
+coords	160 200
+at	327
+spawn	kat
+item axe
+coords	400 230
+at	327
+spawn	zombieb
+coords	280 215
+at	327
+spawn	ghoul3
+flip 1
+coords	50 210
+at	327
+spawn	zombie3
+coords	-80 230
+at	327
+
+
+spawn	okn
+flip 1
+coords	360 240
+at	350
+######################
+group 100 100
+at 401
+spawn	barelb
+item itemr
+coords	400 144
+at	401
+spawn	kat
+coords	400 200
+at	500
+spawn	zombiea
+coords	380 160
+at	530
+spawn	zombie2
+coords	-80 200
+at	530
+spawn	were2
+coords	350 180
+at	570
+spawn	barelb
+item itemr2
+coords	380 220
+at	580
+spawn	zombiea
+coords	380 160
+at	580
+spawn	zombie4
+coords	-80 200
+at	640
+spawn	zombiea
+coords	380 200
+at	580
+spawn	jason
+item money2
+coords	350 180
+at	680
+######################
+blockade 680
+at 720
+group 9 10
+at 720
+wait
+at 720
+spawn	zombiea
+coords	400 160
+at	720
+spawn	zombie2
+coords	-80 200
+at	720
+spawn	were
+coords	400 180
+at	720
+spawn	jason
+coords	350 140
+at	720
+########################
+group 100 100
+at 750
+spawn	jason2
+coords	360 160
+at	780
+spawn	zombie2
+coords	-80 200
+at	820
+spawn	were
+coords	360 180
+at	850
+spawn	jason
+coords	360 200
+at	900
+spawn	barelb
+item itemr
+coords	350 140
+at	900
+spawn	jason2
+coords	360 220
+at	950
+###################
+spawn	barelb
+item bet
+coords	570 140
+at	1000
+spawn	barelb
+item zupa
+coords	430 230
+at	1000
+spawn	barelb
+item flame2
+coords	600 230
+at	1000
+###################
+group 6 6
+at 1300
+spawn	zombie2
+coords	-80 200
+at	1300
+spawn	were2
+flip 1
+coords	-50 180
+at	1300
+spawn	zombiea
+coords	-80 160
+at	1300
+spawn	ghoul3
+coords	280 220
+at	1300
+spawn	zombie2
+coords	-80 200
+at	1300
+spawn	zombieb
+coords	250 180
+at	1300
+spawn	jason
+coords	-80 140
+at	1300
+spawn	ghoul3
+coords	250 160
+at	1300
+spawn	zombie2
+coords	-80 160
+at	1300
+spawn	kat3
+item money1
+coords	250 180
+at	1300
+spawn	zombie3
+coords	-80 200
+at	1300
+spawn	jason2
+flip 1
+item money2
+coords	-50 160
+at	1300

@@ -1,0 +1,54 @@
+music		data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lv1/b1
+panel		data/bgs/lv1/b1b3
+order	a
+direction both
+spawn1 100 30 0
+spawn2 80 50 0
+wall 0 240 -50 -100 30 10 35 1100
+load lv1p1 1
+load lv1p2 1
+load noone2 1
+load tlk0b 1
+load tlk0a 1
+load werebig 1
+noslow 1
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+spawn	lv1p1 
+coords	0 222
+at	0
+spawn	lv1p2 
+coords	120 143
+at	0
+group 5 5
+at 0
+spawn	noone2 
+coords	500 200
+at	0
+spawn	werebig 
+item bosslow
+boss 1
+coords	270 197
+at 0
+spawn	kat2
+health 1
+coords	271 196
+at	0
+spawn	zombie
+item itemr
+coords	380 200
+at	0
+spawn	zombie3
+item itemr
+coords	380 200
+at	0

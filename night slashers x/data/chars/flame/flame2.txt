@@ -1,0 +1,126 @@
+name	flame2
+health	20
+speed	5
+type	enemy
+aimove chase
+aimove wander
+aiattack dodgemove
+shadow	3
+noquake 1
+score	400	5
+falldie 1
+nodieblink 1
+throwdamage	20
+grabdistance 24
+nolife 1
+running  10 4 2 1 0
+gfxshadow 1
+cantgrab 1
+jumpheight 0
+hostile player 
+candamage player npc enemy obstacle
+projectilehit   enemy obstacle npc
+dust dust
+noatflash 1
+flash dflash
+nodrop 1
+nopain 1
+palette data/chars/flame/alt1
+height  1000
+animationscript data/scripts/zombie.c
+anim spawn
+	delay	15
+	offset  58 147
+	bbox    0 0 0 0
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/misc/empty
+	frame	data/chars/flame/15
+	frame	data/chars/flame/14
+	frame	data/chars/flame/13
+	shock    37 46 42 76 10 1 0 0 20
+	frame	data/chars/flame/12
+anim idle
+	loop 1
+	delay	15
+	offset  58 147
+	bbox    37 46 42 76
+	drawmethod 256 256 0 0 0 0 1
+	shock    0 0 0 0
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/flame/03
+	shock    37 46 42 76 10 1 0 0 20
+	frame	data/chars/flame/02
+	frame	data/chars/flame/01
+	frame	data/chars/flame/03
+	frame	data/chars/flame/02
+	frame	data/chars/flame/01
+anim walk
+	loop	1
+	delay	15
+	offset  58 147
+	bbox    37 46 42 76
+	drawmethod 256 256 0 0 0 0 1
+	shock    0 0 0 0 
+	@cmd antiwall -1 1 0
+	@cmd antiwall 1 -1 0
+	@cmd antiwall 0 5 0
+	frame	data/chars/flame/04
+	shock    37 46 42 76 10 1 0 0 20
+	frame	data/chars/flame/05
+	frame	data/chars/flame/06
+	frame	data/chars/flame/07
+	frame	data/chars/flame/08
+	frame	data/chars/flame/09
+	frame	data/chars/flame/10
+	frame	data/chars/flame/11
+anim run
+	loop	1
+	delay	10
+	offset  58 147
+	bbox    37 46 42 76
+	drawmethod 256 256 0 0 0 0 1
+	shock    0 0 0 0 0
+	frame	data/chars/flame/04
+	shock    37 46 42 76 10 1 0 0 20
+	frame	data/chars/flame/05
+	frame	data/chars/flame/06
+	frame	data/chars/flame/07
+	frame	data/chars/flame/08
+	frame	data/chars/flame/09
+	frame	data/chars/flame/10
+	frame	data/chars/flame/11
+anim pain
+	delay 5
+	offset  58 147
+	bbox    37 46 42 76
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/flame/01
+	delay  30
+	frame	data/chars/flame/12
+	delay 10
+	frame	data/chars/flame/01
+anim fall
+	delay 5
+	offset  58 147
+	bbox    37 46 42 76
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/flame/01
+anim rise
+	delay 5
+	offset  58 147
+	bbox    37 46 42 76
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/flame/01
+anim death
+	delay	15
+	offset  58 147
+	bbox    0 0 0 0
+	drawmethod 256 256 0 0 0 0 1
+	frame	data/chars/flame/12
+	frame	data/chars/flame/13
+	frame	data/chars/flame/14
+	frame	data/chars/flame/15
+	frame	data/chars/misc/empty
+

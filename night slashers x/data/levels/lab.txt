@@ -1,0 +1,137 @@
+music		data/music/lv2.bor 1670379
+bossmusic       data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/lab/back2
+bglayer         data/bgs/lab/back1b 0.3 0.3 0 0 0 0 100 1 1 0
+bglayer         data/bgs/lab/back1a 0.3 0.3 0 0 0 0 100 1 1 6
+fglayer 	data/bgs/lv4/swc5a 4 1 0 0 0 99999999 0 2 1 1 2 
+panel		data/bgs/lab/empt
+order	aaa
+spawn1 100 45 0
+spawn2 80 70 0
+cameratype 1
+#levelscript data/bgs/lab/lab.c
+load lab1 1
+load lab2 1
+#--group1-----
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	lab1
+flip 1
+coords	160 240
+at	0
+spawn	lab2
+flip 1
+coords	160 240
+at	0
+spawn	lvbegin2
+flip 1
+coords	320 244
+at	0
+spawn	lab1
+flip 1
+coords	1024 240
+at	0
+spawn	lab2
+flip 1
+coords	1024 240
+at	0
+spawn	lab1
+flip 1
+coords	1884 240
+at	0
+spawn	lab2
+flip 1
+coords	1884 240
+at	0
+spawn	zombiea
+coords	350 180
+at	50
+spawn	zombie2a
+coords	380 220
+at	50
+###################
+spawn	zombie3
+coords	380 200
+at	360
+spawn	zombie
+coords	370 200
+at	360
+###################
+spawn	zombie3
+coords	380 160
+at	380
+spawn	zombie
+coords	-50 220
+at	450
+spawn	zombie
+coords	380 210
+at	455
+#####################
+spawn	zombieb
+item itemr
+coords	280 200
+at	550
+group 3 3
+at 550
+spawn	zombie
+coords	-50 220
+at	550
+spawn	zombie
+coords	280 200
+at	550
+spawn	zombie
+coords	350 200
+at	550
+spawn	zombie2
+coords	-80 220
+at	550
+spawn	zombie
+coords	350 200
+at	550
+#########################
+spawn	zombie
+coords	-50 220
+at	600
+spawn	zombie2a
+coords	370 200
+at	680
+###############
+spawn	zombie3
+coords	380 200
+at	1000
+group 4 5
+at 1000
+spawn	zombie3
+coords	-80 200
+at	1000
+spawn	zombie3
+coords	380 240
+at	1000
+#################
+spawn	barel
+item itemr
+coords	350 230
+at	1001
+spawn	zombie3
+coords	-50 200
+at	1250
+spawn	were2
+item itemr
+coords	350 200
+at	1300
+spawn	zombieb
+coords	280 220
+at	1350
+spawn	zombieb
+coords	150 220
+at	1400
+spawn	zombie2
+coords	380 200
+at	1450
+spawn	zombie3
+coords	380 200
+at	1450

@@ -1,0 +1,139 @@
+music		data/music/boss.bor 291327
+bossmusic       data/music/snake.bor 1557365
+notime 1
+settime 0
+background	data/bgs/lv7/back
+panel		data/bgs/lv7/a1
+order	a
+direction both
+spawn1 100 70 0
+spawn2 50 90 0
+cameratype 1
+#levelscript data/bgs/lv7/lv7b.c
+load heli 1
+load cnpan 1
+load doctor3 
+load franken2 1
+load chsawm 1
+load helitg 1
+load docsht 1
+load docgr1 1
+load docgr2 1
+load docgr3 1
+noslow 1
+#--group1-----
+wall 0 162 -1000 -1000 340 340 100 1100
+shadowalpha 2
+at 0 
+light 256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+wait
+at 0
+spawn	heli
+coords	235 200
+at	0
+spawn	barel
+item itemr2
+coords	50 170
+at	0
+spawn	zombie4
+coords	350 200
+at	0
+spawn	zombie4a
+coords	150 220
+at	0
+spawn	zombie4a
+coords	250 170
+at	0
+######################
+spawn	barel
+item itemr2
+coords	550 140
+at	100
+spawn	zombiea
+coords	370 180
+at	200
+spawn	zombie2a
+coords	400 220
+at	200
+spawn	zombie
+coords	430 160
+at	200
+spawn	zombie2
+coords	440 230
+at	400
+spawn	zombiea
+coords	-170 170
+at	400
+spawn	zombie3
+coords	-200 220
+at	400
+spawn	zombie2
+coords	-230 160
+at	400
+spawn	zombie3
+coords	-240 230
+at	400
+spawn	zombiea
+coords	-170 170
+at	500
+spawn	jason2
+coords	350 200
+at	500
+spawn	zombie2
+coords	-230 160
+at	500
+spawn	jason
+coords	-240 230
+at	500
+spawn	cnpan
+item itemr
+flip 1
+coords	530 140
+at	500
+spawn	zombie3
+coords	-200 220
+at	600
+spawn	zombie2
+coords	-230 160
+at	600
+spawn	zombie3
+coords	-240 230
+at	600
+spawn	zombiea
+coords	-170 170
+at	700
+spawn	jason2
+coords	350 200
+at	780
+spawn	zombie2
+coords	-230 160
+at	800
+########################
+wait 
+at 850
+spawn	jason4
+coords	240 230
+at	850
+wait
+at 1000
+spawn	doctor3
+item bosslow
+map 1
+boss 1
+coords	200 220
+at	1000
+spawn	franken2
+map 1
+item bosslow
+boss 1
+coords	200 180
+at	1000
+spawn	death2
+map 1
+coords	280 200
+at	1000

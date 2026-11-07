@@ -1,0 +1,25 @@
+name zeye
+type pshot
+speed 5
+jumpheight 2
+anim idle 
+	offset 5 7
+	bbox 0 0 0 0
+	delay 1000
+	frame data/chars/zombie2/eye
+anim attack1
+	offset 5 7
+	bbox 0 0 0 0
+	jumpframe 0 1 -1 0
+	delay 1000
+	landframe 1
+	frame data/chars/zombie2/eye
+	delay 200
+	frame data/chars/zombie2/eye
+	delay 10
+	drawmethod 256 128
+	frame data/chars/zombie2/eye
+anim attack2
+	offset 5 7
+	bbox 0 0 0 0
+	frame data/chars/zombie2/eye

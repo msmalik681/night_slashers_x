@@ -1,0 +1,48 @@
+name	axeb
+health 1
+type	pshot
+speed 15
+candamage enemy npc obstacle
+nolife 1
+remove 0
+noatflash 1
+flash flashd
+shadow 0
+anim idle
+	loop 1
+	delay 10 
+	offset  43 45
+	bbox    11 13 66 65
+	hitflash bblod
+	attack  11 13 66 65 50 1 0 0 15
+	frame	data/chars/misc/axeb1
+	frame	data/chars/misc/axeb2
+	frame	data/chars/misc/axeb3
+	frame	data/chars/misc/axeb4
+	frame	data/chars/misc/axeb5
+	frame	data/chars/misc/axeb6
+	frame	data/chars/misc/axeb7
+	frame	data/chars/misc/axeb8
+anim fall
+	delay 10 
+	offset  43 45
+	bbox    0 0 0 0 
+	jumpframe 0 2 -2 0
+	landframe 14
+	frame	data/chars/misc/axeb8
+	frame	data/chars/misc/axeb7
+	frame	data/chars/misc/axeb6
+	frame	data/chars/misc/axeb5
+	frame	data/chars/misc/axeb4
+	frame	data/chars/misc/axeb3
+	frame	data/chars/misc/axeb2
+	frame	data/chars/misc/axeb1
+	frame	data/chars/misc/axeb8
+	frame	data/chars/misc/axeb7
+	frame	data/chars/misc/axeb6
+	frame	data/chars/misc/axeb5
+	frame	data/chars/misc/axeb4
+	frame	data/chars/misc/axeb3
+	frame	data/chars/misc/axeb2
+
+	

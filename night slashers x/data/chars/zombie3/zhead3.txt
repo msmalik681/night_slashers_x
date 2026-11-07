@@ -1,0 +1,8 @@
+name zhead3
+type obstacle
+anim idle 
+	loop 1
+	delay 100
+	offset 24 17
+	bbox 0 0 0 0
+	frame data/chars/zombie3/39

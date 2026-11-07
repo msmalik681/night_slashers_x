@@ -1,0 +1,26 @@
+name	ex1
+type	endlevel
+branch ex1
+nolife 1
+subject_to_wall 0
+subject_to_obstacle 0
+subject_to_platform 0
+facing 1
+anim idle
+	@script
+	if(frame == 2){
+	void self = getlocalvar("self");
+	killentity(self);
+	}
+	@end_script
+	offset  20 120
+	delay   7720
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	delay   1000
+	bbox    11 0 16 120
+#	frame	data/sprites/in
+	frame	data/chars/misc/empty
+	bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty

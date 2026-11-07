@@ -1,0 +1,43 @@
+name	tlk2b
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 300
+facing 1
+animationscript data/scripts/tlk.c
+palette data/scenes/demo/tlk2b1
+anim idle
+	delay	565
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+        delay	200
+	frame	data/scenes/demo/tlk2b1
+	@cmd tlk
+        frame	data/chars/misc/empty
+anim freespecial2
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+	frame	data/scenes/demo/tlk2b2c
+	sound data/sounds/n/tfinalw.wav
+	delay 150
+        frame	data/scenes/demo/tlk2b2c
+anim freespecial3
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+	frame	data/scenes/demo/tlk2b2j
+	sound data/sounds/n/deadmeat.wav
+	delay 150
+        frame	data/scenes/demo/tlk2b2j
+anim freespecial4
+        offset	144 129
+	bbox	0 0 0 0
+        delay	50
+	frame	data/scenes/demo/tlk2b2jk
+	delay 150
+	sound data/sounds/n/ihavepow.wav
+        frame	data/scenes/demo/tlk2b2jk

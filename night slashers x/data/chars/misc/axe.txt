@@ -1,0 +1,25 @@
+name	axe
+type	item
+subtype weapon
+weapnum	5
+counter	100
+typeshot 0
+shootnum 1
+subject_to_screen 0
+anim spawn
+	delay	30
+	offset  29 5
+	bbox    0 0 0 0
+	movez -1
+	frame	data/chars/misc/axe1
+anim idle
+	loop 1
+	delay	10
+	offset  29 5
+	bbox    0 0 40 10 5
+	frame	data/chars/misc/axe1
+anim fall
+	delay	250
+	offset  29 5
+	bbox    0 0 40 10
+	frame	data/chars/misc/axe1

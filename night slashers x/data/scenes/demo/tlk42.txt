@@ -1,0 +1,34 @@
+name	tlk42
+type	text
+subtype noskip
+nolife 1
+nodrop	1
+cantgrab 1
+setlayer 300
+facing 1
+animationscript data/scripts/tlk.c
+palette data/scenes/demo/tlk42
+anim idle
+	delay	1
+	offset	144 129
+	bbox	0 0 0 0
+        frame	data/chars/misc/empty
+        delay	200
+	frame	data/scenes/demo/tlk42
+	@cmd tlk
+        frame	data/chars/misc/empty
+anim freespecial2
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk42c
+anim freespecial3
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk42j
+anim freespecial4
+        offset	144 129
+	bbox	0 0 0 0
+        delay	200
+        frame	data/scenes/demo/tlk42jk

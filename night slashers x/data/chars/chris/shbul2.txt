@@ -1,0 +1,35 @@
+name	shbul2
+type	pshot
+speed 12
+remove 0
+load bblod2
+candamage enemy npc obstacle
+
+
+
+anim idle
+	delay	4
+	offset	19 41
+	hitfx data/sounds/empty.wav
+	sound data/sounds/empty.wav
+	hitflash bblod2
+	attack  18 29 22 21 50 0 1 0 10
+	frame	data/chars/chris/shbul01 
+	frame	data/chars/chris/shbul02 
+	frame	data/chars/chris/shbul03 
+	frame	data/chars/chris/shbul04 
+	frame	data/chars/chris/shbul05
+	attack2  18 29 22 21 50 0 1 0 10 
+	frame	data/chars/chris/shbul06 
+	frame	data/chars/chris/shbul07 
+	frame	data/chars/chris/shbul08 
+	frame	data/chars/chris/shbul09 
+	frame	data/chars/chris/shbul10
+	attack3  18 29 22 21 50 0 1 0 10 
+	frame	data/chars/chris/shbul11 
+	frame	data/chars/chris/shbul12 
+	frame	data/chars/chris/shbul13 
+	frame	data/chars/chris/shbul14 
+	frame	data/chars/chris/shbul15 
+	attack  0 0 0 0 0 
+	frame	data/chars/misc/empty

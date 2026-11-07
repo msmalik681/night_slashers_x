@@ -1,0 +1,127 @@
+music       data/music/boss.bor 291327
+notime 1
+settime 0
+background	data/bgs/library/d4
+bglayer		data/bgs/library/back2 0 0 50 0 0 0 2 2 1 0 2 2 15 3
+panel		data/bgs/library/d4
+bgspeed 1 
+order	a
+direction both
+spawn1 100 50 0
+spawn2 80 70 0
+cameratype 1
+wall 0 244 -1000 -1000 120 40 80 1000
+wall 0 217 -1000 -1000 185 155 30 1000
+wall 471 245 -110 -60 1000 1000 50 1000
+wall 471 215 -150 -100 1000 1000 50 1000
+load doctor2 1
+load docsht 1
+load docgr1 1
+load docgr2 1
+load docgr3 1
+load tlk1 1
+load mutant 1
+load light 1
+noslow 1
+#--group1-----
+shadowalpha 6
+at 0 
+light -256 33
+at 0
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+group 3 4
+at 0
+spawn	doctor2
+boss 1
+map 1
+item bosslow
+coords	250 220
+at	0
+spawn	light
+flip 1
+coords	200 220
+at	0
+spawn	zombie
+coords	750 300
+at	0
+spawn	zombie
+coords	-750 300
+at	0
+spawn	zombie
+coords	-100 300
+at	0
+spawn	zombie2
+coords	380 300
+at	0
+spawn	zombie
+coords	350 300
+at	0
+spawn	zombie
+coords	-100 300
+at	0
+spawn	zombie2
+coords	380 300
+at	0
+group 6 6
+at 0
+spawn	zombieb
+coords	50 300
+at	0
+spawn	zombieb
+coords	80 330
+at	0
+spawn	zombieb
+coords	280 300
+at	0
+spawn	zombieb
+item itemr
+coords	250 280
+at	0
+group 3 4
+at 0
+spawn	zombie2
+coords	-80 300
+at	0
+spawn	zombie
+coords	350 300
+at	0
+spawn	zombie
+coords	350 300
+at	0
+spawn	zombie
+coords	-50 300
+at	0
+spawn	zombie2
+coords	380 300
+at	0
+spawn	zombie
+coords	350 300
+at	0
+spawn	zombie2
+coords	-80 300
+at	0
+spawn	zombie
+coords	350 300
+at	0
+spawn	zombie
+coords	350 300
+at	0
+spawn	zombie2
+coords	-80 300
+at	0
+spawn	zombie
+coords	350 300
+at	0
+spawn	zombie2
+item itemr
+coords	380 300
+at	0
+spawn	zombie
+coords	-50 300
+at	0
+spawn	zombie2
+coords	380 300
+at	0

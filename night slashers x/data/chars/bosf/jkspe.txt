@@ -1,0 +1,37 @@
+name	jkspe
+type	none
+cantgrab 1
+nolife 1
+setlayer 500
+anim idle
+	offset  25 25
+	bbox    0 0 0 0
+	delay 8
+	drawmethod  2048 2048 0 0 0 6 0 0 0 0
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/b31
+	frame	data/chars/bosf/b32
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/b31
+	frame	data/chars/bosf/b32
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/b31
+	frame	data/chars/bosf/b32
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/b31
+	frame	data/chars/bosf/b32
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/b31
+	frame	data/chars/bosf/b32
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/b31
+	frame	data/chars/bosf/b32
+	frame	data/chars/misc/empty
+	frame	data/chars/bosf/b31
+	frame	data/chars/bosf/b32
+	delay 1
+	@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+
+	

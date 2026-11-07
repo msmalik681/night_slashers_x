@@ -1,0 +1,18 @@
+name	flashf
+type	none
+toflip 1
+nomove 1 0
+palette data/chars/misc/zd1
+anim idle
+	offset	112 90
+	quakeframe 1 1 1
+	delay	4
+	frame	data/chars/misc/zd1
+	frame	data/chars/misc/zd2
+	frame	data/chars/misc/zd3
+	frame	data/chars/misc/zd4
+	frame	data/chars/misc/zd5
+	frame	data/chars/misc/zd6
+	frame	data/chars/misc/zd7
+	frame	data/chars/misc/zd8
+	frame	data/chars/misc/zd9

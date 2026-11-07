@@ -1,0 +1,28 @@
+name	Flash
+type	none
+nomove 1 0
+toflip 1
+palette data/chars/misc/flash1
+alternatepal data/chars/misc/flash5
+alternatepal data/chars/misc/flash6
+anim idle
+	@script
+	if(frame == 0){
+		void self = getlocalvar("self");
+		int map = rand()%2;
+		if(map < 0){
+			-map == map;
+		}
+		changeentityproperty(self, "map", map);
+	}
+	@end_script
+	delay	10
+	offset	29 40
+	custbomb blood
+	tossframe 2 1
+	quakeframe 0 1 1
+	frame	data/chars/misc/flash1
+	frame	data/chars/misc/flash2
+	frame	data/chars/misc/flash3
+	frame	data/chars/misc/flash4
+	

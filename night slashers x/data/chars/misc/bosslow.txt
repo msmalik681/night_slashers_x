@@ -1,0 +1,16 @@
+name	bosslow
+type	text
+subtype noskip
+nolife 1
+setlayer 20
+nolife 1
+cantgrab 1
+load bosslow2
+subject_to_hole 0
+anim idle
+	offset  1 1
+	delay   1
+	spawnframe 0 160 120 0 1
+	subentity  bosslow2
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty

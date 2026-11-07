@@ -1,0 +1,6 @@
+disablekey attack4
+renamekey  attack2 Taunt/Use
+renamekey  attack1 Attack
+disablekey attack3 
+renamekey  special Block/Special
+

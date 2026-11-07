@@ -1,0 +1,17 @@
+name	lvbegin3
+type	none
+setlayer 900
+anim idle
+@script
+	int iPlayer; 
+	int iMaxPlayer = 2; 
+	int iWeapon = 1;
+	for (iPlayer = 0; iPlayer < iMaxPlayer; iPlayer++){
+	changeplayerproperty(iPlayer, "weapon", iWeapon);
+	changeopenborvariant("slowmotion", 0);
+	}
+	@end_script
+	delay  200
+	offset	540 260
+	@cmd changeentityproperty getlocalvar("self") "velocity" 9 0 0
+	frame	data/chars/misc/lvst
